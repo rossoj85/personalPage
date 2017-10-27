@@ -7,6 +7,7 @@ module.exports = {
     filename: './public/bundle.js'
   },
   devtool: 'source-map',
+  
   module: {
     rules: [
       {
@@ -23,8 +24,8 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader',
-          'sass-loader'
+          'css-loader?url=false',
+          'sass-loader?url=false'
         ]
       }
     ]

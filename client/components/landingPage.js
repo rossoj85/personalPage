@@ -11,7 +11,18 @@ export default class LandingPage extends Component{
         render(){
             return(
                 <div>
-                    <h1>Welcome to the Landing Page</h1>
+                    <div className="jumbotron" >
+                    <div className="container">  
+                    <div className="main">
+                    </div>
+                    </div>
+
+
+
+                    </div>
+
+                    <div class = "border">
+                    </div>
                 </div>
             )
         }
