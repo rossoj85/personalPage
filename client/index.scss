@@ -1,46 +1,50 @@
 // body
-html{
-    background-color: black;
+#mainView{
+  background-color: black;
+}
+#pageTheme{
+  background-color: black;
+  color: white;
+  font-family: Jura;
+}
+//Navbar
+.navbar{
+  background: #333333;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  font-family: Jura;
 }
 
+#LandingPage .navbar {
+  background: transparent;
+  font-weight: bolder;
+  color: black;
+}
+.navbar >.container{
+  margin: 0px;
+  width: 100%;
+  background-color: transparent;
+}
+.container>.navbar-header {
+  margin-right: 0;
+  margin-left: -15px;
 
-//Navbar
-// .header{
-//     background-color: #333333;
-//     // height: 50px;
-//     color: white;
-//     font-family: Jura;
-//     margin-left: 0;
-//     margin-right:0;
-//     max-width: 100%;
-//     margin-top: 0px;
-//   }
-.header {
-    background-color: rgba(51,51,51,.1);
-    color: grey;
-    font-family: Jura;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 100%;
-    margin-top: 0px;
-    z-index: 99;
-} 
+}
+
+.navbar-collapse{
+  margin-bottom: -300px;
   
+}
+
+ul.nav.container.navbar-nav.navbar-right{
+  float: right;
   
-  .header.container-fluid {
-    margin-left: 0;
-    margin-right: 0;
-    height: 90px;
-    max-width: 100%
-  }
+}
+ul.nav.container.navbar-nav.navbar-right.button{
+  color: red;
   
-  .title{
-    float:left;
-    font-weight: bold;
-    color: black;
-    display: inline-block;
-    margin-left: -15px
-  }
+}
   .logo{
       height:100px;
       width:100px;
@@ -49,54 +53,88 @@ html{
   }
   
   .nav{
-    float: right;
     display: inline-block;
-    width:30%;
+    width:auto;
     margin-right: 30px;
   }
-  .nav >button{
-    margin: 20px 0px 0px 25px;
+  .nav li{
+    width: 100px;
+    margin: 10px 5px;
+  }
+  .nav button{
+    width: 100px;
+  }
+
+   a button{
+    margin: 15px 20p 0px 5px;
     padding: 10px 20px;
     font-size: 15px;
-    font-weight: bold;
     float: right;
     list-style-type: none;
-    color: black;
-    border: 2px solid black;
+    color: white;
+    border: 2px solid white;
     background-color: transparent;
    
   }
-  .nav >button:hover {
+  a button:hover {
       color: red;
       border: 2px solid red;
       cursor: pointer;
+      box-shadow: 0 0 5px red;
   }
+
+  #LandingPage a button{
+    color: black;
+    border: 2px solid black;
+    font-weight: bolder;
+  }
+  #LandingPage a button:hover {
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
 
 #sceneWrapper{
     position: relative;
     
 }
+//BOOTSTRAP NAVBAR
 
 //JUMBOTRON
-// .jumbotron {
-//     height: 500px;
-//     background-image: url("/photos/midtown.jpg");
-//     background-position:center;
-//     background-size: cover;
-//     margin-bottom: 0; 
-//   }
+
 .jumbotron {
-    height: 600px;
+    height: 700px;
     background-image: url(/photos/midtown.jpg);
-    background-position: center;
+    background-position: 50% 30%;
     background-size: cover;
     margin-bottom: 0;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 .border{
     background-color: #333333;
     height: 50px;
     color: white;
-    font-family: Jura;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
+  //Landing Page BOdy
+
+  .short{
+    float: none;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .short .media-heading{
+    font-size:24px;
+  }
+  .short p{
+    font-size: 18px;
+  }
+
+  //Footer
+  #footer{
+    background: #333333;
+    text-align: center;
+    
   }
