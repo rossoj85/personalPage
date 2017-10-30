@@ -16,11 +16,7 @@ export default class LandingPage extends Component{
             <div id="LandingPage">
                 <Navbar />
                 <div className="jumbotron" >
-                    <div className="container"> 
-                    <div className="main">
-                        
-                    </div>
-                    </div>
+                    
                 </div>
 
                 <div className = "border">

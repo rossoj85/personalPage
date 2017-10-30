@@ -9,7 +9,7 @@
 }
 //Navbar
 .navbar{
-  background: #333333;
+  background: rgba(51, 51, 51, .5);
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -184,14 +184,26 @@ ul.nav.container.navbar-nav.navbar-right.button{
 
 //Projects Page
 #projectsPage{
-  background: #070000,url(/photos/midtown.jpg); /* fallback for old browsers */
+  // background: #070000,url(/photos/midtown.jpg); /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8));
+  // background-position: 50% 30%;
+  // background-size: cover;
+  // padding-bottom: 328px; 
+}
+
+.projectsJumbotron {
+  height: 800px;
   background: -webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);
-  background-position: 50% 30%;
+  background-position: 50% 47%;
   background-size: cover;
-  padding-bottom: 328px;
-  
-  
+  margin-bottom: 0;
+  margin-top: -200px;
+}
+#projectsBody{
+  margin-top: -580px;
+  margin-bottom: 500px
 }
 div.panel.panel-default{
   background: transparent !important;
