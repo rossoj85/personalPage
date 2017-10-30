@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
+import {Link} from 'react-router-dom';
 export default class myNavbar extends Component{
     
       
@@ -24,11 +25,13 @@ export default class myNavbar extends Component{
 
            
                 <Navbar style={{width: '100%'}} collapseOnSelect>
+                    <Link to ='/'>
                     <Navbar.Header className="title">
-                    <img className="logo" src ="/photos/logoWhite.jpg" />
-                    <h3><span style = {{color:"red"}} >Jason Rosso</span>, Fullstack Developer,  New York</h3>
-                    <Navbar.Toggle />
-                </Navbar.Header>
+                        <img className="logo" src ="/photos/logoBlack.jpg" />
+                        <h3><span style = {{color:"red"}} >Jason Rosso</span>, Fullstack Developer,  New York</h3>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    </Link>
             <Navbar.Collapse>
               <Nav className="nav container" pullRight>
               

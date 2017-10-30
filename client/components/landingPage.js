@@ -16,8 +16,9 @@ export default class LandingPage extends Component{
             <div id="LandingPage">
                 <Navbar />
                 <div className="jumbotron" >
-                    <div className="container">  
+                    <div className="container"> 
                     <div className="main">
+                        
                     </div>
                     </div>
                 </div>
@@ -38,8 +39,9 @@ export default class LandingPage extends Component{
                             New York based Fullstack Javascript developer who enjoys working with large 
                             datasets and making apps that are elegant, functional, visually striking,
                             and above all fun and easy to use.</p>
-                            <p><span style={{color:'red', textAlign: 'right'}}> Click here to learn more about me.</span>
-                            </p>
+
+                            <Link to='/about' ><p><span style={{color:'red', textAlign: 'right'}}> 
+                            Click here to learn more about me.</span></p></Link>
                         </Media.Body>
                         </Media>
                         <hr style={{marginTop:'60px',marginBottom:'20px'}}/>
@@ -81,7 +83,8 @@ export default class LandingPage extends Component{
                             <li>Visual Arts</li>
                             <li>Games</li>
                         </ul>
-                        <span style={{color:'red', float: 'right'}}> Click to View Projects.</span>
+                        <Link to='/projects'> <span style={{color:'red', float: 'right'}}> Click to View Projects.</span>
+                        </Link>
                       </p>
                       
                   </Media.Body>

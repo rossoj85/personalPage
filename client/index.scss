@@ -14,6 +14,11 @@
   box-shadow: none;
   -webkit-box-shadow: none;
   font-family: Jura;
+  font-weight: 100;
+  margin-bottom: 0px
+}
+.navbar a{
+  color:white
 }
 
 #LandingPage .navbar {
@@ -21,10 +26,14 @@
   font-weight: bolder;
   color: black;
 }
+#LandingPage .navbar a{
+  color: black
+}
 .navbar >.container{
   margin: 0px;
   width: 100%;
   background-color: transparent;
+  margin-left: -15px
 }
 .container>.navbar-header {
   margin-right: 0;
@@ -65,6 +74,12 @@ ul.nav.container.navbar-nav.navbar-right.button{
     width: 100px;
   }
 
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+    background: none;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: none;
+  }
    a button{
     margin: 15px 20p 0px 5px;
     padding: 10px 20px;
@@ -76,6 +91,19 @@ ul.nav.container.navbar-nav.navbar-right.button{
     background-color: transparent;
    
   }
+  button:focus {
+    outline:0;
+    color: red;
+    border: 2px solid red;
+    box-shadow: 0 0 5px red;}
+
+
+  button:active {
+    outline:0;
+    color: red;
+    border: 2px solid red;
+    box-shadow: 0 0 5px red;}
+    
   a button:hover {
       color: red;
       border: 2px solid red;
@@ -93,7 +121,16 @@ ul.nav.container.navbar-nav.navbar-right.button{
     border: 2px solid red;
     cursor: pointer;
 }
+// LandingPage BODY
 
+#LandingPage .descriptors a {
+  text-decoration: none;
+}
+#LandingPage .descriptors a:hover{
+  
+  text-shadow: 0 0 5px red;
+  
+}
 
 #sceneWrapper{
     position: relative;
@@ -136,5 +173,38 @@ ul.nav.container.navbar-nav.navbar-right.button{
   #footer{
     background: #333333;
     text-align: center;
+    // position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
     
   }
+
+
+//Projects Page
+#projectsPage{
+  background: #070000,url(/photos/midtown.jpg); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  padding-bottom: 328px;
+  
+  
+}
+div.panel.panel-default{
+  background: transparent !important;
+}
+div.panel-heading{
+  color: red !important;
+  background: transparent !important;
+  
+}
+h4.panel-title{
+  font-size:24px;
+}
+.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: none;
+  border-bottom: 1px white solid
+}
