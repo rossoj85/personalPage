@@ -20,6 +20,12 @@
 .navbar a{
   color:white
 }
+.navbar a:hover{
+  text-decoration: none;
+  // color: red;
+  text-shadow: 0 0 3px #FF0000;
+
+}
 
 #LandingPage .navbar {
   background: transparent;
@@ -27,7 +33,12 @@
   color: black;
 }
 #LandingPage .navbar a{
-  color: black
+  color: black;
+  text-decoration: none;
+}
+#LandingPage .navbar a:hover{
+  text-shadow: none;
+  
 }
 .navbar >.container{
   margin: 0px;
@@ -79,6 +90,7 @@ ul.nav.container.navbar-nav.navbar-right.button{
   }
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background: none;
+    
   }
    a button{
     margin: 15px 20p 0px 5px;
@@ -183,14 +195,7 @@ ul.nav.container.navbar-nav.navbar-right.button{
 
 
 //Projects Page
-#projectsPage{
-  // background: #070000,url(/photos/midtown.jpg); /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8));
-  // background-position: 50% 30%;
-  // background-size: cover;
-  // padding-bottom: 328px; 
-}
+
 
 .projectsJumbotron {
   height: 800px;
@@ -219,4 +224,69 @@ h4.panel-title{
 .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
   border: none;
   border-bottom: 1px white solid
+}
+.panel-title>a:hover{
+  text-decoration: none;
+  cursor:pointer;
+}
+//APP TILES 
+.tileContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.appTile{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.appTile:hover{
+  cursor: pointer;
+  color: red;
+
+}
+.appThumb{
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+
+
+//Rain
+ #frame{
+   z-index: 99;
+   position: relative;
+ }
+ //this is the rain background
+#defaultCanvas0{
+  margin-top: -520px;
+  margin-bottom: 80px;
+  // margin-left: 60px;
+  width: 700px !important;
+  height: 420px !important;
+  position: relative;
+}
+
+#cityScape{
+  width: 600px;
+  margin-bottom: 150px;
+  margin-top: -273px;
+  // margin-left: 100px;
+  z-index: 50;
+  position: relative;
+}
+
+
+#rainVariation {
+  // display: inline;
+}
+.rainPlace{
+  display: inline;
+}
+#rainVariation h2:hover{
+  cursor: pointer;
 }

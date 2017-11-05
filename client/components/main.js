@@ -24,9 +24,8 @@ export default class Main extends Component{
             )} />
             <Navbar />
             </Switch>
-           
-            <Route exact path='/rain' component={RainPage} />
             <Route exact path='/projects' component={Projects} />
+            <Route exact path='/projects/rain' component={RainPage} />
             <Route exact path='/about' component={About} />
             <Footer />
             </main>

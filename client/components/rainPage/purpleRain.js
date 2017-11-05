@@ -20,11 +20,6 @@ export default function sketch (p) {
         }
     };
   
-    // p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
-    //   if (props.rotation){
-    //     rotation = props.rotation * Math.PI / 180;
-    //   }
-    // };
   
     p.draw = function () {
       p.background(230, 230, 250);

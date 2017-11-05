@@ -25,13 +25,15 @@ export default class myNavbar extends Component{
 
            
                 <Navbar style={{width: '100%'}} collapseOnSelect>
-                    <Link to ='/'>
+                    
                     <Navbar.Header className="title">
+                    <Link to ='/'>
                         <img className="logo" src ="/photos/logoBlack.jpg" />
                         <h3><span style = {{color:"red"}} >Jason Rosso</span>, Fullstack Developer,  New York</h3>
+                         </Link>
                         <Navbar.Toggle />
                     </Navbar.Header>
-                    </Link>
+                   
             <Navbar.Collapse>
               <Nav className="nav container" pullRight>
               
