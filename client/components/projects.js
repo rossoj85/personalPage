@@ -1,74 +1,50 @@
 import React, { Component } from 'react';
 import {Panel, Accordion, Modal} from 'react-bootstrap';
-
+import {ProjectModals, vart, globeChat, uShop} from './index';
 
 export default class Projects extends Component{
     constructor(props){
         super(props)
         this.state = {
-            showVaRt: false,
-            showGlobeChat: false,
-            showUshop: false
+            showModal: false,
+            modal: false
+            // showUshop: false
         }
-        this.openVart = this.openVart.bind(this)
+        // this.openModal = this.openModal.bind(this)
+        this.closeModal=this.closeModal.bind(this);
     }
-    openVart(){
-        var current= this.state.showVaRt
-        var notCurrent = !current;
-        console.log("vArt: ", this.state.showVaRt)
-        console.log("open Vart clicked")
-        this.setState({showVaRt: notCurrent})
-        console.log(this.state.showVaRt)
+    // openModal(){
+    //     var current= this.state.showModal
+    //     var notCurrent = !current;
+    //     console.log("vArt: ", this.state.showModal)
+    //     console.log("open MOdal clicked", this.app)
+    //     this.setState({showModal: this.app})
+    //     console.log("THe MODAL SELECTED",this.state.showModal)
+    // }
+    closeModal(){
+        console.log("CLOSE MODAL EXECUTED")
+        this.setState({showModal: false, modal:false})
+        console.log("new ShowModal state", this.state.showModal)
     }
-    openGlobeChat(){
-        console.log('open Globe Chat')
-    }
-    openUshop(){
-        console.log('U-shop Open')
-    }
+    // openGlobeChat(){
+    //     console.log('open Globe Chat')
+    // }
+    // openUshop(){
+    //     console.log('U-shop Open')
+    // }
     render(){
         const applications = [
-            {name: 'V-aRt', img: '/photos/V-aRt-logo.png', modalFunc: this.openVart},
-            {name: 'Globe Chat', img: '/photos/languageTree.png', modalFunc: this.openGlobeChat},
-            {name: 'U-Shop', img: '/photos/neonCart.png', modalFunc: this.openUshop}
+            vart,
+            globeChat,
+            uShop
         ];
 
-        const visArt=[
-            {}
-        ]
-
+        console.log("Imported Vart Object", vart)
+        console.log("Is there a selected Modal?", this.state.modal)
         return (
         <div id="projectsPage" >
-        
-        <Modal show={this.state.showVaRt} onHide={null}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Text in a modal</h4>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-
-          <h4>Popover in a modal</h4>
-
-          <h4>Tooltips in a modal</h4>
-
-          <hr />
-
-          <h4>Overflowing text to show scroll behavior</h4>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <button onClick={()=>this.openUshop()}>Close</button>
-        </Modal.Footer>
-      </Modal>
+            <ProjectModals  showModal={this.state.showModal} closeModal={this.closeModal} modal={this.state.modal}/>
+       
             <div className="projectsJumbotron" />
                 <div id="projectsBody">
                 <h1 style={{color: 'red', marginTop: '0px'}}>Projects</h1>
@@ -78,13 +54,13 @@ export default class Projects extends Component{
                                     {
                                         applications.map(app => {
                                             return (
-                                                <div className="appTile" key={app.name} onClick={()=> app.modalFunc()}>
+                                                <div className="appTile" key={app.name} onClick={()=> this.setState({showModal: true, modal: app})}>
                                                     <img className = "appThumb" src={app.img} />
                                                     <h4>{app.name}</h4>
                                                 </div>
                                             )
                                         })
-                                    };   
+                                    }   
                                 </div>
                             </Panel>
 
