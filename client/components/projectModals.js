@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Modal} from 'react-bootstrap'; 
+import {Modal, Button, Media,Tooltip,OverlayTrigger} from 'react-bootstrap'; 
 
 
 
@@ -7,35 +7,96 @@ export default (props) => {
   console.log("modalVart", props)
   const showModal=props.showModal;
   const closeModal=props.closeModal;
-  const modal =props.modal;
+  const project =props.modal;
   return(
     <Modal show={showModal} onHide={()=>closeModal()} bsSize="large">
     <Modal.Header closeButton>
-      <Modal.Title>{modal.name}</Modal.Title>
+      <Modal.Title style={{textDecoration: 'none'}}>Projects</Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <h4>Text in a modal</h4>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-
-      <h4>Popover in a modal</h4>
-
-      <h4>Tooltips in a modal</h4>
+     {/* <img src={project.img} className = "appThumb"/>
 
       <hr />
 
-      <h4>Overflowing text to show scroll behavior</h4>
-      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <h4>{project.header || 'Caption title will go here'}</h4>
+      <p>{project.description}</p>
+      
+      <iframe width="560" height="315" src={project.youTube} frameBorder="0" allowFullScreen></iframe>}
+  */}
+       
+          <Media>
+          <Media.Left align="top">
+            <img  src={project.img} className = "appThumb"/>
+          </Media.Left>
+          <Media.Body>
+            <Media.Heading>{project.name}</Media.Heading>
+              <div >
+                <p>{project.description}</p>
+              </div>
+             
+            {project.thumbs?
+              <div className='screenShotRow'>
+                <h4>Screenshots</h4>
+                {project.thumbs.map(thumb=>{
+                  return(
+                    <img src={thumb} className= 'screenshots'/>
+                  )
+                })}
+              </div>
+              :null
+            }
+
+            {
+              project.technologies ?
+              <div> 
+              <h4>Technologies Used</h4>
+            {
+              project.technologies.map(tech=>{
+                let tooltip=(<Tooltip id='tooltip' style={{fontSize:'15px'}}>{tech.name}</Tooltip>)
+                return(
+                 <OverlayTrigger placement='bottom' overlay={tooltip}>
+                    <img src={tech.img} className='techImg' />
+                  </OverlayTrigger>
+                )
+              })
+            }
+            </div>:
+            null }
+            {
+              project.youTube ?
+              <div> 
+              <h4>Youtube</h4>
+              <iframe width="280" height="157" src={project.youTube} frameBorder="0" allowFullScreen></iframe>
+              </div>
+              :
+              null
+            }
+            <h4>Visit Application Site</h4>
+            <h4>Github</h4>
+            
+         
+          </Media.Body>
+          {/*
+          <h4>Thumbs</h4>
+          <h4>Github</h4>
+          <h4>Visit Application Site</h4>
+          {
+            project.youTube ?
+            <div> 
+            <h4>Youtube</h4>
+            <iframe width="240" height="135" src={project.youTube} frameBorder="0" allowFullScreen></iframe>
+            </div>
+            :
+            null
+          }
+        */}
+        </Media>
+        
+    
+
     </Modal.Body>
     <Modal.Footer>
-      <button onClick={()=>openVart()}>Close</button>
+      <Button className ="btn btn-danger" onClick={()=>closeModal()}>Close</Button>
     </Modal.Footer>
   </Modal>
   )

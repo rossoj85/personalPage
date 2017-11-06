@@ -6,32 +6,18 @@ export default class Projects extends Component{
     constructor(props){
         super(props)
         this.state = {
-            showModal: false,
-            modal: false
-            // showUshop: false
+            showModal: null,
+            modal: null,
         }
-        // this.openModal = this.openModal.bind(this)
         this.closeModal=this.closeModal.bind(this);
     }
-    // openModal(){
-    //     var current= this.state.showModal
-    //     var notCurrent = !current;
-    //     console.log("vArt: ", this.state.showModal)
-    //     console.log("open MOdal clicked", this.app)
-    //     this.setState({showModal: this.app})
-    //     console.log("THe MODAL SELECTED",this.state.showModal)
-    // }
+   
     closeModal(){
         console.log("CLOSE MODAL EXECUTED")
         this.setState({showModal: false, modal:false})
         console.log("new ShowModal state", this.state.showModal)
     }
-    // openGlobeChat(){
-    //     console.log('open Globe Chat')
-    // }
-    // openUshop(){
-    //     console.log('U-shop Open')
-    // }
+   
     render(){
         const applications = [
             vart,
@@ -43,8 +29,13 @@ export default class Projects extends Component{
         console.log("Is there a selected Modal?", this.state.modal)
         return (
         <div id="projectsPage" >
-            <ProjectModals  showModal={this.state.showModal} closeModal={this.closeModal} modal={this.state.modal}/>
-       
+
+            { this.state.modal?
+                <ProjectModals  showModal={this.state.showModal} closeModal={this.closeModal} modal={this.state.modal}/>
+                :
+                null
+            }
+
             <div className="projectsJumbotron" />
                 <div id="projectsBody">
                 <h1 style={{color: 'red', marginTop: '0px'}}>Projects</h1>
