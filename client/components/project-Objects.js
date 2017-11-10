@@ -7,9 +7,10 @@ export const socket ={name:'Socket.io Websockets',img: '/photos/tech/socket.png'
 export const sequelize = {name: 'Sequelize', img: '/photos/tech/sequelize.png'}
 export const feathers = {name: 'Feathers.js Server', img: '/photos/tech/feathers.jpg'}
 export const translate ={name: 'Google Translate API', img: '/photos/tech/translate.jpg'}
-export const nodeEx = {name: 'Express Server Written in Node', img: '/photos/tech/nodeEX.jpg'}
+export const nodeEx = {name: 'Express Server in Node.js', img: '/photos/tech/nodeEX.jpg'}
 export const aws ={name: 'Amazon Web Services Image Hosting', img:'/photos/tech/aws.jpg'}
 export const oauth = {name:'OAuth Authentication Service', img: '/photos/tech/oauth.png'}
+export const p5 ={name: 'P5 Processing Environment', img:'photos/tech/p5.png'}
 //Projects 
 export  const vart={name: 'V-aRt', 
 img: '/photos/V-aRt-logo.png',
@@ -26,6 +27,7 @@ export const globeChat={name: 'Globe Chat',
 img: '/photos/languageTree.png',
 description: 'Inspired my time teaching and learning languages abroad, Globe Chat is a Slack-inspired chat app that supports integrated language translation. Users set their language of preference and then receive all their message in said language. Globe chat makes use of the Goolgle translate app and Socket.io',
 technologies:[react,redux,nodeEx,socket,postgres,translate],
+thumbs: ['/photos/globeChatSS1.png','/photos/globeChatSS2.png'],
 youTube:"https://www.youtube.com/embed/4hqXcIR77OM",
 github: 'https://github.com/rossoj85/globe-Chat'
 }
