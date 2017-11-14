@@ -5,6 +5,10 @@ import React, {Component} from 'react';
 
 export default class VRNightScene extends Component{
 
+  componentWillUnmount(){
+    console.log("UNMOUNT HIT")
+    window.location.reload()
+  }
     render(){
     // const currentGalleryId = this.props.match.params.id;
     // const galleries = this.props.galleriesCollection;
@@ -17,7 +21,7 @@ export default class VRNightScene extends Component{
     const ghostPositions = ["10 6 0", "-10 6 0", "0 6 10", "0 6 -10", "10 12 0", "-10 12 0", "0 12 10", "0 12 -10"];
     const ghostRotations = ["0 -90 0", "0 90 0", "0 180 0", "0 0 0", "30 90 0", "30 -90 0", "30 90 0", "30 -90 0"];
     const agavePositions = new Array(40).fill()
-    let paintings =true;
+    let paintings =[];
 
     const circutBoard = 'https://ucarecdn.com/cbef09b9-d5dc-4402-a8b8-ba64210d9283/';
     const nightScape = 'https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg';
@@ -28,8 +32,8 @@ export default class VRNightScene extends Component{
       paintings ?
         <a-scene>
           <a-assets>
-            <a-asset-item id="ghost-obj" src="/models/Ghost/model.obj" />
-            <a-asset-item id="ghost-mtl" src="/models/Ghost/material.mtl" />
+            <a-asset-item id="ghost-obj" src="/models/ghost/model.obj" />
+            <a-asset-item id="ghost-mtl" src="/models/ghost/materials.mtl" />
             <a-asset-item id="pumpkin-obj" src="/models/Pumpkin/pumpkin.obj" />
             <a-asset-item id="pumpkin-mtl" src="/models/Pumpkin/pumpkin.mtl" />
             <a-asset-item id="pineTree-obj" src="/models/pineTree/pineTree.obj" />
@@ -164,8 +168,7 @@ export default class VRNightScene extends Component{
               position="0 12 30" scale="4 7 4" />
 
             {/*FLOOR AND SKY*/}
-            <a-box src="/img/exitsign.png" href={'/galleries'} position="-1 2 10" />
-            <a-box src="/img/back_button.png" href={`/vr/artists/${currentArtistId}/starry`} position="1 2 10" />
+            
             <a-plane src={groundTexture} position="0 0 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
 
             <a-sky src= {nightScape} />

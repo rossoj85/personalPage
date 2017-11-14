@@ -14,7 +14,7 @@ export default function VRDesert(props){
         return (
             paintings ?
             <Scene>
-        {/*
+        
             <a-assets>
             <a-asset-item id="daliClock-obj" src="/models/daliClock/memory.obj" />
             <a-asset-item id="daliClock-mtl" src="/models/daliClock/memory.mtl" />
@@ -23,7 +23,7 @@ export default function VRDesert(props){
             <a-asset-item id="piggy-obj" src="/models/piggy/piggy.obj" />
 
             </a-assets>
-        */}
+        
                 {/*DALI TREES*/}
                 <a-entity
                   obj-model="obj:#daliClock-obj;mtl:#daliClock-mtl"
@@ -96,7 +96,7 @@ export default function VRDesert(props){
 
             }
 
-                <a-box src="/img/exitsign.png" href={'/galleries'} position="-1 2 3.5" />
+               
                 <a-entity obj-model="obj:#marcus-obj" position="0 5 -25" scale="22 22 22" src="/MarcusAureliusTexture.jpg" />
                 <a-sky src={desert}  />
                 <a-plane src={groundTexture} position="0 -2 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />

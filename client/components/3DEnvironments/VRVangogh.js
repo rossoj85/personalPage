@@ -7,8 +7,12 @@ import React, {Component} from 'react';
 
 export default class VRVanGogh extends Component{
     
+  componentWillUnmount(){
+    console.log("UNMOUNT HIT")
+    window.location.reload()
+  }
         render(){
-            const paintings=true
+            const paintings=[];
             var snowyGround= 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1726024.jpg';
     
         
@@ -120,8 +124,7 @@ export default class VRVanGogh extends Component{
                         src={paintings[3].url} />
                     }
     
-                    <a-box src="/img/exitsign.png" href={'/galleries'} position="-1 0 3.5" />
-                    <a-box src="/img/back_button.png" href={`/vr/artists/${currentArtistId}/starry`} position="1 0 3.5" />
+                    
                     <a-entity camera="userHeight: 1.6" look-controls wasd-controls>
                         <a-entity
                           cursor="fuse: true; fuseTimeout: 1500"
