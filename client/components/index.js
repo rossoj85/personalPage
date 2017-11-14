@@ -4,7 +4,9 @@ export {default as Navbar} from './navbar';
 export {default as Projects} from './projects';
 export {default as About} from './about';
 export {default as Footer} from './footer';
-export{default as ProjectModals} from './projectModals';
-export{vart as vart} from './project-Objects';
-export{globeChat as globeChat} from './project-Objects';
-export{uShop as uShop} from './project-Objects';
+
+//projects page
+export {default as ProjectModals} from './projectModals';
+export {default as ScreenShotModal} from './screenShotModal';
+export { vart, globeChat, uShop } from './project-Objects';
+export {rain, theDesert, vanGogh, nightScene} from './project-Objects';

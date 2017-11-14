@@ -10,7 +10,8 @@ export const translate ={name: 'Google Translate API', img: '/photos/tech/transl
 export const nodeEx = {name: 'Express Server in Node.js', img: '/photos/tech/nodeEX.jpg'}
 export const aws ={name: 'Amazon Web Services Image Hosting', img:'/photos/tech/aws.jpg'}
 export const oauth = {name:'OAuth Authentication Service', img: '/photos/tech/oauth.png'}
-export const p5 ={name: 'P5 Processing Environment', img:'photos/tech/p5.png'}
+export const p5 ={name: 'P5 Processing Environment', img:'/photos/tech/p5.png'}
+export const css={name: 'CSS', img: '/photos/tech/css.jpg'}
 //Projects 
 export  const vart={name: 'V-aRt', 
 img: '/photos/V-aRt-logo.png',
@@ -38,4 +39,26 @@ img: '/photos/neonCart.png',
 technologies: [react,redux,nodeEx,postgres,oauth],
 github:'https://github.com/Fullstack-Untouchables/u-shop'
 }
+
+export const rain={name: 'RAiN',
+    description: "An experimental rain effect produced in P5.js with CSS layering",
+    img: "/photos/rain.jpg",
+    technologies: [p5, css],
+}
+export const theDesert ={name: "The Desert",
+    description: "A Dali-inspired 3D desert scene built for V-aRt",
+    img: "/photos/theDesert.png",
+    technologies: [react, aframe],
+}
+export const vanGogh={name: "Van Gogh",
+    description: "A VanGogh-inspired 3D space scene built for V-aRt",
+    img: '/photos/theRoom.png',
+    technologies: [react, aframe],
+};
+
+export const nightScene={name: "NightScene",
+    description: "A Halloween inspired 3D scene built for V-aRt",
+    img:'/photos/halloween.png',
+    technologies: [react, aframe],
+};
 

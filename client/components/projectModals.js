@@ -1,29 +1,43 @@
 import React, { Component } from 'react';
-import {Modal, Button, Media,Tooltip,OverlayTrigger} from 'react-bootstrap'; 
+import {Modal, Button, Media, Tooltip, OverlayTrigger} from 'react-bootstrap'; 
+import{ScreenShotModal} from './index';
 
 
+export default class ProjectModal extends Component{
 
-export default (props) => {
-  console.log("modalVart", props)
-  const showModal=props.showModal;
-  const closeModal=props.closeModal;
-  const project =props.modal;
+  constructor(props){
+    super(props)
+    this.state = {
+        showModal: null,
+        modal: null,
+    }
+    this.closeScreenShotModal = this.closeScreenShotModal.bind(this);
+}
+
+closeScreenShotModal(){
+    console.log("CLOSE MODAL EXECUTED")
+    this.setState({showModal: false, modal:false})
+    console.log("new ShowModal state", this.state.showModal)
+}
+  render(){
+  const showModal=this.props.showModal;
+  const closeModal=this.props.closeModal;
+  const project =this.props.modal;
+  console.log("THE SCREEN SHOT MODAL", ScreenShotModal)
   return(
+  <div>
+    {
+    this.state.modal?
+      <ScreenShotModal  showModal={this.state.showModal} closeScreenShotModal={this.closeScreenShotModal} modal={this.state.modal}/>
+      :
+      null
+    }
+
     <Modal show={showModal} onHide={()=>closeModal()} bsSize="large">
     <Modal.Header closeButton>
       <Modal.Title style={{textDecoration: 'none'}}>Projects</Modal.Title>
     </Modal.Header>
     <Modal.Body>
-     {/* <img src={project.img} className = "appThumb"/>
-
-      <hr />
-
-      <h4>{project.header || 'Caption title will go here'}</h4>
-      <p>{project.description}</p>
-      
-      <iframe width="560" height="315" src={project.youTube} frameBorder="0" allowFullScreen></iframe>}
-  */}
-       
           <Media>
           <Media.Left align="top">
             <img  src={project.img} className = "appThumb"/>
@@ -39,7 +53,7 @@ export default (props) => {
                 <h4>Screenshots</h4>
                 {project.thumbs.map(thumb=>{
                   return(
-                    <img src={thumb} className= 'screenshots'/>
+                    <img src={thumb} className= 'screenshots' onClick={()=> this.setState({showModal: true, modal: thumb})} key={thumb}/>
                   )
                 })}
               </div>
@@ -54,7 +68,7 @@ export default (props) => {
               project.technologies.map(tech=>{
                 let tooltip=(<Tooltip id='tooltip' style={{fontSize:'15px'}}>{tech.name}</Tooltip>)
                 return(
-                 <OverlayTrigger placement='bottom' overlay={tooltip}>
+                 <OverlayTrigger placement='bottom' overlay={tooltip} key={tech.name}>
                     <img src={tech.img} className='techImg' />
                   </OverlayTrigger>
                 )
@@ -72,35 +86,25 @@ export default (props) => {
               null
             }
             <h4>Visit Application Site</h4>
-            <h4>Github</h4>
-            
+
+            <img src='/photos/github-white.png' style={{height:'18px',
+            width:'18px',
+            display:'inline-block',
+            marginBottom: '3px',
+            marginRight: '1px'}} />
+            <h4 style={{display:'inline-block'}}>Github</h4>
+              
          
           </Media.Body>
-          {/*
-          <h4>Thumbs</h4>
-          <h4>Github</h4>
-          <h4>Visit Application Site</h4>
-          {
-            project.youTube ?
-            <div> 
-            <h4>Youtube</h4>
-            <iframe width="240" height="135" src={project.youTube} frameBorder="0" allowFullScreen></iframe>
-            </div>
-            :
-            null
-          }
-        */}
         </Media>
-        
-    
-
     </Modal.Body>
     <Modal.Footer>
       <Button className ="btn btn-danger" onClick={()=>closeModal()}>Close</Button>
     </Modal.Footer>
   </Modal>
+</div>
   )
-
+    }
   }
 
 
