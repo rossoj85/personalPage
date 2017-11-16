@@ -3,6 +3,7 @@ import {Modal, Button, Media, Tooltip, OverlayTrigger} from 'react-bootstrap';
 import{ScreenShotModal} from './index';
 
 
+
 export default class ProjectModal extends Component{
 
   constructor(props){
@@ -85,15 +86,37 @@ closeScreenShotModal(){
               :
               null
             }
-            <h4>Visit Application Site</h4>
-
-            <img src='/photos/github-white.png' style={{height:'18px',
-            width:'18px',
-            display:'inline-block',
-            marginBottom: '3px',
-            marginRight: '1px'}} />
-            <h4 style={{display:'inline-block'}}>Github</h4>
+            {
+              project.site ?
+              <div>
+                <h4>Visit Application Site</h4>
+                <a id="modalA">{project.site}</a>
+              </div>
+            :
+            null
+            }
+            {
+              project.github?
+              <div>
+                <h4>View Source Code</h4>
+                <img src='/photos/github-white.png' style={{height:'18px',
+                width:'18px',
+                display:'inline-block',
+                marginBottom: '3px',
+                marginRight: '1px'}} />
+                <a id="modalA"style={{display:'inline-block'}}>{project.github}</a>
               
+              </div>
+              :
+              null
+          
+            }
+            {
+              project.enterBtn?
+              <Button className ="btn btn-danger" style={{textShadow:'none'}}onClick={()=>closeModal()}>Enter {project.name}</Button>
+              :
+              null
+            }
          
           </Media.Body>
         </Media>

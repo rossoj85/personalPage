@@ -2,7 +2,7 @@ import '../index.scss'
 import React, { Component } from 'react';
 import { Route, Switch, Fade } from 'react-router-dom';
 import {RainPage, LandingPage, Navbar, Projects, About,Footer} from './index';
-import {VRDesert, VRNightScene, VRVangogh} from './3Denvironments'
+import {VRDesert, VRNightScene, VRVangogh} from './environments'
 
 export default class Main extends Component{
 
@@ -19,10 +19,10 @@ export default class Main extends Component{
             <main>
             
             <Switch>
-            <Route  exact path="/" render={(props)=>(
-                <LandingPage {...props} navbar={Navbar} />
-            )} />
-            <Navbar />
+                <Route  exact path="/" render={(props)=>(
+                    <LandingPage {...props} navbar={Navbar} />
+                )} />
+              <Navbar />    
             </Switch>
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/projects/rain' component={RainPage} />
@@ -30,8 +30,8 @@ export default class Main extends Component{
             <Route exact path='/projects/nightScene' component={VRNightScene} />
             <Route exact path='/projects/vangogh' component={VRVangogh} />
             <Route exact path='/about' component={About} />
-            <Footer />
             </main>
+            <Footer />
             </div>
         )
     }

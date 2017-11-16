@@ -5,7 +5,7 @@ import React from 'react';
     
     return (
         <div id="footer">
-            <h1> DUMB FFooter COmponent</h1>
+            <h2>Jason Rosso 2017</h2>
         </div>
       );
   }
