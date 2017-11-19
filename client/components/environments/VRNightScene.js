@@ -31,10 +31,10 @@ export default class VRNightScene extends Component{
           <a-assets>
             <a-asset-item id="ghost-obj" src="/models/ghost/model.obj" />
             <a-asset-item id="ghost-mtl" src="/models/ghost/materials.mtl" />
-            <a-asset-item id="pumpkin-obj" src="/models/Pumpkin/pumpkin.obj" />
-            <a-asset-item id="pumpkin-mtl" src="/models/Pumpkin/pumpkin.mtl" />
-            <a-asset-item id="pineTree-obj" src="/models/pineTree/pineTree.obj" />
-            <a-asset-item id="pineTree-mtl" src="/models/pineTree/pineTree.mtl" />
+            <a-asset-item id="pumpkin-obj" src="/models/pumpkin/pumpkin.obj" />
+            <a-asset-item id="pumpkin-mtl" src="/models/pumpkin/pumpkin.mtl" />
+            <a-asset-item id="pineTree-obj" src="/models/pinetree/pineTree.obj" />
+            <a-asset-item id="pineTree-mtl" src="/models/pinetree/pineTree.mtl" />
           </a-assets>
             <a-sphere src={cyberRust} position="5 12.82 -37.6" radius="1.25" />
             <a-dodecahedron src={circutBoard} position= "-1 13 -32"  />
