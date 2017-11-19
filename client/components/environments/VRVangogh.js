@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
 
 
-export default class VRVanGogh extends Component{
+export default class VRVangogh extends Component{
   constructor(props){
     super(props)
       this.state ={
