@@ -3,6 +3,7 @@ import {Media} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
 export default class LandingPage extends Component{
     
         componentDidMount(){
