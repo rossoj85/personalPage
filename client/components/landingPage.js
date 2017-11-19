@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Media} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class LandingPage extends Component{
     
@@ -10,10 +11,17 @@ export default class LandingPage extends Component{
            
         }
         render(){
-            console.log("Landinf Page Props",this.props.navbar)
+            console.log("Landing Page Props",this.props.navbar)
             const Navbar= this.props.navbar
             return(
-            <div id="LandingPage">
+            <ReactCSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={1000}
+            transitionEnter={false}
+            transitionLeave={false} 
+            id="LandingPage">
+            
                 <Navbar />
                 <div className="jumbotron" >
                     
@@ -88,7 +96,7 @@ export default class LandingPage extends Component{
                   <hr style={{marginTop:'60px',marginBottom:'20px'}}/>
               </div>
                 </div>
-            </div>
+            </ReactCSSTransitionGroup>
             )
         }
     }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Modal, Button, Media, Tooltip, OverlayTrigger} from 'react-bootstrap'; 
 import{ScreenShotModal} from './index';
-
+import {Link} from 'react-router-dom';
 
 
 export default class ProjectModal extends Component{
@@ -90,7 +90,7 @@ closeScreenShotModal(){
               project.site ?
               <div>
                 <h4>Visit Application Site</h4>
-                <a id="modalA">{project.site}</a>
+                <a id="modalA" href={project.site}>{project.site}</a>
               </div>
             :
             null
@@ -104,7 +104,7 @@ closeScreenShotModal(){
                 display:'inline-block',
                 marginBottom: '3px',
                 marginRight: '1px'}} />
-                <a id="modalA"style={{display:'inline-block'}}>{project.github}</a>
+                <a id="modalA" href={project.github} style={{display:'inline-block'}}>{project.github}</a>
               
               </div>
               :
@@ -113,7 +113,9 @@ closeScreenShotModal(){
             }
             {
               project.enterBtn?
-              <Button className ="btn btn-danger" style={{textShadow:'none'}}onClick={()=>closeModal()}>Enter {project.name}</Button>
+              <Link to={project.btnLink}><Button className ="btn btn-danger" 
+              style={{textShadow:'none'}} 
+              onClick={()=>closeModal()}>Enter {project.name}</Button></Link>
               :
               null
             }

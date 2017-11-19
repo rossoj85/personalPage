@@ -1,9 +1,18 @@
 import React from 'react';
 import {Tabs, Tab, Media} from 'react-bootstrap';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
   export default (props) => {
     
     return (
+      <ReactCSSTransitionGroup
+      transitionName="example"
+      transitionAppear={true}
+      transitionAppearTimeout={1000}
+      transitionEnter={true}
+      transitionLeave={true} 
+      >
         <div style={{height: '750px'}}>
         <div className='mediaBodyBackground'>
         <h1 style={{color:'#337ab7',}} >About</h1>
@@ -12,7 +21,7 @@ import {Tabs, Tab, Media} from 'react-bootstrap';
               <Tab eventKey={1} title="Me">
               <Media >
                 <Media.Left>
-                  <img width={64} height={64} src="/photos/logoWhite.jpg" alt="Image" />
+                  <img width={64} height={64} src="/photos/logoBlack.jpg" alt="Image" />
                 </Media.Left>
                 <Media.Body>
                   <Media.Heading style={{fontSize:'24px'}}>About Me</Media.Heading>
@@ -48,7 +57,8 @@ import {Tabs, Tab, Media} from 'react-bootstrap';
                     <div className='aboutPText'>
                       <p style={{width: '40%'}}>
                       This site was one of my first projects after bootcamp, 
-                      built to showcase my work. This site was built using react. 
+                      built to showcase my work. This site was built using a React front-end, and 
+                      and node.js/Express backend. 
                       Please feel free to check out the source code below. 
                       </p>
                     </div>
@@ -67,5 +77,6 @@ import {Tabs, Tab, Media} from 'react-bootstrap';
             </Tabs>
             </div>
         </div>
+      </ReactCSSTransitionGroup>
       );
   }

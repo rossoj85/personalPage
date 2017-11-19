@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Panel, Accordion, Modal} from 'react-bootstrap';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {ProjectModals, vart, globeChat, uShop, rain, theDesert, vanGogh, 
         nightScene} from './index';
+
 
 export default class Projects extends Component{
     constructor(props){
@@ -12,7 +14,7 @@ export default class Projects extends Component{
         }
         this.closeModal=this.closeModal.bind(this);
     }
-   
+    
     closeModal(){
         console.log("CLOSE MODAL EXECUTED")
         this.setState({showModal: false, modal:false})
@@ -36,15 +38,22 @@ export default class Projects extends Component{
         console.log("Is there a selected Modal?", this.state.modal)
         console.log("RaIn", rain )
         return (
-        <div id="projectsPage" >
+            <ReactCSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={1000}
+            transitionEnter={false}
+            transitionLeave={false} 
+            >
+        <div id="ProjectPage">
 
             { this.state.modal?
                 <ProjectModals  showModal={this.state.showModal} closeModal={this.closeModal} modal={this.state.modal}/>
                 :
                 null
             }
-
-            <div className="projectsJumbotron" />
+            
+            <div className="projectsJumbotron" key='jumbo'/>
                 <div id="projectsBody">
                 <h1 style={{color: 'red', marginTop: '0px'}}>Projects</h1>
                         <Accordion>
@@ -83,7 +92,9 @@ export default class Projects extends Component{
                             </Panel>
                         </Accordion>
             </div>
+            
         </div>
+        </ReactCSSTransitionGroup>
         );
     }
 

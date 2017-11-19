@@ -44,25 +44,29 @@ export const rain={name: 'RAiN',
     description: "An experimental rain effect produced in P5.js with CSS layering",
     img: "/photos/rain.jpg",
     technologies: [p5, css],
-    enterBtn: true
+    enterBtn: true,
+    btnLink: '/projects/rain'
 }
 export const theDesert ={name: "The Desert",
     description: "A Dali-inspired 3D desert scene built for V-aRt",
     img: "/photos/theDesert.png",
     technologies: [react, aframe],
-    enterBtn: true
+    enterBtn: true,
+    btnLink: '/projects/theDesert'
 }
 export const vanGogh={name: "Van Gogh",
     description: "A VanGogh-inspired 3D space scene built for V-aRt",
     img: '/photos/theRoom.png',
     technologies: [react, aframe],
-    enterBtn: true
+    enterBtn: true,
+    btnLink:'/projects/vangogh'
 };
 
 export const nightScene={name: "NightScene",
     description: "A Halloween inspired 3D scene built for V-aRt",
     img:'/photos/halloween.png',
     technologies: [react, aframe],
-    enterBtn: true
+    enterBtn: true,
+    btnLink: '/projects/nightScene'
 };
 

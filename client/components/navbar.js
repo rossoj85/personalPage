@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 export default class myNavbar extends Component{
     
       
         render(){
             console.log(this)
             return(
+           
                 <Navbar style={{width: '100%'}} collapseOnSelect>
                     
                     <Navbar.Header className="title">
@@ -27,6 +29,7 @@ export default class myNavbar extends Component{
               </Nav>
               </Navbar.Collapse>
             </Navbar>
+          
           
             )
         }

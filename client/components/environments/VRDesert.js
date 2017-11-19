@@ -3,8 +3,6 @@ import 'aframe-particle-system-component';
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
-
-
 export default class VRDesert extends Component{
       
     componentWillUnmount(){
@@ -24,7 +22,7 @@ export default class VRDesert extends Component{
             paintings ?
             <Scene>
         
-            <a-assets>
+            <a-assets >
             <a-asset-item id="daliClock-obj" src="/models/daliClock/memory.obj" />
             <a-asset-item id="daliClock-mtl" src="/models/daliClock/memory.mtl" />
 

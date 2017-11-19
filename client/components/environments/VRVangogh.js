@@ -6,14 +6,20 @@ import {arrayOfArt} from './paintings';
 
 
 export default class VRVanGogh extends Component{
+  constructor(props){
+    super(props)
+      this.state ={
+        loading: true,
+      }
     
+  }
   componentWillUnmount(){
     console.log("UNMOUNT HIT")
     window.location.reload()
   }
         render(){
             const paintings=arrayOfArt;
-            var snowyGround= 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1726024.jpg';
+            var snowyGround= '/photos/snowyground.jpg';
     
         
             return(
@@ -30,7 +36,7 @@ export default class VRVanGogh extends Component{
                 <a-asset-item id="jupiter-obj" src="/models/jupiter/jupiter.obj"></a-asset-item>
                 <a-asset-item id="jupiter-mtl" src="/models/jupiter/jupiter.mtl"></a-asset-item>
                 </a-assets>
-    
+              
     
                 <a-entity
                   obj-model="obj:#starryNight; mtl:#starryNight-mtl"
