@@ -46,7 +46,7 @@ export default class LandingPage extends Component{
                             and above all fun and easy to use.</p>
 
                             <Link to='/about' ><p><span style={{color:'red', textAlign: 'right'}}> 
-                            Click here to learn more about me.</span></p></Link>
+                            More about me.</span></p></Link>
                         </Media.Body>
                         </Media>
                         <hr style={{marginTop:'60px',marginBottom:'20px'}}/>
@@ -58,16 +58,16 @@ export default class LandingPage extends Component{
                         <Media.Body>
                             <Media.Heading>Tools</Media.Heading>
                             <p>
-                                <span style={{color:'red'}}>Back-End:</span> SQL Databases, Sequelize ORM, Node.js, Express, Websockets
+                                <span style={{color:'gray'}}>Back-End:</span> SQL Databases, Sequelize ORM, Node.js, Express, Websockets
                                 <br/>
                                 <br/>
                                 
                                 
-                                <span style={{color:'red'}}>Front-End:</span> React.js, Redux, A-Frame, P5 processing ,Paper.js, HTML, CSS
+                                <span style={{color:'gray'}}>Front-End:</span> React.js, Redux, A-Frame, P5 processing ,Paper.js, HTML, CSS
                             </p>
                         </Media.Body>
                         <Media.Right>
-                            <img width={150} height={150} src="/photos/tools.png" style={{background:'white'}} />
+                            <img width={150} height={150} src="/photos/toolsinv.png" />
                         </Media.Right>
                         </Media>
                         <hr style={{marginTop:'60px',marginBottom:'20px'}}/>
@@ -77,7 +77,7 @@ export default class LandingPage extends Component{
                   <div className="short col-md-7">
                   <Media>
                   <Media.Left>
-                      <img width={150} height={150} src="/photos/project4.png" style={{background:'white'}} />
+                      <img width={150} height={150} src="/photos/project4.gif"  />
                   </Media.Left>
                   <Media.Body>
                       <Media.Heading>Projects</Media.Heading>
@@ -88,7 +88,7 @@ export default class LandingPage extends Component{
                             <li>Visual Arts</li>
                             <li>Games</li>
                         </ul>
-                        <Link to='/projects'> <span style={{color:'red', float: 'right'}}> Click to View Projects.</span>
+                        <Link to='/projects'> <span style={{color:'red', float: 'right'}}>View Projects.</span>
                         </Link>
                       </p>
                       

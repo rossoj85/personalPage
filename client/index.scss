@@ -233,6 +233,7 @@ div.panel.panel-default{
 div.panel-heading{
   color: red !important;
   background: transparent !important;
+  text-align: center;
   
 }
 h4.panel-title{
@@ -245,6 +246,10 @@ h4.panel-title{
 .panel-title>a:hover{
   text-decoration: none;
   cursor:pointer;
+}
+
+.col-md-7 .media-body{
+  padding-left: 25px
 }
 //APP TILES 
 .tileContainer{

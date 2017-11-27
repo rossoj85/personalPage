@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Panel, Accordion, Modal} from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {ProjectModals, vart, globeChat, uShop, rain, theDesert, vanGogh, 
+import {ProjectModals, vart, globeChat, uShop, jsAcademy, rain, theDesert, vanGogh, 
         nightScene} from './index';
 
 
@@ -25,7 +25,8 @@ export default class Projects extends Component{
         const applications = [
             vart,
             globeChat,
-            uShop
+            uShop,
+            jsAcademy
         ];
         const visualArt =[
             rain,

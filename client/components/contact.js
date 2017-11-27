@@ -19,6 +19,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
             <a href='mailto:jasonrosso@gmail.com'><img className='aboutImg2' src='/photos/gmail.png' /></a>
             <a href='https://linkedin.com/in/jason-rosso'><img className='aboutImg2' src='/photos/linkedin.png' /></a>
             </div>
+            
         </div>
         </ReactCSSTransitionGroup>
       );

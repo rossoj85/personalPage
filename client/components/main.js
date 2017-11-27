@@ -1,7 +1,7 @@
 import '../index.scss'
 import React, { Component } from 'react';
 import { Route, Switch, Fade } from 'react-router-dom';
-import {RainPage, LandingPage, Navbar, Projects, About,Footer, Contact} from './index';
+import {RainPage, LandingPage, Navbar, Projects, About,Footer, Contact, Loader} from './index';
 import {VRDesert, VRNightScene, VRVangogh} from './environments'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 

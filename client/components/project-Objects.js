@@ -15,7 +15,6 @@ export const css={name: 'CSS', img: '/photos/tech/css.jpg'}
 //Projects 
 export  const vart={name: 'V-aRt', 
 img: '/photos/V-aRt-logo.png',
-header: 'What is V-aRt?',
 description: 'V-art is a digital three-dimensional VR art gallery. It gives users a canvas to create works of art, or allows them upload their own and place them in surrealistic 3-D environments. Users can save their works, share them with friends and browse the works of other artists.',
 thumbs: ['/photos/halloween.png','photos/theDesert.png','/photos/theRoom.png'],
 technologies: [aframe,react,redux,feathers,postgres,aws],
@@ -40,6 +39,17 @@ technologies: [react,redux,nodeEx,postgres,oauth],
 github:'https://github.com/Fullstack-Untouchables/u-shop'
 }
 
+export const jsAcademy={name: 'Academy of Javascript',
+description: 'My first major project at bootcamp. Academy of Javascript is a create, read, update and destroy (CRUD) appliction. The app is used to keep track of student and campus information at the fictional "Interplanetary Academy Of Javascript." Data is stored in a PostgresQL data base that users interact with through a React front-end and node/express backend.',
+img: '/photos/planetIcon.png',
+thumbs: ['/photos/jsAcademy1.png','/photos/jsAcademy2.png','/photos/jsAcademy3.png'],
+technologies: [react,nodeEx,postgres],
+github: 'https://github.com/rossoj85/senior-enrichment',
+site: 'Coming Soon'
+}
+
+
+//VISUAL ART
 export const rain={name: 'RAiN',
     description: "An experimental rain effect produced in P5.js with CSS layering",
     img: "/photos/rain.jpg",
@@ -48,23 +58,23 @@ export const rain={name: 'RAiN',
     btnLink: '/projects/rain'
 }
 export const theDesert ={name: "The Desert",
-    description: "A Dali-inspired 3D desert scene built for V-aRt",
+    description: "A Dali-inspired 3D virtual reality scene built for V-aRt",
     img: "/photos/theDesert.png",
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: '/projects/theDesert'
 }
 export const vanGogh={name: "Van Gogh",
-    description: "A VanGogh-inspired 3D space scene built for V-aRt",
-    img: '/photos/theRoom.png',
+    description: "A VanGogh-inspired 3D virtual reality scene built for V-aRt",
+    img: '/photos/vanGogh.png',
     technologies: [react, aframe],
     enterBtn: true,
     btnLink:'/projects/vangogh'
 };
 
 export const nightScene={name: "NightScene",
-    description: "A Halloween inspired 3D scene built for V-aRt",
-    img:'/photos/halloween.png',
+    description: "A Halloween inspired 3D virtual reality scene built for V-aRt",
+    img:'/photos/nightScene.png',
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: '/projects/nightScene'

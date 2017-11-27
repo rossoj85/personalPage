@@ -26,6 +26,7 @@ export default class VRNightScene extends Component{
     const cyberRust = 'https://ucarecdn.com/90bc2baf-a4c1-4237-b00c-a75f9db0b45a/';
     const marbleTexture = 'https://ucarecdn.com/1b213dc4-386d-4978-8fe5-9b021b23c945/';
     return (
+
       paintings ?
         <a-scene>
           <a-assets>
@@ -72,53 +73,7 @@ export default class VRNightScene extends Component{
                 })
             }
 
-            { agavePositions.map((image, index) => {
-                  let x;
-                  let y = '1';
-                  let z;
-                  let coords;
-                  let currCoords;
-                  let currRot;
-                  if (index < 10){
-                    x = ((Math.random() * 30) - 15).toString();
-                    z = ((Math.random() * 7) + 8).toString();
-                    coords = [x, y, z];
-                    currCoords = coords.join(' ');
-                    currRot = '0 180 0';
-                    return (
-                      <a-entity obj-model="obj:#pumpkin-obj;mtl:#pumpkin-mtl" position={currCoords} rotation={currRot} />
-                    );
-                  } else if (index < 20){
-                    x = ((Math.random() * 7) + 8).toString();
-                    z = ((Math.random() * 30) - 15).toString();
-                    coords = [x, y, z];
-                    currCoords = coords.join(' ');
-                    currRot = '0 -90 0';
-                    return (
-                      <a-entity obj-model="obj:#pumpkin-obj;mtl:#pumpkin-mtl" position={currCoords} rotation={currRot} />
-                    );
-                  } else if (index < 30){
-                    x = ((Math.random() * 30) - 15).toString();
-                    z = '-' + ((Math.random() * 7) + 8).toString();
-                    coords = [x, y, z];
-                    currCoords = coords.join(' ');
-                    return (
-                      <a-entity obj-model="obj:#pumpkin-obj;mtl:#pumpkin-mtl" position={currCoords} />
-                    );
-                  } else {
-                    x = '-' + ((Math.random() * 7) + 8).toString();
-                    z = ((Math.random() * 30) - 15).toString();
-                    coords = [x, y, z];
-                    currCoords = coords.join(' ');
-                    currRot = '0 90 0';
-                    return (
-                      <a-entity obj-model="obj:#pumpkin-obj;mtl:#pumpkin-mtl" position={currCoords} rotation={currRot} />
-                    );
-
-                  }
-            })
-            }
-
+            
             { paintings && paintings.map((image, index) => {
                   if (index < 6){
                         return (
@@ -171,8 +126,8 @@ export default class VRNightScene extends Component{
             <a-sky src= {nightScape} />
             <a-entity camera="userHeight: 2.9" look-controls wasd-controls>
               <a-entity
-              cursor="fuse: true; fuseTimeout: 1500"
-              id="cursor" position="0 0 -2" geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05" material="color: white">
+              /*cursor="fuse: true; fuseTimeout: 1500"
+              id="cursor" position="0 0 -2" geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05" material="color: white" */>
                 <a-animation
                   begin="click"
                   easing="ease-in" attribute="scale" dur="150"

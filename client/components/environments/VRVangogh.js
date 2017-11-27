@@ -3,7 +3,7 @@ import 'aframe-particle-system-component';
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
-
+import {ProgressBar} from 'react-bootstrap';
 
 export default class VRVangogh extends Component{
   constructor(props){
@@ -23,9 +23,10 @@ export default class VRVangogh extends Component{
     
         
             return(
+            
                 paintings?
+                
                 <Scene>
-    
                 <a-assets>
                 <a-asset-item id="starryNight" src="/models/vangogh/untitled-scene.obj"></a-asset-item>
                 <a-asset-item id="starryNight-mtl" src="/models/vangogh/untitled-scene.mtl"></a-asset-item>
@@ -36,8 +37,10 @@ export default class VRVangogh extends Component{
                 <a-asset-item id="jupiter-obj" src="/models/jupiter/jupiter.obj"></a-asset-item>
                 <a-asset-item id="jupiter-mtl" src="/models/jupiter/jupiter.mtl"></a-asset-item>
                 </a-assets>
-              
-    
+                <div>
+                <h1 style={{marginTop:'0px'}}>LOADING</h1>
+                <ProgressBar striped bsStyle="success" active now={50}  />
+                </div>
                 <a-entity
                   obj-model="obj:#starryNight; mtl:#starryNight-mtl"
                   position="0 -45 50" scale="50 50 50"
@@ -133,8 +136,8 @@ export default class VRVangogh extends Component{
                     
                     <a-entity camera="userHeight: 1.6" look-controls wasd-controls>
                         <a-entity
-                          cursor="fuse: true; fuseTimeout: 1500"
-                          id="cursor" position="0 0 -2" geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05" material="color: white">
+                          // cursor="fuse: true; fuseTimeout: 1500"
+                          /* id="cursor" position="0 0 -2" geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05" material="color: white"*/>
                             <a-animation
                               begin="click" easing="ease-in" attribute="scale" dur="150"
                               fill="forwards" from="0.1 0.1 0.1" to="1 1 1" />
@@ -146,6 +149,7 @@ export default class VRVangogh extends Component{
                 </Scene>
                 :
                 null
+            
             );
         }
     }
