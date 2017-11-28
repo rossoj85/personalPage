@@ -45,7 +45,7 @@ img: '/photos/planetIcon.png',
 thumbs: ['/photos/jsAcademy1.png','/photos/jsAcademy2.png','/photos/jsAcademy3.png'],
 technologies: [react,nodeEx,postgres],
 github: 'https://github.com/rossoj85/senior-enrichment',
-site: 'Coming Soon'
+site: 'https://javascript-academy.herokuapp.com'
 }
 
 
