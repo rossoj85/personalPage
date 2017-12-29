@@ -3,6 +3,9 @@ import 'aframe-particle-system-component';
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
+
+
+
 export default class VRDesert extends Component{
       
     componentWillUnmount(){
@@ -26,7 +29,7 @@ export default class VRDesert extends Component{
             <a-asset-item id="daliClock-obj" src="/models/daliClock/memory.obj" />
             <a-asset-item id="daliClock-mtl" src="/models/daliClock/memory.mtl" />
 
-            <a-asset-item id="marcus-obj" src="/models/marcus/MarcusAurelius.obj" />>
+            <a-asset-item id="marcus-obj" src="/models/marcus/MarcusAurelius.obj" />
             <a-asset-item id="piggy-obj" src="/models/piggy/piggy.obj" />
 
             </a-assets>
