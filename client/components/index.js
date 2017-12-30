@@ -9,5 +9,5 @@ export {default as Contact} from './contact';
 export {default as ProjectModals} from './projectModals';
 export {default as ScreenShotModal} from './screenShotModal';
 export { vart, globeChat, uShop, jsAcademy } from './project-Objects';
-export {rain, theDesert, vanGogh, nightScene} from './project-Objects';
+export {rain, theDesert, vanGogh, nightScene, vaporWave} from './project-Objects';
 export {default as Loader} from './loader'

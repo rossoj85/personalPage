@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Panel, Accordion, Modal} from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {ProjectModals, vart, globeChat, uShop, jsAcademy, rain, theDesert, vanGogh, 
-        nightScene} from './index';
+        nightScene, vaporWave} from './index';
 
 
 export default class Projects extends Component{
@@ -30,6 +30,7 @@ export default class Projects extends Component{
         ];
         const visualArt =[
             rain,
+            vaporWave,
             theDesert,
             vanGogh,
             nightScene

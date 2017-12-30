@@ -16,7 +16,7 @@ export const css={name: 'CSS', img: '/photos/tech/css.jpg'}
 export  const vart={name: 'V-aRt', 
 img: '/photos/V-aRt-logo.png',
 description: 'V-art is a digital three-dimensional VR art gallery. It gives users a canvas to create works of art, or allows them upload their own and place them in surrealistic 3-D environments. Users can save their works, share them with friends and browse the works of other artists.',
-thumbs: ['/photos/halloween.png','photos/theDesert.png','/photos/theRoom.png'],
+thumbs: ['/photos/nightScene.png','/photos/theDesert.png','/photos/vanGogh.png'],
 technologies: [aframe,react,redux,feathers,postgres,aws],
 youTube: 'https://www.youtube.com/embed/GZujO5liB9I',
 github: 'https://github.com/VaRt-io/V-aRt',
@@ -50,6 +50,13 @@ site: 'https://javascript-academy.herokuapp.com'
 
 
 //VISUAL ART
+export const vaporWave ={ name: 'Vaporwave',
+    description: "A trip back into the 80's...",
+    img: '/photos/vaporwave.png',
+    technologies: [react, aframe],
+    enterBtn: true,
+    btnLink: 'projects/vaporwave'
+}
 export const rain={name: 'RAiN',
     description: "An experimental rain effect produced in P5.js with CSS layering",
     img: "/photos/rain.jpg",
@@ -79,4 +86,5 @@ export const nightScene={name: "NightScene",
     enterBtn: true,
     btnLink: '/projects/nightScene'
 };
+
 

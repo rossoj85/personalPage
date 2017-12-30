@@ -19,7 +19,9 @@ export default class VRVaporwave extends Component{
         const retrowaveTex = '/photos/retrowaveTex.png'
         const retrowaveSun = '/photos/retrowaveSun.jpg'
         const paintings = arrayOfArt;
+        console.log("PAINTINGS",paintings)
         //positions at first index, rotation at second 
+        let backIndex = 4;
         const palmCordsFront =[
             //FRONT 
             //right side 
@@ -78,9 +80,10 @@ export default class VRVaporwave extends Component{
             <a-entity obj-model='obj:#cityscape-obj;mtl:#cityscape-mtl' scale='40 30 20' position= '0 31 -150' rotation = '0 270 0' />
             {/*Sun*/}
             <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>
+
             {/*Billboards*/}
             {
-                billBoardCordsFront.map(cord=>{
+                paintings && billBoardCordsFront.map((cord,index)=>{
                     let position =cord[0]
                     let rotation = cord[1]
                     
@@ -90,13 +93,16 @@ export default class VRVaporwave extends Component{
                         position= {position} 
                         rotation = {rotation} 
                         color='#4CC3D9'
-                        />
+                        >
+                            <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[index]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
+                        </a-entity>
 
                     )
-                })
+                })  
             }
             {
-                billBoardCordsBack.map(cord=>{
+                
+                paintings && billBoardCordsBack.map((cord)=>{
                     let position =cord[0]
                     let rotation = cord[1]
                     
@@ -106,11 +112,14 @@ export default class VRVaporwave extends Component{
                         position= {position} 
                         rotation = {rotation} 
                         color='#4CC3D9'
-                        />
+                        >
+                            <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[backIndex++]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
+                        </a-entity>
 
                     )
                 })
             }
+            
             {/*Palms*/}
             {
                 palmCordsFront.map(cord=> {
