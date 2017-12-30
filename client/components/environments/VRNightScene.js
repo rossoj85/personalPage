@@ -17,7 +17,6 @@ export default class VRNightScene extends Component{
     const textRotations = ["0 -90 0", "0 -145 0", "0 -215 0", "0 -270 0", "0 -335 0", "0 -35 0"];
     const ghostPositions = ["10 6 0", "-10 6 0", "0 6 10", "0 6 -10", "10 12 0", "-10 12 0", "0 12 10", "0 12 -10"];
     const ghostRotations = ["0 -90 0", "0 90 0", "0 180 0", "0 0 0", "30 90 0", "30 -90 0", "30 90 0", "30 -90 0"];
-    const agavePositions = new Array(40).fill()
     let paintings = arrayOfArt;
 
     const circutBoard = 'https://ucarecdn.com/cbef09b9-d5dc-4402-a8b8-ba64210d9283/';
