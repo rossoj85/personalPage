@@ -1,4 +1,5 @@
 import 'aframe';
+import 'aframe-mountain-component'
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
@@ -75,11 +76,14 @@ export default class VRVaporwave extends Component{
                 <a-asset-item id="hotdog-obj" src='/models/hotDog/model.obj' />
                 <a-asset-item id="hotdog-mtl" src='/models/hotDog/materials.mtl' />
             </a-assets>
-            <a-entity obj-model='obj:#hotdog-obj; mtl:#hotdog-mtl' scale='1 1 1' position='0 0 -20' />
+            <a-entity obj-model='obj:#hotdog-obj; mtl:#hotdog-mtl' scale='5 5 5' position='22.5 1.5 0' />
+            <a-mountain color="red" position='0 0 0'  material={`src: ${pinkgrid}; repeat: 10 10`}></a-mountain>
+            
             {/*Scyscrapers*/}
             <a-entity obj-model='obj:#cityscape-obj;mtl:#cityscape-mtl' scale='40 30 20' position= '0 31 -150' rotation = '0 270 0' />
             {/*Sun*/}
-            <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>
+        {/* <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>*/}
+            <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 350 4445' scale ='2000 2000 1'/>
 
             {/*Billboards*/}
             {
@@ -154,7 +158,7 @@ export default class VRVaporwave extends Component{
             <a-entity
               obj-model="obj:#pineTree-obj;mtl:#pineTree-mtl"
               position="24 12 14" scale="4 7 4" />
-            <a-plane src={pinkgrid} position="0 0 -1" rotation="-90 0 0" width="500" height="500" repeat="10 10"  ></a-plane>
+            <a-plane src={pinkgrid} position="0 0 -1" rotation="-90 0 0" width="1000" height="1000" repeat="20 20"  ></a-plane>
             <a-sky src={pinkSky} rotation="0 -90 0"></a-sky>
             <a-entity camera='userHeight: 2' look-controls wasd-controls position='0 0 -5'/>
             </Scene>
