@@ -32,6 +32,7 @@ export default class Main extends Component{
             <Route exact path='/projects/nightScene' component={VRNightScene} />
             <Route exact path='/projects/vaporwave' component={VRVaporwave} />
             <Route exact path='/projects/vangogh' component={VRVangogh} />
+            <Route exact path='/projects/gol' component={Projects} />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
         
