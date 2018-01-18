@@ -1,3 +1,7 @@
+//THIS PROJECT WAS ORIGNALLY WRITTEN IN HTML AND CSS. THE ORIGNAL PROGRAMMING OF THE GAME HAS TRIED TO BEEN PRESERVED WITH SOME 
+//SLIGHT FORMATTING TO MAKE IT FIT INTO A REACT COMPONENT
+
+
 import React, { Component } from 'react';
 
 
@@ -8,8 +12,33 @@ export default class GOL extends Component{
         width: 10, 
         height: 10, // width and height dimensions of the board
         stepInterval: null,
+        boardDisplayed: false,
         }
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit= this.handleSubmit.bind(this)
+        this.checkForOldBoard=this.checkForOldBoard.bind(this)
       }
+    checkForOldBoard(evt){
+      evt.preventDefault()
+      var oldTable = document.getElementById('golBoard')
+      console.log('old table', oldTable)
+      if(this.state.boardDisplayed){
+        console.log('OLD BOARD FOUND!!!')
+        let oldBody=oldTable.firstChild
+        console.log('oldBody',oldBody)
+        let parent = oldBody.parentNode
+        console.log('parent',parent)
+        parent.removeChild(oldBody)
+        this.createAndShowBoard()
+
+      }else {
+        console.log('No old borad found')
+        this.addButtonListeners()
+        this.createAndShowBoard()
+        this.setState({boardDisplayed: true})
+      }
+    }
+
     createAndShowBoard(){
        // create <table> element
       var goltable = document.createElement("tbody");
@@ -37,12 +66,12 @@ export default class GOL extends Component{
     }
 
     forEachCell(iteratorFunc){
-      console.log('!!!!inside for each cell!!!!')
+      // console.log('!!!!inside for each cell!!!!')
       for(var x=0;x<this.state.width;x++){
         for(var y=0;y<this.state.height;y++){
          
           let element = document.getElementById(`${x}-${y}`)
-          console.log('ELEMENT', element)
+          // console.log('ELEMENT', element)
           iteratorFunc(element,x,y)
         }
       }
@@ -64,28 +93,28 @@ export default class GOL extends Component{
       };
      
       var addListeners = function (element,x,y){
-        console.log(`adding listeners!!!!`)
-        console.log(element)
+        // console.log(`adding listeners!!!!`)
+        // console.log(element)
         // console.log(document.getElementById(`${x}-${y}`))
         element.addEventListener('click',onCellClick)
         // console.log('THIS ===',this)
       }
-      var clearAllCells = function(element,x,y){
-      //  let element= document.getElementById(`${x}-${y}`)
-        element.className='dead'
-        element.dataset.status='dead'
-        console.log('FUCKING CLEARED')
-      }
-      var randomize=function(element,x,y){
-        let num = Math.floor(Math.random()*2)
-        console.log(num)
-        // console.log(`${x}-${y}`)
-        // let element =  document.getElementById(`${x}-${y}`)
-        if(num){
-          element.className='alive'
-          element.dataset.status='alive'
-        }
-      } 
+      // var clearAllCells = function(element,x,y){
+      // //  let element= document.getElementById(`${x}-${y}`)
+      //   element.className='dead'
+      //   element.dataset.status='dead'
+      //   console.log('FUCKING CLEARED')
+      // }
+      // var randomize=function(element,x,y){
+      //   let num = Math.floor(Math.random()*2)
+      //   console.log(num)
+      //   // console.log(`${x}-${y}`)
+      //   // let element =  document.getElementById(`${x}-${y}`)
+      //   if(num){
+      //     element.className='alive'
+      //     element.dataset.status='alive'
+      //   }
+      // } 
   
       // var cell00 = document.getElementById('0-0');
       // cell00.addEventListener('click', onCellClick);
@@ -99,10 +128,46 @@ export default class GOL extends Component{
       this.step=this.step.bind(this)
   
       //Buttons 
+      // document.getElementById('clear_btn').addEventListener('click',()=>{
+      //   this.stopAutoPlay()
+      //   this.forEachCell(clearAllCells)
+        
+      // })
+      // document.getElementById('reset_btn').addEventListener('click',()=>{
+      //   this.stopAutoPlay()
+      //   this.forEachCell(clearAllCells)
+      //   this.forEachCell(randomize)
+      // })
+      // document.getElementById('step_btn').addEventListener('click',()=>{
+   
+      //   this.step()
+      // })
+      // document.getElementById('play_btn').addEventListener('click',()=>
+      // this.enableAutoPlay())
+    }
+
+    addButtonListeners(){
+      var clearAllCells = function(element,x,y){
+        //  let element= document.getElementById(`${x}-${y}`)
+          element.className='dead'
+          element.dataset.status='dead'
+          console.log('FUCKING CLEARED')
+      }
+      var randomize=function(element,x,y){
+        let num = Math.floor(Math.random()*2)
+        console.log(num)
+        // console.log(`${x}-${y}`)
+        // let element =  document.getElementById(`${x}-${y}`)
+        if(num){
+          element.className='alive'
+          element.dataset.status='alive'
+        }
+      } 
+      //Adding event listeners to buttons
       document.getElementById('clear_btn').addEventListener('click',()=>{
+        console.log('clear pressed')
         this.stopAutoPlay()
         this.forEachCell(clearAllCells)
-        
       })
       document.getElementById('reset_btn').addEventListener('click',()=>{
         this.stopAutoPlay()
@@ -110,16 +175,18 @@ export default class GOL extends Component{
         this.forEachCell(randomize)
       })
       document.getElementById('step_btn').addEventListener('click',()=>{
-   
+        console.log('step pressed')
         this.step()
       })
-      document.getElementById('play_btn').addEventListener('click',()=>
-      this.enableAutoPlay())
-  
+      document.getElementById('play_btn').addEventListener('click',()=>{
+       console.log('play pressed')
+        this.enableAutoPlay()
+      })
     }
 
+
     getNeighborhood(element,x,y){
-      console.log('CALCULATING NEIGHBORHOOD!!!')
+      // console.log('CALCULATING NEIGHBORHOOD!!!')
       let neighborhood=[]
         // let element=document.getElementById(`${x}-${y}`)
         // console.log(element)
@@ -158,8 +225,7 @@ export default class GOL extends Component{
     }
     
     step() {
-      let nextState = new Array(this.state.width).fill('placeholder').map(el=>[])
-      console.log('NEXT STATE',nextState)
+      let nextState = new Array(+this.state.width).fill('placeholder').map(el=>[])
       this.forEachCell((element,x,y)=>{
         nextState[x][y]=this.getNextState(element,x,y)
       })
@@ -190,13 +256,41 @@ export default class GOL extends Component{
       console.log('STOP AUTOPLAY',this)
     }
     
-    componentDidMount(){
+    // componentDidMount(){
+    //   this.createAndShowBoard()
+    // }
+    handleChange(evt){
+      evt.preventDefault()
+      let inputValue=evt.target.value
+      let n = evt.target.name
+
+      this.setState({
+        [n]: inputValue
+      });
+      console.log(n,evt.target.value)
+    }
+    handleSubmit(evt){
+      evt.preventDefault()
+      console.log('FORM SUBMITTED')
+      if(!this.state.boardDisplayed){
+    let currentBoardDisplayed = this.state.boardDisplayed
+     let newCurrentBoard = !currentBoardDisplayed
+      this.setState({
+        boardDisplayed: (!currentBoardDisplayed)
+      })
       this.createAndShowBoard()
+      //ADD ATTACH EVENT LISTENERS HERE 
+      return;
+    }
+     console.log(this.state.boardDisplayed)
+     //clear board 
+     this.createAndShowBoard()
     }
     render(){
         
         return(
            <div style={{marginTop:'3em', height:'100%', position:'relative'}}>
+           
            <table id='golBoard'></table>
 
             <div id='control_panel'>
@@ -205,7 +299,15 @@ export default class GOL extends Component{
                 <button id='reset_btn' className='btn btn-warning'>Reset Random</button>
                 <button id='clear_btn' className='btn btn-info'>Clear</button>
              </div>
-           
+
+             <form id='tableSetup' onSubmit={this.checkForOldBoard} >
+             Enter a board width and height of up to 120 to get started <br/>
+             Width
+             <input type="number" name="width" size="4" value={this.state.width} onChange={(evt)=>this.handleChange(evt)}></input>
+             Height       
+             <input type="number" name="height" size="4" value ={this.state.height} onChange={this.handleChange}></input>
+             <input id="submit" type = "submit" value="submit" width="5em" />
+           </form>
 
              <br/>
 
