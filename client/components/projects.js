@@ -3,6 +3,7 @@ import {Panel, Accordion, Modal} from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {ProjectModals, vart, globeChat, uShop, jsAcademy, rain, theDesert, vanGogh, 
         nightScene, vaporWave} from './index';
+import { gol } from './project-Objects';
 
 
 export default class Projects extends Component{
@@ -35,6 +36,9 @@ export default class Projects extends Component{
             vanGogh,
             nightScene
         ];
+        const games =[
+            gol
+        ]
         console.log("VIS ART",visualArt)
         console.log("Imported Vart Object", vart)
         console.log("Is there a selected Modal?", this.state.modal)
@@ -90,7 +94,18 @@ export default class Projects extends Component{
                                 
                             </Panel>
                             <Panel header="Fun And Games" eventKey="3">
-                            Coming Soon...
+                                 <div className="tileContainer">
+                                    {
+                                        games.map(app => {
+                                            return (
+                                                <div className="appTile" key={app.name} onClick={()=> this.setState({showModal: true, modal: app})}>
+                                                    <img className = "appThumb" src={app.img} />
+                                                    <h4>{app.name}</h4>
+                                                </div>
+                                            )
+                                        })
+                                    }   
+                                </div>
                             </Panel>
                         </Accordion>
             </div>

@@ -1,3 +1,4 @@
+import React from 'react';
 //technologies 
 export const aframe ={name:'A-FRAME Virtual Reality Framework', img:'/photos/tech/Aframe.png'}
 export const react = {name: 'React', img: '/photos/tech/react.png'}
@@ -12,6 +13,7 @@ export const aws ={name: 'Amazon Web Services Image Hosting', img:'/photos/tech/
 export const oauth = {name:'OAuth Authentication Service', img: '/photos/tech/oauth.png'}
 export const p5 ={name: 'P5 Processing Environment', img:'/photos/tech/p5.png'}
 export const css={name: 'CSS', img: '/photos/tech/css.jpg'}
+export const html={name: 'html', img: '/photos/tech/html.jpg'}
 //Projects 
 export  const vart={name: 'V-aRt', 
 img: '/photos/V-aRt-logo.png',
@@ -87,4 +89,12 @@ export const nightScene={name: "NightScene",
     btnLink: '/projects/nightScene'
 };
 
-
+//Games 
+export const gol ={name: "Conway's Game of Life",
+    description:`The Game of Life was devised by British mathmetician John Conway and is intended to simulate the death and survival of lifeforms in nature. Cells can die from isolation or overpopulation, or new cells can be created through reproduction. Set up your game board and see if your cells can survive !`,
+    img:'/photos/gol.png',
+    technologies:[html,css],
+    enterBtn:true,
+    btnLink: 'projects/gol'
+}
+ 

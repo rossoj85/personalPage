@@ -3,9 +3,9 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstr
 import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+
 export default class myNavbar extends Component{
-    
-      
         render(){
             console.log(this)
             return(
