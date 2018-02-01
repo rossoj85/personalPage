@@ -1,0 +1,24 @@
+#golBoard{
+    margin: 0 auto;
+  }
+  #golBoard td{
+    border: 1px solid #ddd;
+    width: 18px;
+    height: 18px;
+  }
+  
+  td.alive {
+    background-color: #8CC8DD;
+  }
+  
+  td.dead {
+    background-color: black;
+  }
+  
+  #control_panel {
+    margin: 10px auto;
+    text-align: center;
+  }
+  input {
+    color: black
+  }

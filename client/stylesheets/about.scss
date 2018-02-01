@@ -1,0 +1,42 @@
+
+  .aboutPText p{
+    font-size: 16px;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #337ab7;
+  }
+  
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #337ab7;
+    cursor: default;
+    background-color: black;
+    border: 1px solid #337ab7;
+    border-bottom-color: transparent;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  //these are the settings for the unfocused tab during
+  .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: black;
+    border: none;
+  }
+  //ABOUT BACKGROUND 
+  
+  .mediaBodyBackground{
+  height: 625px;
+  width: auto;
+  // background-size: 100%;
+  background-image: url(/photos/Mbridge.jpg);
+  float: right;
+  margin-right:100px;
+  margin-top: 50px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: black;
+  
+  // margin-top: -200px;
+  }

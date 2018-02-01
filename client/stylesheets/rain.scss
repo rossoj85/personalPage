@@ -1,3 +1,37 @@
 #sceneWrapper{
     position: relative;  
 }
+
+#frame{
+    z-index: 99;
+    position: relative;
+  }
+  //this is the rain background
+ #defaultCanvas0{
+   margin-top: -520px;
+   margin-bottom: 80px;
+   // margin-left: 60px;
+   width: 700px !important;
+   height: 420px !important;
+   position: relative;
+ }
+ 
+ #cityScape{
+   width: 600px;
+   margin-bottom: 150px;
+   margin-top: -273px;
+   // margin-left: 100px;
+   z-index: 50;
+   position: relative;
+ }
+ 
+ 
+ #rainVariation {
+   // display: inline;
+ }
+ .rainPlace{
+   display: inline;
+ }
+ #rainVariation h2:hover{
+   cursor: pointer;
+ }
