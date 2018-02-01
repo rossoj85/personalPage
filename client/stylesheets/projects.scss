@@ -1,0 +1,64 @@
+.projectsJumbotron {
+    height: 800px;
+    background: -webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);
+    background-position: 50% 47%;
+    background-size: cover;
+    margin-bottom: 0;
+    margin-top: -200px;
+  }
+#projectsBody{
+    margin-top: -580px;
+    margin-bottom: 500px
+  }
+
+  div.panel.panel-default{
+    background: transparent !important;
+  }
+  div.panel-heading{
+    color: red !important;
+    background: transparent !important;
+    text-align: center;
+    
+  }
+  h4.panel-title{
+    font-size:24px;
+  }
+  .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+    border-bottom: 1px white solid
+  }
+  .panel-title>a:hover{
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  .col-md-7 .media-body{
+    padding-left: 25px
+  }
+  
+  //APP TILES 
+  .tileContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .appTile{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .appTile:hover{
+    cursor: pointer;
+    color: red;
+  
+  }
+  .appThumb{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 10px;
+  }
