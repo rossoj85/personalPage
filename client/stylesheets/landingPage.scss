@@ -1,0 +1,36 @@
+
+.descriptors{
+    a{
+        text-decoration: none;
+        &:hover {text-shadow: 0 0 5px red;}
+    }
+}
+
+.jumbotron {
+    height: 700px;
+    background-image: url(/photos/midtown.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    margin-bottom: 0;
+    margin-top: -200px;
+}
+.border{
+    background-color: #333333;
+    height: 50px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.short{
+    float: none;
+    margin: auto;
+    margin-top: 50px;
+    .media-heading{
+        font-size:24px;
+    }
+    p{
+        font-size: 18px;
+    }
+  }
+
+ 

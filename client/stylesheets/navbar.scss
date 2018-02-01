@@ -1,0 +1,111 @@
+$transNavbarGrey: rgba(51, 51, 51, .5);
+
+@mixin buttonActivity{
+    outline:0;
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+    box-shadow: 0 0 5px red;
+}
+@mixin buttonConstructor($color){
+    margin: 15px 20px 0px 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    float: right;
+    list-style-type: none;
+    color: $color;
+    border: 2px solid $color;
+    background-color: transparent;
+    &:focus, &:active, &:hover{
+        @include buttonActivity();   
+    }
+}
+
+.navbar{
+    background: $transNavbarGrey;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    font-weight: 100;
+    margin-bottom: 0px;
+    z-index: 99;
+    a {
+        color:white
+        &:hover{
+            text-decoration: none;
+            // color: red;
+            text-shadow: 0 0 3px #FF0000;
+        }
+      }
+    >.container{
+        margin: 0px;
+        width: 100%;
+        background-color: transparent;
+        margin-left: -15px 
+    }
+    button{
+        @include buttonConstructor(white);
+    }
+}
+
+#LandingPage .navbar {
+    background: transparent;
+    font-weight: bolder;
+    color: black;
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover{
+            text-shadow: none; //for the name next to logo 
+        }
+        button{
+            @include buttonConstructor(black)
+        }
+    }
+}
+
+.container>.navbar-header {
+    margin-right: 0;
+    margin-left: -15px;
+}
+
+.navbar-collapse{
+    margin-bottom: -300px;
+}
+div.navbar-collapse.collapse.in{
+    background-color: rgba(220, 220, 220, .5);
+}
+ul.nav.container.navbar-nav.navbar-right{
+    float: right;
+    
+}
+ul.nav.container.navbar-nav.navbar-right.button{
+    color: red;
+}
+.logo{
+    height:100px;
+    width:100px;
+    float:left;
+    margin-right: 3px	
+}
+
+.nav{       //for collapsed display?
+    display: inline-block;
+    width:auto;
+    margin-right: 30px;
+    li{
+        width: 100px;
+        margin: 10px 5px;
+      }
+      button{
+        width: 100px;
+      }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+    background: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: none;   
+}
+
