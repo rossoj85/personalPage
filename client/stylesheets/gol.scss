@@ -1,14 +1,19 @@
+$subtleBlue: #8CC8DD;
+$matrixGreen: #02E148 ;
+$oldBorder:  #ddd;
+
 #golBoard{
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   #golBoard td{
-    border: 1px solid #ddd;
+    border: 1px solid gray;
     width: 18px;
     height: 18px;
   }
   
   td.alive {
-    background-color: #8CC8DD;
+    background-color: greenyellow;
   }
   
   td.dead {
@@ -18,7 +23,18 @@
   #control_panel {
     margin: 10px auto;
     text-align: center;
+    button {
+      margin: 0px 3px;
+    }
   }
+ 
+  #tableSetup{
+    text-align: center;
+    input{
+      margin: 10px 5px;
+    }
+  }
+
   input {
     color: black
   }
