@@ -8,9 +8,47 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 export default class myNavbar extends Component{
         render(){
             console.log(this)
+            window.onscroll = function() {
+                var navbar = document.getElementById('navbar')
+                console.log('Y OFFSET', window.pageYOffset);
+                if ( window.pageYOffset > 160 ) {
+                    navbar.classList.add("navbarColored");
+                } else {
+                    navbar.classList.remove("navbarColored");
+                }
+            }
             return(
-           
-                <Navbar style={{width: '100%'}} collapseOnSelect>
+                <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
+            <Navbar.Header>
+                <Link to ='/'>
+                <img className="logo" src ="/photos/logoBlack.jpg" />
+                <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
+                </Link>
+                <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+                <Nav pullRight className='navContainer'>
+                {/*}
+                    <LinkContainer to="/projects"><NavItem><button>Projects</button></NavItem></LinkContainer>
+                    <LinkContainer to="/about"><NavItem><button>About</button></NavItem></LinkContainer>
+                    <LinkContainer to="/contact"><NavItem><button>Contact</button></NavItem></LinkContainer>
+            */}
+                
+                <a className='abtn'>Contact</a>
+                <a className='abtn'>Projects</a>
+                <a className='abtn' href='#about'>About</a>
+                
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+            )
+        }
+    }
+
+
+
+                {/*}
+                <Navbar style={{width: '100%'}} collapseOnSelect className='navbar-fixed-top'>
                     
                     <Navbar.Header className="title">
                     <Link to ='/'>
@@ -29,8 +67,6 @@ export default class myNavbar extends Component{
               </Nav>
               </Navbar.Collapse>
             </Navbar>
-          
-          
-            )
-        }
-    }
+            */}
+
+    
