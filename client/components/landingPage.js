@@ -23,7 +23,7 @@ export default class LandingPage extends Component{
             transitionLeave={false} 
             id="LandingPage">
             
-                <Navbar />
+                
                 <div className="jumbotron" >
                     
                 </div>
@@ -31,7 +31,7 @@ export default class LandingPage extends Component{
                 <div className = "border">
                 </div>
 
-                <div className="descriptors">
+                <div className="descriptors" id='about'>
                 
                     <div className="short col-md-7">
                         <Media>
