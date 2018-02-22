@@ -20,17 +20,43 @@
     color: white;
     margin-bottom: 60px;
 }
-
-.short{
-    float: none;
-    margin: auto;
-    margin-top: 50px;
-    .media-heading{
-        font-size:24px;
+#bio{
+    text-align: center;
+    h2{
+        padding: 0 12%;
+        @media(min-width:768px){
+            padding: 0 20%
+        }
+        @media(min-width:992px){
+            font-size: 34px;
+        }
     }
     p{
+
+        font-family: jura;
         font-size: 18px;
+        padding: 5% 12%;
+        @media(min-width:768px){
+            font-size: 18px;
+            padding: 0 20%
+        }
+
+        @media(min-width:992px){
+            font-size: 16px;
+            padding: 0 25%;
+        }
     }
-  }
+}
+// .short{
+//     float: none;
+//     margin: auto;
+//     margin-top: 50px;
+//     .media-heading{
+//         font-size:24px;
+//     }
+//     p{
+//         font-size: 18px;
+//     }
+//   }
 
  
