@@ -24,14 +24,29 @@ export default class LandingPage extends Component{
             id="LandingPage">
             
                 
-                <div className="jumbotron" >
-                    
-                </div>
+                <div className="jumbotron" ></div>
 
-                <div className = "border">
+                <div className = "border" id='about'> </div>
+                <div id='bio'>
+                    <h2>The Only Limit To Our Reality Is Imagination...</h2>
+                    <p>
+                    Hi, my name is Jason. I am a Fullstack Javascript developer, software engineer, former teacher and world-traveler.
+                    I first discovered my love for code about a year and a half ago upon returning home from a long stint working abroad 
+                    and realized that my passion for studying human language extended to learning computer language as well. <br/>
+                    <br/>
+                    I spent about six months teaching myself Javascript and then enrolled in Fullstack Academy’s Immersive Software Engineering Program 
+                    where my knowledge grew exponentially. My current specialty is building React.js applications in a Node.js environment, but I enjoy 
+                    working throughout the stack and am always open to learning with new technologies.  I love what I do because I am constantly improving, 
+                    creating amazing things, collaborating with great people and pushing the boundaries of what is possible everyday. 
+                    </p>
                 </div>
+            </ReactCSSTransitionGroup>
+            )
+        }
+    }
 
-                <div className="descriptors" id='about'>
+    {/*}
+                <div className="descriptors" >
                 
                     <div className="short col-md-7">
                         <Media>
@@ -95,9 +110,7 @@ export default class LandingPage extends Component{
                   </Media.Body>
                   </Media>
                   <hr style={{marginTop:'60px',marginBottom:'20px'}}/>
+            
               </div>
                 </div>
-            </ReactCSSTransitionGroup>
-            )
-        }
-    }
+            */}
