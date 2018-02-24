@@ -5,6 +5,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Skills from '../skills';
 
 export default class LandingPage extends Component{
     
@@ -26,32 +27,32 @@ export default class LandingPage extends Component{
             transitionLeave={false} 
             id="LandingPage">
             
-                <ScrollableAnchor id={'top'}>
+                <ScrollableAnchor id={'top'}><div></div></ScrollableAnchor>
                 <div className="jumbotron"></div>
-                </ScrollableAnchor>
+                
 
                 <div className = "border" > </div>
                 
-                 <ScrollableAnchor id={'about'}>
+                <ScrollableAnchor id={'about'}>
                 <div id='bio'>
-               
-                    <P5Wrapper id='landingMatrix ' sketch={Matrix} />
-                        <div id='textBox'>
-                            <h2>The Only Limit To Our Reality Is Imagination...</h2>
-                            <p>
-                            Hi, my name is Jason. I am a Fullstack Javascript developer, software engineer, former teacher and world-traveler.
-                            I first discovered my love for code about a year and a half ago upon returning home from a long stint working abroad 
-                            and realized that my passion for studying human language extended to learning computer language as well. <br/>
-                            <br/>
-                            I spent about six months teaching myself Javascript and then enrolled in Fullstack Academy’s Immersive Software Engineering Program 
-                            where my knowledge grew exponentially. My current specialty is building React.js applications in a Node.js environment, but I enjoy 
-                            working throughout the stack and am always open to learning with new technologies.  I love what I do because I am constantly improving, 
-                            creating amazing things, collaborating with great people and pushing the boundaries of what is possible everyday. 
-                            </p>
-                        </div>
-               
+                    <P5Wrapper id='landingMatrix ' sketch={Matrix} style={{height: '90vh'}}/>
+                    <div id='textBox'>
+                        <h2>The Only Limit To Our Reality Is Imagination...</h2>
+                        <p>
+                        Hi, my name is Jason. I am a Fullstack Javascript developer, software engineer, former teacher and world-traveler.
+                        I first discovered my love for code about a year and a half ago upon returning home from a long stint working abroad 
+                        and realized that my passion for studying human language extended to learning computer language as well. <br/>
+                        <br/>
+                        I spent about six months teaching myself Javascript and then enrolled in Fullstack Academy’s Immersive Software Engineering Program 
+                        where my knowledge grew exponentially. My current specialty is building React.js applications in a Node.js environment, but I enjoy 
+                        working throughout the stack and am always open to learning with new technologies.  I love what I do because I am constantly improving, 
+                        creating amazing things, collaborating with great people and pushing the boundaries of what is possible everyday. 
+                         </p>
+                    </div>
                 </div>
-                 </ScrollableAnchor>
+                </ScrollableAnchor>
+
+                <Skills />
             </ReactCSSTransitionGroup>
             )
         }

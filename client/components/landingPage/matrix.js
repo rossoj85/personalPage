@@ -12,7 +12,7 @@ export default function sketch (p) {
     p.setup = function (){ 
         p.createCanvas(
             window.innerWidth ,//might have ot change when intergrate into site
-            window.innerHeight
+            window.innerHeight * 0.9
         );
 
         p.background(0, 900);
