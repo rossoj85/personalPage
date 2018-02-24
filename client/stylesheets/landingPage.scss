@@ -18,35 +18,48 @@
     background-color: #333333;
     height: 50px;
     color: white;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 }
 #bio{
-    text-align: center;
-    h2{
-        padding: 0 12%;
-        @media(min-width:768px){
-            padding: 0 20%
+    // text-align: center;
+    #textBox{
+        position: relative;
+        margin-top: -50vh;
+        @media(min-width: 992px){
+            margin: 0 25%;
+            margin-top: -50vh;
         }
+       //before changes
+    }
+    h2{
+    //     padding: 0 12%;
+    //     @media(min-width:768px){
+    //         padding: 0 20%
+    //     }
         @media(min-width:992px){
             font-size: 34px;
         }
     }
     p{
 
-        font-family: jura;
-        font-size: 18px;
-        padding: 5% 12%;
-        @media(min-width:768px){
-            font-size: 18px;
-            padding: 0 20%
+    //     font-family: jura;
+    //     font-size: 18px;
+    //     padding: 5% 12%;
+    //     @media(min-width:768px){
+    //         font-size: 18px;
+    //         padding: 0 20%
         }
 
-        @media(min-width:992px){
-            font-size: 16px;
-            padding: 0 25%;
+        // @media(min-width:992px){
+        //     font-size: 16px;
+        //     margin: 0 25%;
+        //     padding: 0;
         }
     }
-}
+    #defaultCanvas0{
+        position: relative;
+    }
+// }
 // .short{
 //     float: none;
 //     margin: auto;
