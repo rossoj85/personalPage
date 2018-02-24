@@ -3,11 +3,13 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstr
 import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ScrollableAnchor, { goToTop } from 'react-scrollable-anchor';
+
 
 
 export default class myNavbar extends Component{
         render(){
-            console.log(this)
+            console.log(goToTop)
             window.onscroll = function() {
                 var navbar = document.getElementById('navbar')
                 console.log('Y OFFSET', window.pageYOffset);
@@ -20,10 +22,10 @@ export default class myNavbar extends Component{
             return(
                 <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
             <Navbar.Header>
-                <Link to ='/'>
+                <a href='#top'>
                 <img className="logo" src ="/photos/logoBlack.jpg" />
                 <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
-                </Link>
+                </a>
                 <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>

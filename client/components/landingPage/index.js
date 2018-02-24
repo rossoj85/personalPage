@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default class LandingPage extends Component{
     
@@ -14,6 +15,7 @@ export default class LandingPage extends Component{
         render(){
             console.log("Landing Page Props",this.props.navbar)
             console.log(Matrix)
+            console.log(ScrollableAnchor)
             const Navbar= this.props.navbar
             return(
             <ReactCSSTransitionGroup
@@ -24,12 +26,16 @@ export default class LandingPage extends Component{
             transitionLeave={false} 
             id="LandingPage">
             
-                
-                <div className="jumbotron" ></div>
+                <ScrollableAnchor id={'top'}>
+                <div className="jumbotron"></div>
+                </ScrollableAnchor>
 
-                <div className = "border" id='about'> </div>
+                <div className = "border" > </div>
+                
+                 <ScrollableAnchor id={'about'}>
                 <div id='bio'>
-                    <P5Wrapper id='landingMatrix' sketch={Matrix} />
+               
+                    <P5Wrapper id='landingMatrix ' sketch={Matrix} />
                         <div id='textBox'>
                             <h2>The Only Limit To Our Reality Is Imagination...</h2>
                             <p>
@@ -42,8 +48,10 @@ export default class LandingPage extends Component{
                             working throughout the stack and am always open to learning with new technologies.  I love what I do because I am constantly improving, 
                             creating amazing things, collaborating with great people and pushing the boundaries of what is possible everyday. 
                             </p>
-                            </div>
                         </div>
+               
+                </div>
+                 </ScrollableAnchor>
             </ReactCSSTransitionGroup>
             )
         }

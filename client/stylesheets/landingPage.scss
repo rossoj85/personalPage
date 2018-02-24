@@ -15,19 +15,18 @@
     // margin-top: -200px;
 }
 .border{
-    background-color: #333333;
+    background-color: black;
     height: 50px;
-    color: white;
-    // margin-bottom: 60px;
 }
 #bio{
-    // text-align: center;
+    text-align: center;
+    height: 80vh;
     #textBox{
-        position: relative;
-        margin-top: -50vh;
+        position: absolute;
+        height: 100%;
+        background: black;
         @media(min-width: 992px){
             margin: 0 25%;
-            margin-top: -50vh;
         }
        //before changes
     }
@@ -41,23 +40,24 @@
         }
     }
     p{
-
+        @media(min-width:992px){
+            font-size: 16px; padding: 0 15px
+        }
+        @media(min-width:1600px){font-size: 22px}
+        
     //     font-family: jura;
     //     font-size: 18px;
     //     padding: 5% 12%;
     //     @media(min-width:768px){
     //         font-size: 18px;
     //         padding: 0 20%
-        }
+        // }
 
-        // @media(min-width:992px){
-        //     font-size: 16px;
-        //     margin: 0 25%;
-        //     padding: 0;
-        }
+        
     }
     #defaultCanvas0{
-        position: relative;
+        position: absolute;
+        display: block;
     }
 // }
 // .short{
@@ -70,6 +70,6 @@
 //     p{
 //         font-size: 18px;
 //     }
-//   }
+  }
 
  
