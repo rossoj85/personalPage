@@ -8,11 +8,17 @@ export default function sketch (p) {
     var symbol; 
     var symbolSize = 24;
     var streams = [];
-    
+    let availWidth = window.screen.availWidth
+    let availHeight = window.screen.availHeight
+    console.log('Max Width', window.screen.availWidth)
+    console.log('Max Height', window.screen.availHeight)
+    let maxWidth;
+    availWidth>availHeight ? maxWidth=availWidth: maxWidth=availHeight;
+    console.log('MaxWidth', maxWidth)
     p.setup = function (){ 
         p.createCanvas(
-            window.innerWidth ,//might have ot change when intergrate into site
-            window.innerHeight
+            maxWidth,//might have ot change when intergrate into site
+            window.innerHeight * 0.9
         );
 
         p.background(0, 900);
@@ -37,7 +43,12 @@ export default function sketch (p) {
         // console.log('INSIDE SETUP!!')
         // console.log(streams)
     }   
-
+    p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
+        console.log(props)
+        console.log('MAX WIDTH@#!$#', maxWidth)
+        console.log('Inside Matrix Width',props.width,'Inside Matrix Height', props.height)
+        p.resizeCanvas(props.width, props.height);
+      };
    
     p.draw = function(){
     p.background(6, 125) //we want tohe background to re-render for each symbol. second arg is opacity

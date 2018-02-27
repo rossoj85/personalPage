@@ -1,0 +1,256 @@
+$skill-bar-color: green;
+$skill-bar-container-color: gray;
+$background-light: black;
+$node-color:#6cc24a;
+$react-color:#00d8ff;
+$express-color:#9f8cda;
+$psql-color:#316192;
+$github-color: purple;
+$heroku-color:#430098;
+$chrome-dev-color: #3680f7;
+$react-dev-color:#00d8ff;
+$postman-color: #ff931e;
+$webpack-color:#0052cf;
+$electron-color:#0052cf;
+$socketio-color:white;
+
+
+$neonSign-pink: #FF00E6;
+$neonSign-blue: #1086e8;
+
+.skills {
+    background-color: $background-light;
+    padding: 100px 10%;
+    text-align: center;
+    &__intro {
+    //   font-family: $Proxima-Nova-LT;
+      padding-bottom: 3em;
+      span {
+        font-size: 1.05em;
+      }
+      .node-color {
+        color: $node-color;
+      }
+      .react-color {
+        color: $react-color;
+      }
+      .express-color {
+        color: $express-color;
+      }
+      .psql-color {
+        color: $psql-color;
+      }
+    }
+    .nerd-stack {
+    //   font-family: $Proxima-Nova-Upper;
+      letter-spacing: .1em;
+      span {
+        font-size: 1.25em;
+      }
+      img {
+        width: 80%;
+      }
+    }
+    .skills {
+    //   font-family: $Proxima-Nova-Upper;
+      color: red;
+      &-intro {
+        // font-family: $Proxima-Nova-LT-Bold;
+        padding: 3em 0 1em 0;
+      }
+    }
+    .neonSign{
+      display: inline-block;
+      border: 1px solid $neonSign-blue;
+      padding: 5px;
+      border-radius: 5px;
+      animation: border-flicker 2s linear infinite;
+      color: $neonSign-pink;
+    }
+    .languages {
+      &-border {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20%;
+        border-bottom: 1px solid;
+      }
+      h2 {
+        margin: 0 -15px;
+        padding: 1em 0;
+        position: relative;
+        text-align: left;
+      }
+      img {
+        height: 64px;
+        width: 63.99px;
+      }
+    }
+    .frameworks {
+      &-border {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20%;
+        border-bottom: 1px solid;
+      }
+      h2 {
+        margin: 0 -15px;
+        padding: 1em 0;
+        position: relative;
+        text-align: right;
+      }
+      img {
+        height: 64px;
+        width:63.99px;;
+      }
+    }
+  
+    .skill {
+      &-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6px 18px;
+        img {
+          // filter: grayscale(100%);
+          transition: all .3s ease-in-out;
+          
+          &:hover {
+            // filter: grayscale(0%);
+            transform: scale(1.2);
+          }
+        }
+      }
+      &-row {
+        display: flex;
+        align-items: center;
+      }
+      &-name {
+        padding: 0 .3em;
+      }
+      &-percent-left {
+        position: absolute;
+        left: .3em;
+      }
+      &-percent-right {
+        position: absolute;
+        right: .3em;
+      }
+      &-bar-container {
+        background-color: $skill-bar-container-color;
+        padding: 0;
+      }
+      &-bar {
+        color: white;
+        background-color: $skill-bar-color;
+      }
+      &-js, &-html, &-css, &-sql, &-rails {
+        text-align: right;
+        float: right;
+      }
+      &-react, &-redux, &-express, &-sequelize, &-jquery {
+        text-align: left;
+        float: left;
+      }
+      &-js {
+        width: 80%;
+      }
+      &-html {
+        width: 90%;
+      }
+      &-css {
+        width: 90%;
+      }
+      &-sql {
+        width: 60%;
+      }
+      &-rails {
+        width: 50%;
+      }
+      &-react {
+        width: 90%;
+      }
+      &-redux {
+        width: 80%;
+      }
+      &-express {
+        width: 70%;
+      }
+      &-sequelize {
+        width: 70%;
+      }
+      &-jquery {
+        width: 60%;
+      }
+    }
+    .tools {
+      div {
+        text-align: left;
+      }
+      h3 {
+        margin: 1em -15px;
+      }
+      .tool-row {
+        display: flex;
+        align-items: center;
+      }
+      .tool-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        img {
+          height: 32px;
+          margin: .5em;
+          transition: all .3s ease-in-out;
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+      .github-color {
+        color: $github-color;
+      }
+      .heroku-color {
+        color: $heroku-color;
+      }
+      .chrome-dev-color {
+        color: $chrome-dev-color;
+      }
+      .react-dev-color {
+        color: $react-dev-color;
+      }
+      .postman-color {
+        color: $postman-color;
+      }
+      .webpack-color {
+        color: $webpack-color;
+      }
+      .electron-color {
+        color: $electron-color;
+      }
+      .socketio-color {
+        color: $socketio-color;
+      }
+    }
+    .auxiliary {
+      div {
+        text-align: left;
+      }
+      h3 {
+        margin: 1em -15px;
+      }
+      h4 {
+        margin: .5em;
+        padding: 0;
+      }
+      h1 {
+        margin: .5em 0;
+      }
+      .auxiliary-row {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
