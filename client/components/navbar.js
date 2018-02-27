@@ -3,13 +3,14 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstr
 import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import ScrollableAnchor, { goToTop } from 'react-scrollable-anchor';
+import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-anchor';
 
 
 
 export default class myNavbar extends Component{
         render(){
-            console.log(goToTop)
+            configureAnchors({offset: -60, scrollDuration: 600})
+            // console.log(configureAnchors)
             window.onscroll = function() {
                 var navbar = document.getElementById('navbar')
                 console.log('Y OFFSET', window.pageYOffset);
@@ -37,7 +38,7 @@ export default class myNavbar extends Component{
             */}
                 
                 <a className='abtn'>Contact</a>
-                <a className='abtn'>Projects</a>
+                <a className='abtn' href='#skillSection'>Skills</a>
                 <a className='abtn' href='#about'>About</a>
                 
                 </Nav>

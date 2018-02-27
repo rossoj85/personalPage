@@ -8,8 +8,9 @@ export default function sketch (p) {
     var symbol; 
     var symbolSize = 24;
     var streams = [];
-    
+    console.log(p)
     p.setup = function (){ 
+        console.log('THE PEE OBJECT',p)
         p.createCanvas(
             window.innerWidth ,//might have ot change when intergrate into site
             window.innerHeight
@@ -37,7 +38,10 @@ export default function sketch (p) {
         console.log('INSIDE SETUP!!')
         console.log(streams)
     }   
-
+    p.windowResized = function() {
+        console.log('WINDOW RESIZED!!')
+        resizeCanvas(windowWidth, windowHeight);
+      }
    
     p.draw = function(){
     p.background(6, 125) //we want tohe background to re-render for each symbol. second arg is opacity

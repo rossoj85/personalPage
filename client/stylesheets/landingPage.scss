@@ -20,7 +20,7 @@
 }
 #bio{
     text-align: center;
-    height: 90vh;
+    height: 92vh;
     #textBox{
         position: absolute;
         height: 90vh;
@@ -59,6 +59,13 @@
     #defaultCanvas0{
         position: absolute;
         display: block;
+    }
+    #headshot{
+        border-radius: 50%;
+        width: 35%;
+        height:auto;
+   
+      
     }
 // }
 // .short{

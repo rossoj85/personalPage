@@ -1,6 +1,6 @@
-$skill-bar-color: red;
+$skill-bar-color: green;
 $skill-bar-container-color: gray;
-$background-light: gray;
+$background-light: black;
 $node-color:#6cc24a;
 $react-color:#00d8ff;
 $express-color:#9f8cda;
@@ -12,12 +12,16 @@ $react-dev-color:#00d8ff;
 $postman-color: #ff931e;
 $webpack-color:#0052cf;
 $electron-color:#0052cf;
-$socketio-color:#000;
+$socketio-color:white;
 
+
+$neonSign-pink: #FF00E6;
+$neonSign-blue: #1086e8;
 
 .skills {
     background-color: $background-light;
     padding: 100px 10%;
+    text-align: center;
     &__intro {
     //   font-family: $Proxima-Nova-LT;
       padding-bottom: 3em;
@@ -44,7 +48,7 @@ $socketio-color:#000;
         font-size: 1.25em;
       }
       img {
-        width: 100%;
+        width: 80%;
       }
     }
     .skills {
@@ -54,6 +58,14 @@ $socketio-color:#000;
         // font-family: $Proxima-Nova-LT-Bold;
         padding: 3em 0 1em 0;
       }
+    }
+    .neonSign{
+      display: inline-block;
+      border: 1px solid $neonSign-blue;
+      padding: 5px;
+      border-radius: 5px;
+      animation: border-flicker 2s linear infinite;
+      color: $neonSign-pink;
     }
     .languages {
       &-border {
@@ -71,6 +83,7 @@ $socketio-color:#000;
       }
       img {
         height: 64px;
+        width: 63.99px;
       }
     }
     .frameworks {
@@ -89,6 +102,7 @@ $socketio-color:#000;
       }
       img {
         height: 64px;
+        width:63.99px;;
       }
     }
   
@@ -101,6 +115,7 @@ $socketio-color:#000;
         img {
           // filter: grayscale(100%);
           transition: all .3s ease-in-out;
+          
           &:hover {
             // filter: grayscale(0%);
             transform: scale(1.2);
