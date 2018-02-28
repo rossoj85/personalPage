@@ -3,16 +3,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Main from './components/main';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 
 
 ReactDOM.render(
     
-    <div>
+    <ParallaxProvider>
         <Router >
             <Main />
         </Router>
-        </div>,
+        </ParallaxProvider>,
        document.getElementById('mainView')
 ); 

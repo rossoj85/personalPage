@@ -18,13 +18,20 @@ $socketio-color:white;
 $neonSign-pink: #FF00E6;
 $neonSign-blue: #1086e8;
 
+#zen{
+  perspective: 1px;
+  transform: translateZ(-2px); //CHANGES FONT SIZE
+  overflow-x: hidden; //The overflow is clipped, and the rest of the content will be invisible
+  overflow-y: auto; //If overflow is clipped, a scroll-bar should be added to see the rest of the conten
+}
 .skills {
     background-color: $background-light;
-    padding: 100px 10%;
+    padding: 0 5%;
     text-align: center;
     &__intro {
     //   font-family: $Proxima-Nova-LT;
-      padding-bottom: 3em;
+      // padding-bottom: 3em;
+    }
       span {
         font-size: 1.05em;
       }
@@ -40,7 +47,7 @@ $neonSign-blue: #1086e8;
       .psql-color {
         color: $psql-color;
       }
-    }
+    
     .nerd-stack {
     //   font-family: $Proxima-Nova-Upper;
       letter-spacing: .1em;
@@ -56,7 +63,7 @@ $neonSign-blue: #1086e8;
       color: red;
       &-intro {
         // font-family: $Proxima-Nova-LT-Bold;
-        padding: 3em 0 1em 0;
+        padding: 1em 0 1em 0;
       }
     }
     .neonSign{

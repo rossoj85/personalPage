@@ -4,15 +4,17 @@ import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
-import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Skills from '../skills';
+import { Parallax } from 'react-scroll-parallax';
+
 
 export default class LandingPage extends Component{
     constructor() {
         super();
         this.state = {
-          width:  null,
-          height: null
+          width:  window.innerWidth,
+          height: window.innerHeight
         }
         this.updateDimensions=this.updateDimensions.bind(this)
       }
@@ -30,19 +32,10 @@ export default class LandingPage extends Component{
         }
         render(){
             console.log("Landing Page Props",this.props.navbar)
-            
-            // console.log(ScrollableAnchor)
-            const Navbar= this.props.navbar
-            // console.log(configureAnchors)
+            console.log(Parallax)
             console.log(screen.height)
             return(
-            <ReactCSSTransitionGroup
-            transitionName="example"
-            transitionAppear={true}
-            transitionAppearTimeout={1000}
-            transitionEnter={false}
-            transitionLeave={false} 
-            id="LandingPage">
+           <div>
             
                 <ScrollableAnchor id={'top'}><div></div></ScrollableAnchor>
                 <div className="jumbotron"></div>
@@ -50,9 +43,9 @@ export default class LandingPage extends Component{
 
                 <div className = "border" > </div>
                 
-                <ScrollableAnchor id={'about'}>
+                <ScrollableAnchor id={'about'}><div></div></ScrollableAnchor>
                 <div id='bio'>
-                    <P5Wrapper id='landingMatrix ' sketch={Matrix} style={{height: '90vh'}} width ={this.state.width} height={this.state.height}/>
+                    <P5Wrapper id='landingMatrix ' sketch={Matrix}  width ={this.state.width} height={this.state.height}/>
                     <div id='textBox'>
                         <h2>The Only Limit To Our Reality Is Imagination...</h2>
                         <p>
@@ -68,12 +61,14 @@ export default class LandingPage extends Component{
                         
                     </div>
                 </div>
-                </ScrollableAnchor>
+                <div id='container'>
+                    <img id='zen' src='/photos/zenBanner.jpg' />
+                
 
-                <ScrollableAnchor id={'skillSection'}><div></div></ScrollableAnchor>
-                <Skills />
-
-            </ReactCSSTransitionGroup>
+                    <ScrollableAnchor id={'skillSection'}><div></div></ScrollableAnchor>
+                    <Skills />
+                </div>
+            </div>
             )
         }
     }
