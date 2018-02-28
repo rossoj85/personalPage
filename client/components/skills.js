@@ -18,9 +18,9 @@ const Skills = (props) => {
       <Zoom bottom cascade duration={2000}>
       <div className='nerd-stack container-fluid'>
         <div className='col-sm-offset-4 col-sm-4'>
-          <h1>
+          <h3>
             <span className='node-color'>N</span>odeJS
-          </h1>
+          </h3>
         </div>
         <div className='col-xs-10 col-xs-offset-1'>
           <img src='/photos/tech/nerd-stack-black.png'/>
@@ -34,7 +34,7 @@ const Skills = (props) => {
           </h3>
         </div>
         <div className='col-sm-4' style={{marginLeft:'30px'}}>
-          <h3>Postgre<span className='psql-color'>SQL D</span>atabases<br/><br/>
+          <h3>Postgre<span className='psql-color'>SQL<br/> D</span>atabases<br/><br/>
           </h3>
         </div>
       </div>
@@ -116,7 +116,7 @@ const Skills = (props) => {
                 </span>
                 <div className='skill-bar skill-rails'>
                   <span className='skill-name'>
-                    Ruby
+                    A-frame
                   </span>
                 </div>
               </div>

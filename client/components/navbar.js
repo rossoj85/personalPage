@@ -10,7 +10,7 @@ import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-an
 export default class myNavbar extends Component{
         render(){
             configureAnchors({offset: -60, scrollDuration: 600})
-            // console.log(configureAnchors)
+            console.log(configureAnchors)
             window.onscroll = function() {
                 var navbar = document.getElementById('navbar')
                 console.log('Y OFFSET', window.pageYOffset);
