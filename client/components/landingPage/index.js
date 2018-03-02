@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Media} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
 import ScrollableAnchor from 'react-scrollable-anchor';
