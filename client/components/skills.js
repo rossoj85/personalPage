@@ -10,7 +10,7 @@ const Skills = (props) => {
     <section className='skills'>
       <h2 className='skills-title section-title'>Skills</h2>
       <Fade fraction={1} duration={2000}>
-      <h3 className='skills__intro'>My core proficiencies are the <span className='node-color'>N</span><span className='express-color'>E</span><span className='react-color'>R</span><span className='psql-color'>D</span>stack.
+      <h3 className='skills__intro'>My core proficiencies are built around the <span className='node-color'>N</span><span className='express-color'>E</span><span className='react-color'>R</span><span className='psql-color'>D</span>stack.
       <br/>
       But picking up new languages or frameworks isn't a problem.
       </h3>
