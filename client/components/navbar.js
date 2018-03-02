@@ -9,8 +9,8 @@ import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-an
 
 export default class myNavbar extends Component{
         render(){
-            configureAnchors({offset: -60, scrollDuration: 600})
-            console.log(configureAnchors)
+            configureAnchors({offset: -60, scrollDuration: 800})
+            
             window.onscroll = function() {
                 var navbar = document.getElementById('navbar')
                 console.log('Y OFFSET', window.pageYOffset);
@@ -20,6 +20,7 @@ export default class myNavbar extends Component{
                     navbar.classList.remove("navbarColored");
                 }
             }
+            console.log('NAVBAR PROPS', this.props)
             return(
                 <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
             <Navbar.Header>
@@ -37,7 +38,7 @@ export default class myNavbar extends Component{
                     <LinkContainer to="/contact"><NavItem><button>Contact</button></NavItem></LinkContainer>
             */}
                 
-                <a className='abtn'>Contact</a>
+                <a className='abtn' href='#projects'>Projects</a>
                 <a className='abtn' href='#skillSection'>Skills</a>
                 <a className='abtn' href='#about'>About</a>
                 

@@ -19,15 +19,15 @@ export default class Main extends Component{
             <div id="innerRoute">
                 <div id='innerRouteMainBody'>
                    
-                    <Navbar />
+                    <Navbar isNavbar={true}/>
                    
-                    <Route exact path='/' component={LandingPage} />
+                    <Route exact path='/' component={LandingPage} isLandingPage={true}/>
                     <Route exact path='/projects' component={Projects} /> 
                     <Route exact path='/projects/rain' component={RainPage} />
-                    <Route exact path='/projects/theDesert' component={VRDesert} />
-                    <Route exact path='/projects/nightScene' component={VRNightScene} />
-                    <Route exact path='/projects/vaporwave' component={VRVaporwave} />
-                    <Route exact path='/projects/vangogh' component={VRVangogh} />
+                    <Route exact path='/projects/theDesert' component={VRDesert} isVR={true} />
+                    <Route exact path='/projects/nightScene' component={VRNightScene} isVR={true} />
+                    <Route exact path='/projects/vaporwave' component={VRVaporwave} isVR={true} />
+                    <Route exact path='/projects/vangogh' component={VRVangogh} isVR={true}/>
                     <Route exact path='/projects/gol' component={Gol} />
                     <Route exact path='/about' component={About} />
                     <Route exact path='/contact' component={Contact} />

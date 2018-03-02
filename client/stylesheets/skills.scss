@@ -1,4 +1,4 @@
-$skill-bar-color: green;
+$skill-bar-color: #3B8542;
 $skill-bar-container-color: gray;
 $background-light: black;
 $node-color:#6cc24a;
@@ -17,13 +17,43 @@ $socketio-color:white;
 
 $neonSign-pink: #FF00E6;
 $neonSign-blue: #1086e8;
-
-#zen{
-  perspective: 1px;
-  transform: translateZ(-2px); //CHANGES FONT SIZE
-  overflow-x: hidden; //The overflow is clipped, and the rest of the content will be invisible
-  overflow-y: auto; //If overflow is clipped, a scroll-bar should be added to see the rest of the conten
-}
+// .parallax {
+//   perspective: 1px;
+//   height: 100vh;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+  
+// }
+// %parallax_layer{
+//   position: relative; ///this is absolute in tutorial may ahve advese effects
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+// .parallax-layer-base {
+//   @extend %parallax_layer;
+//   transform: translateZ(0);
+//   width: 100%;
+//   min-height: 500px;
+//   overflow-y: hidden;
+// }
+// .parallax-layer-back {
+//   @extend %parallax_layer;
+//   transform: translateZ(-1px)scale(2);
+//   width:100%
+// }
+// .parallax-group {
+//   position: relative;
+//   height: 100vh;
+//   transform-style: preserve-3d;
+// }
+// #zen{
+//   perspective: 1px;
+//   transform: translateZ(-2px); //CHANGES FONT SIZE
+//   overflow-x: hidden; //The overflow is clipped, and the rest of the content will be invisible
+//   overflow-y: auto; //If overflow is clipped, a scroll-bar should be added to see the rest of the conten
+// }
 .skills {
     background-color: $background-light;
     padding: 0 5%;
@@ -139,10 +169,12 @@ $neonSign-blue: #1086e8;
       &-percent-left {
         position: absolute;
         left: .3em;
+        color: black
       }
       &-percent-right {
         position: absolute;
         right: .3em;
+        color: black;
       }
       &-bar-container {
         background-color: $skill-bar-container-color;
@@ -150,7 +182,7 @@ $neonSign-blue: #1086e8;
       }
       &-bar {
         color: white;
-        background-color: $skill-bar-color;
+        background-color: $node-color;
       }
       &-js, &-html, &-css, &-sql, &-rails {
         text-align: right;

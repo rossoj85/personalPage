@@ -6,6 +6,7 @@ import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Skills from '../skills';
+import Projects from '../projects'
 import { Parallax } from 'react-scroll-parallax';
 
 
@@ -26,7 +27,7 @@ export default class LandingPage extends Component{
         updateDimensions(){
             this.setState({
                 width: window.innerWidth,
-                height: window.innerHeight*0.9
+                height: window.innerHeight
             })
             console.log('width - ',this.state.width, 'height -',this.state.height)
         }
@@ -34,6 +35,12 @@ export default class LandingPage extends Component{
             console.log("Landing Page Props",this.props.navbar)
             console.log(Parallax)
             console.log(screen.height)
+            // window.onscroll=function(){
+            //     var zen = document.getElementsByClassName('zen');
+            //     console.log(zen)
+            //     console.log(zen[0])
+            //     console.log(zen[0].style)
+            // }
             return(
            <div>
             
@@ -43,7 +50,7 @@ export default class LandingPage extends Component{
 
                 <div className = "border" > </div>
                 
-                <ScrollableAnchor id={'about'}><div></div></ScrollableAnchor>
+                <ScrollableAnchor id={'about'}>
                 <div id='bio'>
                     <P5Wrapper id='landingMatrix ' sketch={Matrix}  width ={this.state.width} height={this.state.height}/>
                     <div id='textBox'>
@@ -61,13 +68,23 @@ export default class LandingPage extends Component{
                         
                     </div>
                 </div>
-                <div id='container'>
-                    <img id='zen' src='/photos/zenBanner.jpg' />
+                </ScrollableAnchor>
+                {/*<img className='zen' src='/photos/zenBanner.jpg' /> */}
+                {/*<div id = 'parallax'></div>*/}
                 
-
-                    <ScrollableAnchor id={'skillSection'}><div></div></ScrollableAnchor>
-                    <Skills />
+                <ScrollableAnchor id={'skillSection'}>
+                <div>
+                <div id = 'parallax'></div>
+                <Skills />
                 </div>
+                </ScrollableAnchor>
+
+                <ScrollableAnchor id={'projects'}>
+                    <div>
+                        <Projects />
+                    </div>
+                </ScrollableAnchor>
+                
             </div>
             )
         }

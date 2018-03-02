@@ -18,7 +18,7 @@ export default function sketch (p) {
     p.setup = function (){ 
         p.createCanvas(
             maxWidth,//might have ot change when intergrate into site
-            window.innerHeight * 0.8
+            window.innerHeight 
         );
 
         p.background(0, 900);
@@ -47,7 +47,7 @@ export default function sketch (p) {
         console.log(props)
         console.log('MAX WIDTH@#!$#', maxWidth)
         console.log('Inside Matrix Width',props.width,'Inside Matrix Height', props.height)
-        p.resizeCanvas(props.width, props.height*0.8);
+        p.resizeCanvas(props.width, props.height);
       };
    
     p.draw = function(){
