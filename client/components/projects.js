@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Panel, Accordion, Modal} from 'react-bootstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {ProjectModals, vart, globeChat, uShop, jsAcademy, rain, theDesert, vanGogh, 
         nightScene, vaporWave} from './index';
 import { gol } from './project-Objects';
@@ -44,13 +43,7 @@ export default class Projects extends Component{
         console.log("Is there a selected Modal?", this.state.modal)
         console.log("RaIn", rain )
         return (
-            <ReactCSSTransitionGroup
-            transitionName="example"
-            transitionAppear={true}
-            transitionAppearTimeout={1000}
-            transitionEnter={false}
-            transitionLeave={false} 
-            >
+      
         <div id="ProjectPage">
 
             { this.state.modal?
@@ -109,9 +102,8 @@ export default class Projects extends Component{
                             </Panel>
                         </Accordion>
             </div>
-            
         </div>
-        </ReactCSSTransitionGroup>
+        
         );
     }
 

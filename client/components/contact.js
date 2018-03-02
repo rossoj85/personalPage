@@ -1,16 +1,9 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
   export default (props) => {
     
     return (
-        <ReactCSSTransitionGroup
-        transitionName="example"
-        transitionAppear={true}
-        transitionAppearTimeout={1000}
-        transitionEnter={false}
-        transitionLeave={false} 
-        >
+
         <div id="contact">
             <h2 style={{color: 'red'}}>Contact</h2>
 
@@ -21,6 +14,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
             </div>
             
         </div>
-        </ReactCSSTransitionGroup>
+        
       );
   }

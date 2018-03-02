@@ -20,7 +20,6 @@
     "express": "^4.16.2",
     "p5": "^0.5.16",
     "react": "^15.6.2",
-    "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.6.2",
     "react-p5-wrapper": "0.0.4",

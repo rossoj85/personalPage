@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-anchor';
 
 
