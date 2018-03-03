@@ -17,7 +17,11 @@ export default class RainPage extends Component {
     }
     
     render(){
-        // console.log(this.state.location)
+        console.log('RaInPage Props#@$@#$@',this.props)
+        console.log(document)
+        let navbar = document.getElementById('navbar')
+        console.log(navbar)
+        console.log(document.getElementById('frame'))
         return(
 
             <div style={{margin:'auto', textAlign:'center'}}>

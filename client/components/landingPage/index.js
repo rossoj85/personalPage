@@ -30,6 +30,10 @@ export default class LandingPage extends Component{
             })
             console.log('width - ',this.state.width, 'height -',this.state.height)
         }
+        componentWillUnmount(){
+            window.removeEventListener('resize',this.updateDimensions)
+            
+        }
         render(){
             console.log("Landing Page Props",this.props.navbar)
             console.log(Parallax)

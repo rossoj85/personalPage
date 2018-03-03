@@ -20,8 +20,8 @@ export default class Main extends Component{
                 <div id='innerRouteMainBody'>
                     <Route exact path='/' component={Navbar} />
                     <Route exact path='/' component={LandingPage} />
-                    <Route exact path='/projects/:project' component={ProjectNavbar}/>
-                    <Route exact path='/projects/rain' component={RainPage}/>
+                    <Route exact path='/projects/:project' component={Navbar} projectNavbar={true} foo='bar'/>
+                    <Route exact path='/projects/rain' component={RainPage} navbarDark={true}/>
                     <Route exact path='/projects/theDesert' component={VRDesert} isVR={true} />
                     <Route exact path='/projects/nightScene' component={VRNightScene} isVR={true} />
                     <Route exact path='/projects/vaporwave' component={VRVaporwave} isVR={true} />

@@ -7,40 +7,68 @@ import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-an
 
 
 export default class myNavbar extends Component{
+    componentDidMount(){
+        console.log('NAVBAR MOUNTED')
+        console.log(this.props)
+        let navbar =  document.getElementById('navbar')
+        if(this.props.match.params.project==='rain'){
+            navbar.classList.add('navbarColored')
+        }
+    }
         render(){
             configureAnchors({offset: -60, scrollDuration: 800})
+            let navbarColored;
+            if(this.props.match.params.project==='rain'){
+                navbarColored=true
+            }
             
             window.onscroll = function() {
-                var navbar = document.getElementById('navbar')
+                let navbar = document.getElementById('navbar')
                 console.log('Y OFFSET', window.pageYOffset);
-                if ( window.pageYOffset > 160 ) {
+                if ( window.pageYOffset > 160 || navbarColored ) {
                     navbar.classList.add("navbarColored");
                 } else {
                     navbar.classList.remove("navbarColored");
                 }
             }
-            console.log('NAVBAR PROPS', this.props)
+            console.log('NAVBAR PROPS', this.ownProps)
+            let isExternalProject=this.props.match.params.project;
+            console.log(isExternalProject)
             return(
                 <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
             <Navbar.Header>
-                <a href='#top'>
-                <img className="logo" src ="/photos/logoBlack.jpg" />
-                <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
-                </a>
+                    {isExternalProject ?
+                        <LinkContainer to='/'>
+                        <a href='#top'>
+                        <img className="logo" src ="/photos/logoBlack.jpg" />
+                        <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
+                        </a>
+                        </LinkContainer>
+                        :
+                        <a href='#top'>
+                        <img className="logo" src ="/photos/logoBlack.jpg" />
+                        <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
+                        </a>
+                    }
                 <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
                 <Nav pullRight className='navContainer'>
-                {/*}
-                    <LinkContainer to="/projects"><NavItem><button>Projects</button></NavItem></LinkContainer>
-                    <LinkContainer to="/about"><NavItem><button>About</button></NavItem></LinkContainer>
-                    <LinkContainer to="/contact"><NavItem><button>Contact</button></NavItem></LinkContainer>
-            */}
                 
+                {isExternalProject ?
+                <div>
+                <LinkContainer to="/#projects"><a className='abtn'>Projects</a></LinkContainer>
+                <LinkContainer to="/#skillSection"><a className='abtn'>Skills</a></LinkContainer>
+                <LinkContainer to="/#about"><a className='abtn'>About</a></LinkContainer>
+                </div>
+                :
+                <div>
                 <a className='abtn' href='#projects'>Projects</a>
                 <a className='abtn' href='#skillSection'>Skills</a>
                 <a className='abtn' href='#about'>About</a>
-                
+                </div>
+                }
+          
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
