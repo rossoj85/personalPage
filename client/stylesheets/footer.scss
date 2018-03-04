@@ -1,12 +1,100 @@
-#footer{
-    background: #222222;
-    text-align: center;
-    position: relative;
-    // right: 0;
-    bottom: 0;
-    // left: 0;
-    padding: 1rem;
-    height: 100px;
-    width:  100%;
-    clear: both;
+$github-purple: #81047E;
+$linkedin-blue:#0079B3;
+
+// #footer{
+//     background: #222222;
+//     text-align: center;
+//     position: relative;
+//     // right: 0;
+//     bottom: 0;
+//     // left: 0;
+//     padding: 1rem;
+//     height: 100px;
+//     width:  100%;
+//     clear: both;
+// }
+.footer {
+  text-align: center;
+  // color: $neutral-gray;
+  img {
+    cursor: pointer;
   }
+}
+.footer-title {
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+  .nav-footer {
+    display: block;
+    opacity: 1;
+    transition: all .6s ease;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding: 0 1em;
+    &:hover .nav-link-footer {
+      opacity: .5;
+      transform: translateY(6px);
+      transition: .6s;
+    }
+    #designedLine{
+      margin-left: 1.5em;
+    }
+    .nav-link-footer {
+      display: inline-block;
+      position: relative;
+      padding: 6px 6px;
+      height: 36px;
+      width: 36px;
+      margin: 0 3px;
+      transition: .6s;
+    }
+    .nav-link-github {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: $github-purple;
+        border-radius: 50%;
+        transition: .6s;
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          opacity: 0;
+        }
+        .hover-link {
+          opacity: 1;
+          transition: .6s;
+        }
+      }
+    .nav-link-linkedin {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: $linkedin-blue;
+        border-radius: 50%;
+        transition: .6s;
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          opacity: 0;
+        }
+        .hover-link {
+          opacity: 1;
+          transition: .6s;
+        }
+    }
+    
+}
+.footlogo{
+  height: 80px;
+  width: 80px;
+  
+}

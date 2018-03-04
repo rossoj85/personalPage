@@ -45,12 +45,12 @@ export default class LandingPage extends Component{
             //     console.log(zen[0])
             //     console.log(zen[0].style)
             // }
-            return(
+            return (
            <div>
             
-                <ScrollableAnchor id={'top'}><div></div></ScrollableAnchor>
-                <div className="jumbotron"></div>
-                
+                <ScrollableAnchor id={'top'}>
+                    <div className="jumbotron"></div>
+                </ScrollableAnchor>
 
                 <div className = "border" > </div>
                 
