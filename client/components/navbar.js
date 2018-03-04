@@ -34,6 +34,7 @@ export default class myNavbar extends Component{
             console.log('NAVBAR PROPS', this.ownProps)
             let isExternalProject=this.props.match.params.project;
             console.log(isExternalProject)
+            
             return(
                 <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
             <Navbar.Header>

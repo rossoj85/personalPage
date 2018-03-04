@@ -16,9 +16,9 @@ export default class Projects extends Component{
     }
     
     closeModal(){
-        console.log("CLOSE MODAL EXECUTED")
+        // console.log("CLOSE MODAL EXECUTED")
         this.setState({showModal: false, modal:false})
-        console.log("new ShowModal state", this.state.showModal)
+        // console.log("new ShowModal state", this.state.showModal)
     }
    
     render(){

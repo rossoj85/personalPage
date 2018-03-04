@@ -32,6 +32,7 @@ export default class LandingPage extends Component{
         }
         componentWillUnmount(){
             window.removeEventListener('resize',this.updateDimensions)
+            window.location.reload()
             
         }
         render(){

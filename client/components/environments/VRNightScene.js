@@ -2,6 +2,7 @@ import 'aframe';
 import 'aframe-particle-system-component';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
+import {Entity, Scene} from 'aframe-react';
 
 export default class VRNightScene extends Component{
 
@@ -24,10 +25,25 @@ export default class VRNightScene extends Component{
     const groundTexture = 'https://cdn.aframe.io/a-painter/images/floor.jpg';
     const cyberRust = 'https://ucarecdn.com/90bc2baf-a4c1-4237-b00c-a75f9db0b45a/';
     const marbleTexture = 'https://ucarecdn.com/1b213dc4-386d-4978-8fe5-9b021b23c945/';
-    return (
+    
 
-      paintings ?
-        <a-scene>
+    document.addEventListener('DOMContentLoaded', function() {
+      var scene = document.querySelector('a-scene');
+      var splash = document.querySelector('#splash');
+      scene.addEventListener('loaded', function (e) {
+          console.log('LOADED!!!!!!________________________________________________________')
+          splash.remove();
+      });
+    });
+    
+    return (
+      <div>
+      <div id='splash'>
+        <h2>Loading Scene...</h2>
+        <img className='loading' src={'/photos/circleRainbowLoad.gif'} />
+      </div>
+       
+        <Scene>
           <a-assets>
             <a-asset-item id="ghost-obj" src="/models/ghost/model.obj" />
             <a-asset-item id="ghost-mtl" src="/models/ghost/materials.mtl" />
@@ -58,15 +74,14 @@ export default class VRNightScene extends Component{
                           repeat="indefinite" />
                         <a-entity obj-model="obj:#ghost-obj;mtl:#ghost-mtl" position={ghostPositions[index]} rotation={ghostRotations[index]} />
                       </a-entity>
-
-            );
-          })
-        }
+                    );
+                   })
+            }
 
             { paintings && paintings.map((image, index) => {
                     if (index < 6){
                         return (
-                          <a-text value={image.name} align="center" position={textPositions[index]} rotation={textRotations[index]} color="white" />
+                          <a-text key={index} value={image.name} align="center" position={textPositions[index]} rotation={textRotations[index]} color="white" />
                         );
                     }
                 })
@@ -76,7 +91,7 @@ export default class VRNightScene extends Component{
             { paintings && paintings.map((image, index) => {
                   if (index < 6){
                         return (
-                          <a-cylinder src={marbleTexture} position={pedPositions[index]} rotation="0 0 0" scale=".3 1.2 .3" />
+                          <a-cylinder key={index} src={marbleTexture} position={pedPositions[index]} rotation="0 0 0" scale=".3 1.2 .3" />
                         );
                       }
                     })
@@ -85,7 +100,7 @@ export default class VRNightScene extends Component{
             { paintings && paintings.map((image, index) => {
                         if (index < 6){
                         return (
-                            <a-entity id={`painting${index}`} geometry={{primative: 'box'}} material={`src: ${paintings[index]}`} position={boxPositions[index]} rotation="0 90 0">
+                            <a-entity id={`painting${index}`} key={index} geometry={{primative: 'box'}} material={`src: ${paintings[index]}`} position={boxPositions[index]} rotation="0 90 0">
                               <a-animation
                                 attribute="rotation"
                                 dur="10000"
@@ -137,9 +152,8 @@ export default class VRNightScene extends Component{
                   fill="backwards" from="1 1 1" to="0.1 0.1 0.1" />
             </a-entity>
           </a-entity>
-          </a-scene>
-          :
-          null
+          </Scene>
+        </div>
     );
 
   }
