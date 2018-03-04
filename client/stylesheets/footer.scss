@@ -91,6 +91,26 @@ $linkedin-blue:#0079B3;
           transition: .6s;
         }
     }
+    .nav-link-mail {
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+        background-color: maroon;
+        border-radius: 50%;
+        transition: .6s;
+      }
+        .default-link {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          opacity: 0;
+        }
+        .hover-link {
+          opacity: 1;
+          transition: .6s;
+        }
+    }
     
 }
 .footlogo{
