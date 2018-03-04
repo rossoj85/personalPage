@@ -36,15 +36,7 @@ export default class LandingPage extends Component{
             
         }
         render(){
-            console.log("Landing Page Props",this.props.navbar)
-            console.log(Parallax)
-            console.log(screen.height)
-            // window.onscroll=function(){
-            //     var zen = document.getElementsByClassName('zen');
-            //     console.log(zen)
-            //     console.log(zen[0])
-            //     console.log(zen[0].style)
-            // }
+            
             return (
            <div>
             

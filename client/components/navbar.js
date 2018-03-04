@@ -8,8 +8,8 @@ import ScrollableAnchor, { goToTop, configureAnchors } from 'react-scrollable-an
 
 export default class myNavbar extends Component{
     componentDidMount(){
-        console.log('NAVBAR MOUNTED')
-        console.log(this.props)
+        // console.log('NAVBAR MOUNTED')
+        // console.log(this.props)
         let navbar =  document.getElementById('navbar')
         if(this.props.match.params.project==='rain'){
             navbar.classList.add('navbarColored')
@@ -24,16 +24,16 @@ export default class myNavbar extends Component{
             
             window.onscroll = function() {
                 let navbar = document.getElementById('navbar')
-                console.log('Y OFFSET', window.pageYOffset);
+                // console.log('Y OFFSET', window.pageYOffset);
                 if ( window.pageYOffset > 160 || navbarColored ) {
                     navbar.classList.add("navbarColored");
                 } else {
                     navbar.classList.remove("navbarColored");
                 }
             }
-            console.log('NAVBAR PROPS', this.ownProps)
+            // console.log('NAVBAR PROPS', this.ownProps)
             let isExternalProject=this.props.match.params.project;
-            console.log(isExternalProject)
+            // console.log(isExternalProject)
             
             return(
                 <Navbar inverse collapseOnSelect fixedTop className='navbarClear' id='navbar'>
