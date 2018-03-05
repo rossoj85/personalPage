@@ -85,9 +85,14 @@ $neonSign-blue: #1086e8;
         font-size: 1.25em;
       }
       img {
+        @media(max-width: 415px){
+          width: 100%;
+          margin: 30px auto 30px auto;
+        }
         width: 80%;
       }
     }
+
     .skills {
     //   font-family: $Proxima-Nova-Upper;
       color: red;

@@ -10,6 +10,7 @@ export default class VRNightScene extends Component{
     console.log("UNMOUNT HIT")
     window.location.reload()
   }
+ 
     render(){
     
     const pedPositions = ["6.75 .7 0", "3 .7 6.2", "-2.644 .7 6.353", "-6.619 .7 0", "-2.862 .7 -5.734", "3.000 .7 -6.108"];
@@ -35,8 +36,8 @@ export default class VRNightScene extends Component{
           splash.remove();
       });
     });
-    
-    return (
+   
+        return (
       <div>
       <div id='splash'>
         <h2>Loading Scene...</h2>
