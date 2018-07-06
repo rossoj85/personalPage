@@ -60,14 +60,15 @@ export default class myNavbar extends Component{
                 <div>
                 <LinkContainer to="/#projects"><a className='abtn'>Projects</a></LinkContainer>
                 <LinkContainer to="/#skillSection"><a className='abtn'>Skills</a></LinkContainer>
-                <LinkContainer to="/#about"><a className='abtn'>About</a></LinkContainer>
+                <LinkContainer to="/#about"><a id='about' className='abtn'>About</a></LinkContainer>
                 </div>
                 :
                 <div>
-                <a className='abtn' href='#projects'>Projects</a>
-                <a className='abtn' href='#skillSection'>Skills</a>
-                <a className='abtn' href='#about'>About</a>
+                <a className='abtn' id='projects' href='#projects'>Projects</a>
+                <a className='abtn' id='skillSection' href='#skillSection'>Skills</a>
+                <a className='abtn' id='about' href='#about'>About</a>
                 </div>
+                //IDS ARE COMBINED WITH THE :PSEUDO CLASS TO TARGET THESE BUTTONS AS YOU SCROLL
                 }
           
                 </Nav>
