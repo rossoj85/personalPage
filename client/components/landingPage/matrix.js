@@ -13,7 +13,7 @@ export default function sketch (p) {
     console.log('Max Width', window.screen.availWidth)
     console.log('Max Height', window.screen.availHeight)
     let maxWidth;
-    availWidth>availHeight ? maxWidth=availWidth: maxWidth=availHeight;
+    availWidth>availHeight ? maxWidth=availWidth : maxWidth=availHeight;
     console.log('MaxWidth', maxWidth)
     p.setup = function (){ 
         p.createCanvas(

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Media} from 'react-bootstrap';
+
 import {Link} from 'react-router-dom';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
@@ -48,7 +48,7 @@ export default class LandingPage extends Component{
                 
                 <ScrollableAnchor id={'about'}>
                 <div id='bio'>
-                    <P5Wrapper id='landingMatrix ' sketch={Matrix}  width ={this.state.width} height={this.state.height}/>
+            <P5Wrapper id='landingMatrix ' sketch={Matrix}  width ={this.state.width} height={this.state.height}/> 
                     <div id='textBox'>
                         <h2>The Only Limit To Our Reality Is Imagination...</h2>
                         <p>

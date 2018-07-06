@@ -39,6 +39,9 @@
             &:hover{
                 color: red
             }
+            &:target{
+                color:red
+            }
         }   
     }
 
