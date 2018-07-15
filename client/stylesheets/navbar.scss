@@ -35,13 +35,14 @@
         }
     a{
         text-decoration: none;
+        cursor: pointer;
         h3 {
             &:hover{
                 color: red
             }
-            &:target{
-                color:red
-            }
+            // &:target{
+            //     color:purple
+            // }
         }   
     }
 
@@ -57,8 +58,11 @@
     color: $color;
     border: 2px solid $color;
     background-color: transparent;
-    &:focus, &:active, &:hover{
+    &:active, &:hover, &:target{
         @extend %buttonActivity 
+    }
+    &:focus{
+        outline: none;
     }
 }
 
@@ -87,6 +91,9 @@ div.navbar-collapse.collapse.in{
     height: 100px;
 }
 
+.activeNavButton{
+    color: green !important
+}
 // $transNavbarGrey: rgba(51, 51, 51, .5);
 
 // %buttonActivity{

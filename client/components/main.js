@@ -9,12 +9,10 @@ import {VRDesert, VRNightScene, VRVangogh, VRVaporwave} from './environments'
 export default class Main extends Component{
 
     componentDidMount(){
-        console.log("Main Component mounted")
-        // console.log("Is Webpack Workings?")
-       
+        console.log("Main Component mounted") 
     }
+
     render(){
-        
         return(
             <div id="innerRoute">
                 <div id='innerRouteMainBody'>
