@@ -17,7 +17,7 @@ export default class myNavbar extends Component{
 
     render(){
     
-        configureAnchors({offset: -100, scrollDuration: 800})
+        configureAnchors({offset: -80, scrollDuration: 800})
         let navbarColored;
         if(this.props.match.params.project==='rain'){
                 navbarColored = true
