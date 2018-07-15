@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-
-import {Link} from 'react-router-dom';
 import {default as Matrix} from './matrix';
 import P5Wrapper from 'react-p5-wrapper';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Skills from '../skills';
 import Projects from '../projects'
-import { Parallax } from 'react-scroll-parallax';
+
 
 
 export default class LandingPage extends Component{
@@ -39,11 +37,12 @@ export default class LandingPage extends Component{
             
             return (
            <div>
-            
-                <ScrollableAnchor id={'top'}>
-                    <div className="jumbotron"></div>
-                </ScrollableAnchor>
+           <ScrollableAnchor id={'splash'}>
+           <div className="jumbotron" ></div>
 
+         
+           </ScrollableAnchor>
+    
                 <div className = "border" > </div>
                 
                 <ScrollableAnchor id={'about'}>
@@ -70,7 +69,7 @@ export default class LandingPage extends Component{
                 
                 <ScrollableAnchor id={'skillSection'}>
                 <div>
-                <div id = 'parallax'></div>
+               
                 <Skills />
                 </div>
                 </ScrollableAnchor>

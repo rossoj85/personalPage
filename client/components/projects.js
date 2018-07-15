@@ -38,10 +38,9 @@ export default class Projects extends Component{
         const games =[
             gol
         ]
-        console.log("VIS ART",visualArt)
-        console.log("Imported Vart Object", vart)
+
         console.log("Is there a selected Modal?", this.state.modal)
-        console.log("RaIn", rain )
+
         return (
       
         <div id="ProjectPage">
