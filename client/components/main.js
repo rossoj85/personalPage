@@ -1,7 +1,7 @@
 import '../stylesheets/index.scss'
 import React, { Component } from 'react';
 import { Route, Switch, Fade } from 'react-router-dom';
-import {RainPage, LandingPage, Navbar, Footer, Contact, Loader, ProjectNavbar} from './index';
+import {RainPage, LandingPage, Navbar, Footer, Contact, Loader, ProjectNavbar, Resume} from './index';
 import {Gol} from './index'
 import {VRDesert, VRNightScene, VRVangogh, VRVaporwave} from './environments'
 
@@ -13,9 +13,11 @@ export default class Main extends Component{
     }
 
     render(){
+        console.log('REUME!@!#!@#!@', Resume)
         return(
             <div id="innerRoute">
                 <div id='innerRouteMainBody'>
+                    <Route exact path='/resume' component={Resume} />
                     <Route exact path='/' component={Navbar} />
                     <Route exact path='/' component={LandingPage} />
                     <Route exact path='/projects/:project' component={Navbar} projectNavbar={true} foo='bar'/>

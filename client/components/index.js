@@ -7,6 +7,7 @@ export {default as Footer} from './footer';
 export {default as Contact} from './contact';
 export{default as ProjectNavbar} from './navbarProjects';
 export{default as Gol} from './Gol/gol.js';
+export {default as Resume} from './resume'
 
 //projects page
 export {default as ProjectModals} from './projectModals';
