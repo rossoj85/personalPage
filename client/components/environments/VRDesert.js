@@ -3,6 +3,9 @@ import 'aframe-particle-system-component';
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
+// import midtown from '../../../public/photos/midtown.jpg';
+// import desertImage from '../../../public/photos/DesertBackground.jpg';
+
 
 
 
@@ -16,8 +19,10 @@ export default class VRDesert extends Component{
     render(){
         console.log("ArrayOfArt", arrayOfArt);
         const paintings = arrayOfArt;
-        const desert = 'https://ucarecdn.com/39f58506-1bfa-4464-b66e-c356292be9c8/';
+        // const desert = 'https://ucarecdn.com/39f58506-1bfa-4464-b66e-c356292be9c8/';
         const groundTexture = 'https://cdn.aframe.io/a-painter/images/floor.jpg';
+        const desert = "../../../public/photos/DesertBackground.jpg"
+        // const desert = desertImage;
         
         console.log(paintings)
         //Listeneing for load

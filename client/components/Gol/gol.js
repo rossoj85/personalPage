@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 
 
 export default class GOL extends Component{
+  
     constructor(){
       super()
         this.state = { 
@@ -256,9 +257,12 @@ export default class GOL extends Component{
       console.log('STOP AUTOPLAY',this)
     }
     
-    // componentDidMount(){
-    //   this.createAndShowBoard()
-    // }
+    componentDidMount() {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        navbar.classList.add('navbarColored');
+      }
+    }
     handleChange(evt){
       evt.preventDefault()
       let inputValue=evt.target.value
@@ -287,9 +291,10 @@ export default class GOL extends Component{
      this.createAndShowBoard()
     }
     render(){
-        
+        console.log('inside render of GOL');
         return(
-           <div style={{marginTop:'3em', height:'100%', position:'relative'}}>
+           <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',minHeight: '100vh',flexDirection: 'column'}}>
+
            
            <table id='golBoard'></table>
 

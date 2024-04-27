@@ -25,15 +25,15 @@ export default class myNavbar extends Component{
             
         //using an arrow function here preserves the this context
         window.onscroll = ()=> {
-            console.log('height', window.innerHeight, 'height divieded', window.innerHeight *.8)
+            // console.log('height', window.innerHeight, 'height divieded', window.innerHeight *.8)
             let navbar = document.getElementById('navbar')
-            console.log('Y OFFSET', window.pageYOffset);
+            // console.log('Y OFFSET', window.pageYOffset);
          
-            if ( window.pageYOffset > 160 || navbarColored ) {
+            if (window.pageYOffset > 160 || navbarColored ||  this.props.match.params.project && this.props.match.params.project.includes('gol')) {
                 navbar.classList.add("navbarColored");
-                } else {
+            } else {
                 navbar.classList.remove("navbarColored");
-                }
+            }
             }
 
             let isExternalProject = this.props.match.params.project;
