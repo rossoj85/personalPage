@@ -27,7 +27,16 @@ module.exports = {
           'css-loader?url=false',
           'sass-loader?url=false'
         ]
-      }
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[hash].[ext]',
+          },
+        },
+      },
     ]
   }
 };

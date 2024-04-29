@@ -3,8 +3,7 @@ import 'aframe-particle-system-component';
 import {Entity, Scene} from 'aframe-react';
 import React, {Component} from 'react';
 import {arrayOfArt} from './paintings';
-// import midtown from '../../../public/photos/midtown.jpg';
-// import desertImage from '../../../public/photos/DesertBackground.jpg';
+
 
 
 
@@ -21,8 +20,8 @@ export default class VRDesert extends Component{
         const paintings = arrayOfArt;
         // const desert = 'https://ucarecdn.com/39f58506-1bfa-4464-b66e-c356292be9c8/';
         const groundTexture = 'https://cdn.aframe.io/a-painter/images/floor.jpg';
-        const desert = "../../../public/photos/DesertBackground.jpg"
-        // const desert = desertImage;
+        const desert = "/photos/360Desert.jpg"
+        
         
         console.log(paintings)
         //Listeneing for load
@@ -42,12 +41,14 @@ export default class VRDesert extends Component{
                 <img className='loading' src={'/photos/circleRainbowLoad.gif'} />
             </div>
 
+            <h1></h1>
+
                 <Scene>
             
                 <a-assets >
                     <a-asset-item id="daliClock-obj" src="/models/daliClock/memory.obj" />
                     <a-asset-item id="daliClock-mtl" src="/models/daliClock/memory.mtl" />
-                    <a-asset-item id="marcus-obj" src="/models/marcus/MarcusAurelius.obj" />
+                    <a-asset-item id="marcus-obj" src="/models/marcus/MarcusAurelius.obj"  material="color: grey"/>
                     <a-asset-item id="piggy-obj" src="/models/piggy/piggy.obj" />
                 </a-assets>
             
@@ -125,6 +126,8 @@ export default class VRDesert extends Component{
 
                 
                     <a-entity obj-model="obj:#marcus-obj" position="0 5 -25" scale="22 22 22" src="/MarcusAureliusTexture.jpg" />
+                    
+                    {/* <a-sky src={`https://www.eso.org/public/archives/images/publicationjpg/par-sunset-pan.jpg`}  /> */}
                     <a-sky src={desert}  />
                     <a-plane src={groundTexture} position="0 -2 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
 
