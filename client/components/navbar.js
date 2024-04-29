@@ -29,7 +29,7 @@ export default class myNavbar extends Component{
             let navbar = document.getElementById('navbar')
             // console.log('Y OFFSET', window.pageYOffset);
          
-            if (window.pageYOffset > 160 || navbarColored ||  this.props.match.params.project && this.props.match.params.project.includes('gol')) {
+            if (window.pageYOffset > 160 || navbarColored ||  this.props && this.props.match.params.project.includes('gol')) {
                 navbar.classList.add("navbarColored");
             } else {
                 navbar.classList.remove("navbarColored");

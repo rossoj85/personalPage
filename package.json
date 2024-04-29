@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://rossoj85.github.io/personalPage/",
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "webpack -w & nodemon server --ignore /client --ignore /public",
     "start-dev": "npm run build-client-watch & npm run start-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -39,6 +42,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.11",
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0",
     "nodemon": "^1.12.1",
     "sass-loader": "^6.0.6",
