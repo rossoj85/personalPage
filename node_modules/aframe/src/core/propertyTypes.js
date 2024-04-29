@@ -6,6 +6,7 @@ var warn = debug('core:propertyTypes:warn');
 
 var propertyTypes = module.exports.propertyTypes = {};
 var nonCharRegex = /[,> .[\]:]/;
+var urlRegex = /\url\((.+)\)/;
 
 // Built-in property types.
 registerPropertyType('audio', '', assetParse);
@@ -24,7 +25,7 @@ registerPropertyType('string', '', defaultParse, defaultStringify);
 registerPropertyType('time', 0, intParse);
 registerPropertyType('vec2', {x: 0, y: 0}, vecParse, coordinates.stringify);
 registerPropertyType('vec3', {x: 0, y: 0, z: 0}, vecParse, coordinates.stringify);
-registerPropertyType('vec4', {x: 0, y: 0, z: 0, w: 0}, vecParse, coordinates.stringify);
+registerPropertyType('vec4', {x: 0, y: 0, z: 0, w: 1}, vecParse, coordinates.stringify);
 
 /**
  * Register a parser for re-use such that when someone uses `type` in the schema,
@@ -77,7 +78,7 @@ function assetParse (value) {
   if (typeof value !== 'string') { return value; }
 
   // Wrapped `url()` in case of data URI.
-  parsedUrl = value.match(/\url\((.+)\)/);
+  parsedUrl = value.match(urlRegex);
   if (parsedUrl) { return parsedUrl[1]; }
 
   // ID.

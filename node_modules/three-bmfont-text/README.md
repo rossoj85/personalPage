@@ -8,7 +8,7 @@
 
 Bitmap font rendering for ThreeJS, batching glyphs into a single BufferGeometry. Supports word-wrapping, letter spacing, kerning, [signed distance fields](./docs/sdf.md) with standard derivatives, [multi-channel signed distance fields](./docs/sdf.md#msdf-shader), multi-texture fonts, and more. About 12kb after minification.
 
-Works on Three r69-73, r79, and possibly more.
+The latest `3.x` version works on Three r109 and beyond. For legacy support (e.g. Three r69-73, r79-108), please use version `three-bmfont-text@2.3.0`.
 
 Below is an example that uses [load-bmfont](https://www.npmjs.com/package/load-bmfont) to parse BMFont files on the fly with XHR:
 
@@ -160,6 +160,10 @@ See [docs/multi.md](docs/multi.md)
 See [text-modules](https://github.com/mattdesl/text-modules) for more text and font related tools.
 
 ## Change Log
+
+- `3.0.0`
+
+  - Fixed `BufferAttribute` problems in new ThreeJS
 
 - `2.0.1`
   - Added `shaders/msdf.js` and docs around MSDF usage

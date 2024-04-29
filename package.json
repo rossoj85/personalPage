@@ -7,8 +7,8 @@
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack -w & nodemon server --ignore /client --ignore /public",
     "start-dev": "npm run build-client-watch & npm run start-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,10 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aframe": "^0.7.1",
+    "aframe": "^1.5.0",
     "aframe-mountain-component": "^0.3.3",
-    "aframe-particle-system-component": "^1.0.10",
-    "aframe-react": "^4.3.0",
+    "aframe-particle-system-component": "^1.1.3",
+    "aframe-react": "^4.4.0",
     "express": "^4.16.2",
     "p5": "^0.5.16",
     "react": "^15.6.2",
