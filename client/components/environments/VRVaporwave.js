@@ -113,8 +113,8 @@ export default class VRVaporwave extends Component{
                     {/*Scyscrapers*/}
                     <a-entity obj-model='obj:#cityscape-obj;mtl:#cityscape-mtl' scale='40 30 20' position= '0 31 -150' rotation = '0 270 0' />
                     {/*Sun*/}
-                    {/* <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>*/}
-                    <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 350 4445' scale ='2000 2000 1'/>
+                    {/* <a-entity geometry={{primitive: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>*/}
+                    <a-entity geometry={{primitive: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 350 4445' scale ='2000 2000 1'/>
 
                     {/*Billboards*/}
                     {
@@ -123,14 +123,14 @@ export default class VRVaporwave extends Component{
                             let rotation = cord[1]
                             
                             return(
-                                <a-entity key={position} obj-model='obj:#billboard-obj' 
+                                <Entity key={position} obj-model='obj:#billboard-obj' 
                                 scale='.02 .02 .02' 
                                 position= {position} 
                                 rotation = {rotation} 
                                 color='#4CC3D9'
                                 >
-                                    <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[index]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
-                                </a-entity>
+                                    <Entity geometry={{primitive: 'box'}} material ={`src: ${paintings[index]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/> 
+                                </Entity>
 
                             )
                         })  
@@ -142,14 +142,15 @@ export default class VRVaporwave extends Component{
                             let rotation = cord[1]
                             
                             return(
-                                <a-entity key={position} obj-model='obj:#billboard-obj' 
+                                <Entity key={position} obj-model='obj:#billboard-obj' 
                                 scale='.02 .02 .02' 
                                 position= {position} 
                                 rotation = {rotation} 
                                 color='#4CC3D9'
                                 >
-                                    <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[backIndex++]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
-                                </a-entity>
+                                    <Entity geometry={{primitive: 'box'}} material ={`src: ${paintings[backIndex++]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
+                                </Entity>
+                                
 
                             )
                         })
@@ -190,9 +191,8 @@ export default class VRVaporwave extends Component{
                     <a-plane src={pinkgrid} position="0 0 -1" rotation="-90 0 0" width="1000" height="1000" repeat="20 20"  ></a-plane>
                     <a-sky src={pinkSky} rotation="0 -90 0"></a-sky>
                    
-                    <a-entity camera="userHeight: 2" look-controls wasd-controls>
-                   
-                </a-entity>
+                    {/* <a-entity camera="userHeight: 2" look-controls wasd-controls></a-entity> */}
+                    <a-entity camera position="0 2 0" look-controls wasd-controls></a-entity>
                 </Scene>
                 
             </div>
@@ -219,8 +219,8 @@ export default class VRVaporwave extends Component{
 // {/*Scyscrapers*/}
 // <a-entity obj-model='obj:#cityscape-obj;mtl:#cityscape-mtl' scale='40 30 20' position= '0 31 -150' rotation = '0 270 0' />
 // {/*Sun*/}
-// {/* <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>*/}
-// <a-entity geometry={{primative: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 350 4445' scale ='2000 2000 1'/>
+// {/* <a-entity geometry={{primitive: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 47 272' scale ='200 200 1'/>*/}
+// <a-entity geometry={{primitive: 'box'}} material ={`src: ${retrowaveSun}`} position = '0 350 4445' scale ='2000 2000 1'/>
 
 // {/*Billboards*/}
 // {
@@ -235,7 +235,7 @@ export default class VRVaporwave extends Component{
 //             rotation = {rotation} 
 //             color='#4CC3D9'
 //             >
-//                 <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[index]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
+//                 <a-entity geometry={{primitive: 'box'}} material ={`src: ${paintings[index]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
 //             </a-entity>
 
 //         )
@@ -254,7 +254,7 @@ export default class VRVaporwave extends Component{
 //             rotation = {rotation} 
 //             color='#4CC3D9'
 //             >
-//                 <a-entity geometry={{primative: 'box'}} material ={`src: ${paintings[backIndex++]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
+//                 <a-entity geometry={{primitive: 'box'}} material ={`src: ${paintings[backIndex++]}`} position = '-60.2 535.6 -70.8' scale ='300 230 1' rotation='0 90 0'/>
 //             </a-entity>
 
 //         )

@@ -57,7 +57,7 @@ export default class VRVangogh extends Component{
  
              <a-entity
                obj-model="obj:#room; mtl:#room-mtl"
-               position="0 0 -15" scale="1 1 1" />
+               position="0 0 -6" scale="1 1 1" />
              
              
              <a-entity geometry="primitive: sphere; radius: 30" 
@@ -78,7 +78,7 @@ export default class VRVangogh extends Component{
  
                  <a-sky src='/models/vangogh/sky/milkyWay.png' />
                  <a-plane src={snowyGround} position="0 -2 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
-                 <Entity particle-system={{preset: 'snow'}} />
+                 {/* <Entity particle-system={{preset: 'snow'}} /> */}
                  {
                    paintings.length >= 1 &&
                    <a-curvedimage
@@ -144,9 +144,12 @@ export default class VRVangogh extends Component{
                  }
  
                  
-                 <a-entity camera="userHeight: 1.6" look-controls wasd-controls position='0 0 -9'>
-                     
-                 </a-entity>
+                 {/* <a-entity camera="userHeight: 1.6" look-controls wasd-controls position='0 0 -9'></a-entity> */}
+                 
+                 <Entity camera position='0 0 0' look-controls wasd-controls></Entity>
+
+              
+
              </Scene>
               </div>
             

@@ -66,15 +66,16 @@ export default class VRNightScene extends Component{
                     ghostDirection = '0 -360 0';
                   }
                     return (
-                      <a-entity key={index} position="0 0 0">
-                        <a-animation
-                          attribute="rotation"
-                          dur="50000"
-                          fill="forwards"
-                          to={ghostDirection}
-                          repeat="indefinite" />
-                        <a-entity obj-model="obj:#ghost-obj;mtl:#ghost-mtl" position={ghostPositions[index]} rotation={ghostRotations[index]} />
-                      </a-entity>
+                      <Entity key={index} position="0 0 0"
+                        animation__rotate={{
+                          property: 'rotation',
+                          to: ghostDirection,
+                          dur: 50000,
+                          loop: true
+                        }}
+                      >
+                        <Entity obj-model="obj:#ghost-obj;mtl:#ghost-mtl" position={ghostPositions[index]} rotation={ghostRotations[index]} />
+                      </Entity>
                     );
                    })
             }
@@ -100,16 +101,16 @@ export default class VRNightScene extends Component{
 
             { paintings && paintings.map((image, index) => {
                         if (index < 6){
-                        return (
-                            <a-entity id={`painting${index}`} key={index} geometry={{primative: 'box'}} material={`src: ${paintings[index]}`} position={boxPositions[index]} rotation="0 90 0">
-                              <a-animation
-                                attribute="rotation"
-                                dur="10000"
-                                fill="forwards"
-                                to="0 -360 0"
-                                repeat="indefinite" />
-                            </a-entity>
-                      );
+                          return (
+                            <Entity id={`painting${index}`} key={index} geometry={{primitive: 'box'}} material={`src: ${paintings[index]}`} position={boxPositions[index]} rotation="0 90 0"
+                              animation__rotate={{
+                                property: 'rotation',
+                                to: '0 360 0',
+                                dur: 10000,
+                                loop: true
+                              }}
+                            />
+                          );
                     }
                   }
                 )
@@ -139,7 +140,7 @@ export default class VRNightScene extends Component{
             <a-plane src={groundTexture} position="0 0 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
 
             <a-sky src= {nightScape} />
-            <a-entity camera="userHeight: 2.9" look-controls wasd-controls>
+            <a-entity camera position="0 2 0" look-controls wasd-controls>
               <a-entity
               /*cursor="fuse: true; fuseTimeout: 1500"
               id="cursor" position="0 0 -2" geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05" material="color: white" */>

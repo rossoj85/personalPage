@@ -132,9 +132,8 @@ export default class VRDesert extends Component{
                     <a-plane src={groundTexture} position="0 -2 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
 
 
-                    <a-entity camera="userHeight: 2" look-controls wasd-controls>
-                       
-                    </a-entity>
+                    {/* <a-entity camera="userHeight: 2" look-controls wasd-controls></a-entity> */}
+                    <a-entity camera position="0 2 0" look-controls wasd-controls></a-entity>
                 </Scene>
             </div>
         );
