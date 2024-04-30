@@ -9,8 +9,9 @@
     "build-client-watch": "webpack -w",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "webpack -w & nodemon server --ignore /client --ignore /public",
-    "start-dev": "npm run build-client-watch & npm run start-server",
+    "start-server": "node server",
+    "start": "webpack & npm run start-server",
+    "start-dev": "webpack -w & nodemon server --ignore /client --ignore /public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm install --legacy-peer-deps"
   },
