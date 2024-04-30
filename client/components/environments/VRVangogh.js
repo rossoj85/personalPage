@@ -146,6 +146,7 @@ export default class VRVangogh extends Component{
                  
                  {/* <a-entity camera="userHeight: 1.6" look-controls wasd-controls position='0 0 -9'></a-entity> */}
                  
+                 {/* Just a comment */}
                  <Entity camera position='0 0 0' look-controls wasd-controls></Entity>
 
               
