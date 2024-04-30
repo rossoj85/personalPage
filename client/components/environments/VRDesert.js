@@ -66,25 +66,13 @@ export default class VRDesert extends Component{
 
                     {/*ROTATING PIGS*/}
 
-                <a-entity obj-model="obj:#piggy-obj" scale="1 1 1" position="8 5 -12" material="color:pink">
-                <a-animation
-                    attribute="rotation"
-                    easing="linear"
-                    dur="3000"
-                    fill="backwards"
-                    to="0 360 0"
-                    repeat="indefinite" />
-                </a-entity>
+                    <a-entity obj-model="obj:#piggy-obj" scale="1 1 1" position="8 5 -12" material="color:pink"
+                            animation="property: rotation; to: 0 360 0; loop: true; dur: 3000; easing: linear">
+                    </a-entity>
 
-                <a-entity obj-model="obj:#piggy-obj" scale="1 1 1" position="-7 5 -12" material="color:pink">
-                <a-animation
-                    attribute="rotation"
-                    easing="linear"
-                    dur="5000"
-                    fill="forwards"
-                    to="0 360 0"
-                    repeat="indefinite" />
-                </a-entity>
+                    <a-entity obj-model="obj:#piggy-obj" scale="1 1 1" position="-7 5 -12" material="color:pink"
+                            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear">
+                    </a-entity>
 
                 {/*PAINTINGS */}
                 {paintings[0] ?

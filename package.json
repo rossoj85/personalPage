@@ -11,7 +11,8 @@
     "deploy": "gh-pages -d build",
     "start": "webpack -w & nodemon server --ignore /client --ignore /public",
     "start-dev": "npm run build-client-watch & npm run start-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm install --legacy-peer-deps"
   },
   "author": "",
   "license": "ISC",
@@ -43,9 +44,9 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.11",
     "gh-pages": "^6.1.1",
-    "node-sass": "^9.0.0",
     "nodemon": "^1.12.1",
-    "sass-loader": "^6.0.6",
+    "sass": "^1.75.0",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1"
   }
