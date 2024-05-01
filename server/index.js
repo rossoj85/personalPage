@@ -3,12 +3,18 @@ const express = require('express');
 const volleyball = require('volleyball');
 const path = require('path')
 const app = express();
+const enforce = require('express-sslify');
 const bodyParser = require('body-parser');
+
 // const db = require('./db');
 const PORT = process.env.PORT || 3200;
 const server = app.listen(PORT, ()=>console.log(`It will soon begin to rain on port ${PORT}`))
-// const io=require('socket.io')(server)
 
+console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 app.use(volleyball);
 
