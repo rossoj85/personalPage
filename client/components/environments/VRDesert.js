@@ -24,15 +24,7 @@ export default class VRDesert extends Component{
         
         
         console.log(paintings)
-        //Listeneing for load
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     var scene = document.querySelector('a-scene');
-        //     var splash = document.querySelector('#splash');
-        //     scene.addEventListener('loaded', function (e) {
-        //         console.log('LOADED!!!!!!________________________________________________________')
-        //         splash.style.display = 'none';
-        //     });
-        // });
+       
         return (
             <div>
 

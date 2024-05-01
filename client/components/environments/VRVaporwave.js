@@ -82,14 +82,7 @@ export default class VRVaporwave extends Component{
             //left side 
             ['-23 0 35','0 225 0']
         ]
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     var scene = document.querySelector('a-scene');
-        //     var splash = document.querySelector('#splash');
-        //     scene.addEventListener('DOMCOntentLoaded', function (e) {
-        //         console.log('LOADED!!!!!!________________________________________________________')
-        //         splash.remove();
-        //     });
-        // });
+        
         return (
             <div>
                 <div id='splash'>
