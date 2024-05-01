@@ -16,7 +16,7 @@
         margin: 0px;
         width: 100%;
         background-color: transparent;
-        margin-left: -15px 
+        // margin-left: -15px 
     }
     h3{
         @media(max-width:375px){display:inline}
@@ -30,7 +30,7 @@
                 margin-left: -15px 
             }
         .abtn{
-            @media(max-width:375px){margin:-10px -10px 5px 10px}
+            // @media(max-width:375px){margin:-10px -10px 5px 10px}
             @include aLinkButtonConstructor($textColor);
         }
     a{
@@ -73,11 +73,45 @@
     margin-right: 3px	
 }
 
-// .navbarClear{
-// @include navbarConstructor(black, transparent );
+.navbarClear{
+@include navbarConstructor(black, transparent );
 
-// }
+}
 
+#navbar .navbar-right {
+    margin: 0px;
+    position: relative;
+}
+@media(max-width: 767px) {
+    #navbar .navbar-right {
+        width: 100%;
+    }
+    .navbarClear h3 {
+        width: 83%;
+    }
+}
+
+.navbar-text {
+    position: absolute;
+    top: 50px; // Adjust this value to move the element down
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    color: white !important;
+    transition: opacity 3s ease-in-out;
+}
+
+.icon-bar{
+    background-color: black !important;
+}
+.navbarColored .icon-bar{
+    background: white !important;
+}
+
+// hardcoded result for Navbar clear constructer
 .navbarClear {
     color: #000;
     margin-bottom: 0px;
@@ -85,12 +119,14 @@
     background: rgba(0,0,0,0);
     transition: background-color 1s;
 }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+}
 
 .navbarClear>.container {
-    margin: 0px;
     width: 100%;
     background-color: rgba(0,0,0,0);
-    margin-left: -15px;
+    // margin-left: -15px;
 }
 .navbarClear .abtn {
     width: 79px;
@@ -122,11 +158,39 @@
 }
 div.navbar-collapse.collapse.in{
     height: 100px;
+    border-top: 1px solid black;
+}
+
+.navbar-toggle {
+    /* position: relative; */
+    float: right;
+    padding: 9px 10px;
+    /* margin-top: 8px; */
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: absolute;
+    top: 25px;
+    right: 3px;
+}
+.navbar-toggle:hover{
+    background-color: transparent !important;
+
 }
 
 .activeNavButton{
     color: green !important
 }
+
+element.style {
+    margin: 0px;
+    width: 100%;
+}
+
+// -----------------  OLD CODE NAVBAR hardcoded end  -----------------
 // $transNavbarGrey: rgba(51, 51, 51, .5);
 
 // %buttonActivity{

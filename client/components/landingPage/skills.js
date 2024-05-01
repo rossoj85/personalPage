@@ -12,6 +12,22 @@ export default class  Skills extends Component{
           mqMatch: null, //jsut a dummy state to force rerender
       };
   }
+//   componentDidMount() {
+//     window.addEventListener('scroll', this.parallax);
+// }
+
+// componentWillUnmount() {
+//     window.removeEventListener('scroll', this.parallax);
+// }
+
+// parallax = () => {
+//   var scrolledY = window.scrollY;
+//   var parallax = document.getElementById('parallax');
+//   if (parallax) parallax.style.backgroundPosition = 'center ' + ((scrolledY)) + 'px';
+// }
+
+
+
   render(){
     const mq = window.matchMedia('(max-width:767px)');
     console.log('MEdia Query', mq)

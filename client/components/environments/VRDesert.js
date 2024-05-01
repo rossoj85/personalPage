@@ -25,14 +25,14 @@ export default class VRDesert extends Component{
         
         console.log(paintings)
         //Listeneing for load
-        document.addEventListener('DOMContentLoaded', function() {
-            var scene = document.querySelector('a-scene');
-            var splash = document.querySelector('#splash');
-            scene.addEventListener('loaded', function (e) {
-                console.log('LOADED!!!!!!________________________________________________________')
-                splash.style.display = 'none';
-            });
-        });
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var scene = document.querySelector('a-scene');
+        //     var splash = document.querySelector('#splash');
+        //     scene.addEventListener('loaded', function (e) {
+        //         console.log('LOADED!!!!!!________________________________________________________')
+        //         splash.style.display = 'none';
+        //     });
+        // });
         return (
             <div>
 
@@ -41,7 +41,6 @@ export default class VRDesert extends Component{
                 <img className='loading' src={'/photos/circleRainbowLoad.gif'} />
             </div>
 
-            <h1></h1>
 
                 <Scene>
             

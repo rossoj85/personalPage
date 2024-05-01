@@ -28,16 +28,9 @@ export default class VRNightScene extends Component{
     const marbleTexture = 'https://ucarecdn.com/1b213dc4-386d-4978-8fe5-9b021b23c945/';
     
 
-    document.addEventListener('DOMContentLoaded', function() {
-      var scene = document.querySelector('a-scene');
-      var splash = document.querySelector('#splash');
-      scene.addEventListener('loaded', function (e) {
-          console.log('LOADED!!!!!!________________________________________________________')
-          splash.remove();
-      });
-    });
+
    
-        return (
+    return (
       <div>
       <div id='splash'>
         <h2>Loading Scene...</h2>

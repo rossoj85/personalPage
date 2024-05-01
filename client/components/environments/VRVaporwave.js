@@ -13,7 +13,7 @@ export default class VRVaporwave extends Component{
         this.state = {
             showLoadingScreen: true
         }
-      this.removeLoadScreen= this.removeLoadScreen.bind(this)
+    //   this.removeLoadScreen= this.removeLoadScreen.bind(this)
     }
     // componentDidMount(){
     //     window.onload = function(){ 
@@ -22,10 +22,10 @@ export default class VRVaporwave extends Component{
     //         }).bind(this)
     //     }
     // }
-    removeLoadScreen(){
-        console.log('REMOVING LOAD SCREEN')
-        document.getElementById.spash.style.display='none'
-    }
+    // removeLoadScreen(){
+    //     console.log('REMOVING LOAD SCREEN')
+    //     document.getElementById.spash.style.display='none'
+    // }
     componentWillUnmount(){
         console.log("UNMOUNT HIT")
         window.location.reload()
@@ -82,14 +82,14 @@ export default class VRVaporwave extends Component{
             //left side 
             ['-23 0 35','0 225 0']
         ]
-        document.addEventListener('DOMContentLoaded', function() {
-            var scene = document.querySelector('a-scene');
-            var splash = document.querySelector('#splash');
-            scene.addEventListener('DOMCOntentLoaded', function (e) {
-                console.log('LOADED!!!!!!________________________________________________________')
-                splash.remove();
-            });
-        });
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var scene = document.querySelector('a-scene');
+        //     var splash = document.querySelector('#splash');
+        //     scene.addEventListener('DOMCOntentLoaded', function (e) {
+        //         console.log('LOADED!!!!!!________________________________________________________')
+        //         splash.remove();
+        //     });
+        // });
         return (
             <div>
                 <div id='splash'>

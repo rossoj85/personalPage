@@ -21,14 +21,6 @@ export default class VRVangogh extends Component{
           const paintings=arrayOfArt;
           var snowyGround= '/photos/snowyground.jpg';
           console.log(paintings)
-          document.addEventListener('DOMContentLoaded', function() {
-            var scene = document.querySelector('a-scene');
-            var splash = document.querySelector('#splash');
-            scene.addEventListener('loaded', function (e) {
-                console.log('LOADED!!!!!!________________________________________________________')
-                splash.remove();
-            });
-          });
 
             return(
               //Loading Screen
