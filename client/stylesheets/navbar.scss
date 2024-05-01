@@ -55,7 +55,7 @@
     float: right;
     text-align: center;
     list-style-type: none;
-    color: $color;
+    color: $color !important;
     border: 2px solid $color;
     background-color: transparent;
     &:active, &:hover, &:target{
@@ -73,9 +73,42 @@
     margin-right: 3px	
 }
 
-.navbarClear{
-@include navbarConstructor(black, transparent );
+// .navbarClear{
+// @include navbarConstructor(black, transparent );
+
+// }
+
+.navbarClear {
+    color: #000;
+    margin-bottom: 0px;
+    border-bottom: none;
+    background: rgba(0,0,0,0);
+    transition: background-color 1s;
 }
+
+.navbarClear>.container {
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    margin-left: -15px;
+}
+.navbarClear .abtn {
+    width: 79px;
+    margin: 20px 20px 0px 5px;
+    padding: 8px 15px;
+    font-size: 12px;
+    float: right;
+    text-align: center;
+    list-style-type: none;
+    color: black !important;
+    border: 2px solid #000;
+    background-color: rgba(0,0,0,0);
+}
+.navbarClear h3 {
+    font-size: 22px;
+    color: #000;
+}
+
 .navbarColored{
     @include navbarConstructor(white, black);
 }
