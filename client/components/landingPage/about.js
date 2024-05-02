@@ -66,7 +66,7 @@ export default class About extends Component{
                             Just as learning foreign languages brought me to new places, expanded my horizons and broadened my concept of the world, 
                             so has learning computer code. Since I started my first gig working as a React developer, my craft has brought me to new 
                             cities, helped me to make new and lasting friendships, and saw me collaborating with an array of people and organizations; 
-                            from some of the largest companies in the world, to small local businesses and start-up. <br/>
+                            from some of the largest companies in the world, to small local businesses and start-ups. <br/>
                             <br/>
                             I strive everyday to constantly improve, create amazing things, collaborate with great people and push the boundaries of what is possible. 
                             </p> 

@@ -8,7 +8,7 @@ export default function sketch (p) {
     console.log("THIS IS P",p)
     console.log(p.random)
     console.log("Raindrop Object",RainDrop)
-    var width = document.getElementById('sceneWrapper').offsetWidth;
+    // var width = document.getElementById('sceneWrapper').offsetWidth;
     // console.log(width)
     let rainDrops = []
   
@@ -22,7 +22,8 @@ export default function sketch (p) {
   
   
     p.draw = function () {
-      p.background(230, 230, 250);
+      // p.background(230, 230, 250);
+      p.background(162, 162, 245);
       for (var i= 0; i<rainDrops.length;i++){
         rainDrops[i].show()
         rainDrops[i].fall()

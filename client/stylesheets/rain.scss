@@ -1,37 +1,90 @@
+
+
+.rainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+ 
+  h1{
+    text-align: center;
+  }
+}
+@media (min-width: 740px) {
+  .rainContainer {
+      margin-top: 100px;
+  }
+}
+
 #sceneWrapper{
     position: relative;  
 }
 
-#frame{
+.frameWrapper{
     z-index: 99;
     position: relative;
+    width: 80vw;
+    max-width: 825px;
+    
+}
+
+.frame{
+    z-index: 99;
+    position: relative;
+    width: 80vw;
+    max-width: 825px;
+    
   }
-  //this is the rain background
- #sceneWrapper #defaultCanvas0{
-   margin-top: -520px;
-   margin-bottom: 80px;
-   // margin-left: 60px;
-   width: 700px !important;
-   height: 420px !important;
-   position: relative;
- }
- 
- #cityScape{
-   width: 600px;
-   margin-bottom: 150px;
-   margin-top: -273px;
-   // margin-left: 100px;
-   z-index: 50;
-   position: relative;
- }
- 
- 
- #rainVariation {
-   // display: inline;
- }
- .rainPlace{
-   display: inline;
- }
- #rainVariation h2:hover{
-   cursor: pointer;
- }
+
+.frameWrapperChild{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 91%;
+  height: 85%;
+  background: yellow;
+}
+
+.rainContainer #defaultCanvas0{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 91% !important;
+  height: 85% !important;
+}
+
+.cityScape {
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  height: 35%;
+}
+
+.rainControls {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  text-align: center;
+}
+
+.citySelect, .rainType {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
