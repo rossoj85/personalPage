@@ -5546,12 +5546,12 @@ module.exports = exports['default'];
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var deer = exports.deer = "/paintings/deer.jpg";
-var fuji = exports.fuji = "/paintings/fuji.jpg";
-var memory = exports.memory = "/paintings/memory.jpg";
-var monaLisa = exports.monaLisa = "/paintings/mona-lisa.jpg";
-var skull = exports.skull = "/paintings/skull.jpg";
-var stars = exports.stars = "/paintings/stars.jpg";
+var deer = exports.deer = "paintings/deer.jpg";
+var fuji = exports.fuji = "paintings/fuji.jpg";
+var memory = exports.memory = "paintings/memory.jpg";
+var monaLisa = exports.monaLisa = "paintings/mona-lisa.jpg";
+var skull = exports.skull = "paintings/skull.jpg";
+var stars = exports.stars = "paintings/stars.jpg";
 
 var arrayOfArt = exports.arrayOfArt = [deer, fuji, memory, monaLisa, skull, stars];
 
@@ -138686,8 +138686,8 @@ var uShop = exports.uShop = { name: 'U-Shop',
 
 var jsAcademy = exports.jsAcademy = { name: 'Academy of Javascript',
     description: 'My first major project at bootcamp. Academy of Javascript is a create, read, update and destroy (CRUD) appliction. The app is used to keep track of student and campus information at the fictional "Interplanetary Academy Of Javascript." Data is stored in a PostgresQL data base that users interact with through a React front-end and node/express backend.',
-    img: '/photos/planetIcon.png',
-    thumbs: ['/photos/jsAcademy1.png', '/photos/jsAcademy2.png', '/photos/jsAcademy3.png'],
+    img: 'photos/planetIcon.png',
+    thumbs: ['photos/jsAcademy1.png', 'photos/jsAcademy2.png', 'photos/jsAcademy3.png'],
     technologies: [react, nodeEx, postgres],
     github: 'https://github.com/rossoj85/senior-enrichment',
     site: 'https://javascript-academy.herokuapp.com'
@@ -138695,21 +138695,21 @@ var jsAcademy = exports.jsAcademy = { name: 'Academy of Javascript',
     //VISUAL ART
 };var vaporWave = exports.vaporWave = { name: 'Vaporwave',
     description: "A trip back into the 80's...",
-    img: '/photos/vaporwave.png',
+    img: 'photos/vaporwave.png',
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: 'projects/vaporwave'
 };
 var rain = exports.rain = { name: 'RAiN',
     description: "An experimental rain effect produced in P5.js with CSS layering",
-    img: "/photos/rain.jpg",
+    img: "photos/rain.jpg",
     technologies: [p5, css],
     enterBtn: true,
     btnLink: '/projects/rain'
 };
 var theDesert = exports.theDesert = { name: "The Desert",
     description: "A Dali-inspired 3D virtual reality scene built for V-aRt",
-    img: "/photos/theDesert.png",
+    img: "photos/theDesert.png",
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: '/projects/theDesert'
@@ -139030,11 +139030,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //dsfsa
 //scenery
 // const newYork = "https://bagelbrothersofny.com/wp-content/uploads/2016/02/skyline.png"
-var newYork = "/photos/New-York-Skyline.png";
+var newYork = "photos/New-York-Skyline.png";
 var london = "http://i.imgur.com/utq4e4V.png";
 
-var prague = "/photos/prague.jpg";
-var neonMetropolis = "/photos/neonMetropolis.jpg";
+var prague = "photos/prague.jpg";
+var neonMetropolis = "photos/neonMetropolis.jpg";
 
 var RainPage = function (_Component) {
     _inherits(RainPage, _Component);
@@ -139073,7 +139073,7 @@ var RainPage = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'frameWrapper' },
-                    _react2.default.createElement('img', { src: '/photos/longArtFrame.png', className: 'frame' }),
+                    _react2.default.createElement('img', { src: 'photos/longArtFrame.png', className: 'frame' }),
                     _react2.default.createElement(_reactP5Wrapper2.default, { id: 'rainWindow', className: 'frameWrapperChild', sketch: this.state.rainType }),
                     _react2.default.createElement('img', { src: this.state.city, className: 'cityScape' })
                 ),
@@ -139143,7 +139143,7 @@ var RainPage = function (_Component) {
 /*
            <div style={{margin:'auto'}}>
               <h1 >RaiN</h1>
-              <img src='/photos/longArtFrame.png' id="frame"/>
+              <img src='photos/longArtFrame.png' id="frame"/>
            
               <div id="sceneWrapper">
        
@@ -154492,7 +154492,7 @@ exports = module.exports = __webpack_require__(372)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway);", ""]);
 
 // module
-exports.push([module.i, ".navbarColored .abtn:active,.navbarColored .abtn:hover,.navbarColored .abtn:target,.navbarClear .abtn:active,.navbarClear .abtn:hover,.navbarClear .abtn:target{outline:0;color:red;border:2px solid red;cursor:pointer;box-shadow:0 0 5px red;text-decoration:none}.logo{height:80px;width:80px;float:left;margin-right:3px}.navbarClear{color:#000;margin-bottom:0px;border-bottom:none;background:rgba(0,0,0,0);transition:background-color 1s}.navbarClear>.container{margin:0px;width:100%;background-color:rgba(0,0,0,0)}.navbarClear h3{font-size:22px;color:#000}@media(max-width: 375px){.navbarClear h3{display:inline}}.navbarClear>.navContainer{margin:0px;width:100%;background-color:rgba(0,0,0,0);margin-left:-15px}.navbarClear .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#000 !important;border:2px solid #000;background-color:rgba(0,0,0,0)}.navbarClear .abtn:focus{outline:none}.navbarClear a{text-decoration:none;cursor:pointer}.navbarClear a h3:hover{color:red}#navbar .navbar-right{margin:0px;position:relative;top:-5px}@media(max-width: 767px){#navbar .navbar-right{width:100%}.navbarClear h3{width:83%;padding-top:10px}}.navbar-text{position:absolute;top:50px;left:50%;transform:translateX(-50%);text-align:center;background-color:gray;border-radius:10px;padding:20px;color:#fff !important;transition:opacity 3s ease-in-out}.icon-bar{background-color:#000 !important}.navbarColored .icon-bar{background:#fff !important}.navbarClear{color:#000;margin-bottom:0px;border-bottom:none;background:rgba(0,0,0,0);transition:background-color 1s}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form{border:none}.navbarClear>.container{width:100%;background-color:rgba(0,0,0,0)}.navbarClear .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#000 !important;border:2px solid #000;background-color:rgba(0,0,0,0)}.navbarClear h3{font-size:22px;color:#000}.navbarColored{color:#fff;margin-bottom:0px;border-bottom:none;background:#000;transition:background-color 1s}.navbarColored>.container{margin:0px;width:100%;background-color:rgba(0,0,0,0)}.navbarColored h3{font-size:22px;color:#fff}@media(max-width: 375px){.navbarColored h3{display:inline}}.navbarColored>.navContainer{margin:0px;width:100%;background-color:rgba(0,0,0,0);margin-left:-15px}.navbarColored .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#fff !important;border:2px solid #fff;background-color:rgba(0,0,0,0)}.navbarColored .abtn:focus{outline:none}.navbarColored a{text-decoration:none;cursor:pointer}.navbarColored a h3:hover{color:red}.nav{margin-bottom:-20px}@media(max-width: 767px){.nav{margin-left:80px}}.nav li{margin:-10px 5px !important}div.navbar-collapse.collapse.in{height:100px;border-top:1px solid #000}.navbar-toggle{float:right;padding:9px 10px;margin-right:15px;margin-bottom:8px;background-color:rgba(0,0,0,0);background-image:none;border:1px solid rgba(0,0,0,0);border-radius:4px;position:absolute;top:10px;right:3px}.navbar-toggle:hover{background-color:rgba(0,0,0,0) !important}.activeNavButton{color:green !important}element.style{margin:0px;width:100%}@media(min-width: 767px){.navbar .container{padding:0px}.navbar h3{padding-top:10px}}.nav{display:inline-block;width:auto}.nav li{width:100px;margin:0px 5px}.descriptors a{text-decoration:none}.descriptors a:hover{text-shadow:0 0 5px red}.jumbotron{height:80vh;background-image:url(/photos/midtown.jpg);background-position:50% 30%;background-size:cover;margin-bottom:0}.border{background-color:#000;height:50px}#bio{text-align:center;min-height:100vh;height:fit-content}#bio #textBox{position:absolute;min-height:100vh;height:fit-content;background:#000}@media(min-width: 375px){#bio #textBox p{font-size:16px;padding:0 15px}}@media(max-width: 412px){#bio #textBox{padding:0 5%}}@media(min-width: 540px){#bio #textBox{margin:0 20%}}@media(min-width: 992px){#bio #textBox{margin:0 25%}#bio #textBox h2{font-size:34px}}@media(min-width: 1600px){#bio #textBox p{font-size:22px}}@media(min-width: 1600px){#bio #textBox p{font-size:22px}}#bio #defaultCanvas0{position:absolute;display:block}#bio #headshot{border-radius:50%;width:35%;height:auto}#parallax{width:100%;background-image:url(\"/photos/zenBanner.jpg\");height:475px;background-attachment:fixed;background-position:top;background-size:cover}@media(max-device-width: 1024px)and (min-device-width: 320px)and (-webkit-min-device-pixel-ratio: 1){#parallax{background-attachment:scroll}}.zen{width:100%}.skills{background-color:#000;padding:0 5%;text-align:center}.skills span{font-size:1.05em}.skills .node-color{color:#6cc24a}.skills .react-color{color:#00d8ff}.skills .express-color{color:#9f8cda}.skills .psql-color{color:#316192}.skills .nerd-stack{letter-spacing:.1em}.skills .nerd-stack span{font-size:1.25em}.skills .nerd-stack img{width:80%}@media(max-width: 415px){.skills .nerd-stack img{width:100%;margin:30px auto 30px auto}}.skills .skills{color:red}.skills .skills-intro{padding:1em 0 1em 0}.skills .neonSign{display:inline-block;border:1px solid #1086e8;padding:5px;border-radius:5px;animation:border-flicker 2s linear infinite;color:#ff00e6}.skills .languages-border{position:absolute;left:0;bottom:0;width:20%;border-bottom:1px solid}.skills .languages h2{margin:0 -15px;padding:1em 0;position:relative;text-align:left}.skills .languages img{height:64px;width:63.99px}.skills .frameworks-border{position:absolute;right:0;bottom:0;width:20%;border-bottom:1px solid}.skills .frameworks h2{margin:0 -15px;padding:1em 0;position:relative;text-align:right}.skills .frameworks img{height:64px;width:63.99px}.skills .skill-logo{display:flex;justify-content:center;align-items:center;margin:6px 18px}.skills .skill-logo img{transition:all .3s ease-in-out}.skills .skill-logo img:hover{transform:scale(1.2)}.skills .skill-row{display:flex;align-items:center}.skills .skill-name{padding:0 .3em}.skills .skill-percent-left{position:absolute;left:.3em;color:#000}.skills .skill-percent-right{position:absolute;right:.3em;color:#000}.skills .skill-bar-container{background-color:gray;padding:0}.skills .skill-bar{color:#fff;background-color:#6cc24a}.skills .skill-js,.skills .skill-html,.skills .skill-css,.skills .skill-sql,.skills .skill-rails{text-align:right;float:right}.skills .skill-react,.skills .skill-redux,.skills .skill-express,.skills .skill-sequelize,.skills .skill-jquery{text-align:left;float:left}.skills .skill-js{width:80%}.skills .skill-html{width:90%}.skills .skill-css{width:90%}.skills .skill-sql{width:60%}.skills .skill-rails{width:50%}.skills .skill-react{width:90%}.skills .skill-redux{width:80%}.skills .skill-express{width:70%}.skills .skill-sequelize{width:70%}.skills .skill-jquery{width:60%}.skills .tools div{text-align:left}.skills .tools h3{margin:1em -15px}.skills .tools .tool-row{display:flex;align-items:center}.skills .tools .tool-logo{display:flex;justify-content:flex-start;align-items:center;padding:0}.skills .tools .tool-logo img{height:32px;margin:.5em;transition:all .3s ease-in-out}.skills .tools .tool-logo img:hover{transform:scale(1.3)}.skills .tools .github-color{color:purple}.skills .tools .heroku-color{color:#430098}.skills .tools .chrome-dev-color{color:#3680f7}.skills .tools .react-dev-color{color:#00d8ff}.skills .tools .postman-color{color:#ff931e}.skills .tools .webpack-color{color:#0052cf}.skills .tools .electron-color{color:#0052cf}.skills .tools .socketio-color{color:#fff}.skills .auxiliary div{text-align:left}.skills .auxiliary h3{margin:1em -15px}.skills .auxiliary h4{margin:.5em;padding:0}.skills .auxiliary h1{margin:.5em 0}.skills .auxiliary .auxiliary-row{display:flex;align-items:center}body{background-color:#000}.neon div{text-align:center;position:absolute;border:5px solid #1086e8;width:300px;top:150px;border-radius:20px;left:50%;margin:-50px 0 0 -150px;animation:border-flicker 2s linear infinite}.neon h1,.neon h2,.neon h3{color:#ff00e6;font-family:\"Raleway\",sans-serif;font-size:64px;letter-spacing:10px;animation:text-flicker 3s linear infinite}.neon #offset{animation:letter-flicker 2s linear infinite}@keyframes text-flicker{0%{opacity:.1;text-shadow:0px 0px 29px #f21616}2%{opacity:1;text-shadow:0px 0px 29px #f21616}8%{opacity:.1;text-shadow:0px 0px 29px #f21616}9%{opacity:1;text-shadow:0px 0px 29px #f21616}12%{opacity:.1;text-shadow:0px 0px #f21616}20%{opacity:1;text-shadow:0px 0px 29px #f21616}25%{opacity:.3;text-shadow:0px 0px 29px #f21616}30%{opacity:1;text-shadow:0px 0px 29px #f21616}70%{opacity:.7;text-shadow:0px 0px 29px #f21616}72%{opacity:.2;text-shadow:0px 0px 29px #f21616}77%{opacity:.9;text-shadow:0px 0px 29px #f21616}100%{opacity:.9;text-shadow:0px 0px 29px #f21616}}@keyframes border-flicker{0%{opacity:.1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}2%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}4%{opacity:.1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}8%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}70%{opacity:.7;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}100%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}}@keyframes letter-flicker{0%{opacity:.1;text-shadow:0px 0px 29px #f21616}2%{opacity:.1;text-shadow:0px 0px 29px #f21616}4%{opacity:1;text-shadow:0px 0px 29px #f21616}19%{opacity:1;text-shadow:0px 0px 29px #f21616}21%{opacity:.1;text-shadow:0px 0px 29px #f21616}23%{opacity:1;text-shadow:0px 0px 29px #f21616}80%{opacity:1;text-shadow:0px 0px 29px #f21616}83%{opacity:.4;text-shadow:0px 0px 29px #f21616}87%{opacity:1;text-shadow:0px 0px 29px #f21616}}.footer{text-align:center}.footer img{cursor:pointer}.footer-title{text-transform:uppercase;letter-spacing:.25em;font-size:2.5em;margin-top:0;margin-bottom:1rem}.nav-footer{display:block;opacity:1;transition:all .6s ease;width:fit-content;margin:0 auto 0 auto;padding:0 1em}.nav-footer:hover .nav-link-footer{opacity:.5;transform:translateY(6px);transition:.6s}.nav-footer #designedLine{margin-left:1.5em}.nav-footer .nav-link-footer{display:inline-block;position:relative;padding:6px 6px;height:36px;width:36px;margin:0 3px;transition:.6s}.nav-footer .nav-link-github:hover{opacity:1;transform:scale(1.15);background-color:#81047e;border-radius:50%;transition:.6s}.nav-footer .nav-link-github .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-github .hover-link{opacity:1;transition:.6s}.nav-footer .nav-link-linkedin:hover{opacity:1;transform:scale(1.15);background-color:#0079b3;border-radius:50%;transition:.6s}.nav-footer .nav-link-linkedin .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-linkedin .hover-link{opacity:1;transition:.6s}.nav-footer .nav-link-mail:hover{opacity:1;transform:scale(1.15);background-color:maroon;border-radius:50%;transition:.6s}.nav-footer .nav-link-mail .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-mail .hover-link{opacity:1;transition:.6s}.footlogo{height:80px;width:80px;border:1px solid #fff;margin-top:10px}.projectsJumbotron{height:800px;background:-webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);background:linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);background-position:50% 47%;background-size:cover;background-attachment:fixed;margin-bottom:0}@media(max-width: 433px){.projectsJumbotron{background-position:30% 47%}}@media(max-device-width: 1024px)and (min-device-width: 320px)and (-webkit-min-device-pixel-ratio: 1){.projectsJumbotron{background-attachment:scroll}}#projectsBody{margin-top:-650px;margin-bottom:500px}@media(max-width: 767px){#projectsBody{margin-top:-750px}}div.panel.panel-default{background:rgba(0,0,0,0) !important}div.panel-heading{color:red !important;background:rgba(0,0,0,0) !important;text-align:center}h4.panel-title{font-size:24px}.panel,.panel-group .panel-heading+.panel-collapse>.panel-body{border:none;border-bottom:1px #fff solid}.panel-title>a:hover{text-decoration:none;cursor:pointer}.col-md-7 .media-body{padding-left:25px}.tileContainer{display:flex;flex-direction:row;flex-wrap:wrap}.appTile{text-align:center;margin:auto;display:flex;flex-direction:column}.appTile:hover{cursor:pointer;color:red}.appThumb{height:200px;width:200px;background-color:#000;border-radius:10px}@media(max-width: 433px){.appThumb{height:150px;width:150px}}#splash{display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:100%}#splash h2{font-size:1.5em}@media(max-width: 600px){#splash h2{font-size:1em}}#splash .loading{width:50%;max-width:200px}.modal-content{background:rgba(51,51,51,.9)}.modal-content span{color:#fff;font-size:30px}@media(max-width: 415px){.modal-content .appThumb{display:none}}.modal-content .screenshots{width:180px;height:120px;margin:5px 20px 20px 0px;border:3px solid #000}@media(max-width: 992px){.modal-content .screenshots{width:42%;height:auto}}.modal-content .media-heading{font-size:36px;text-decoration:underline;margin-bottom:10px}.modal-content .media-body p{font-size:18px}.modal-content h3,h4{text-decoration:underline}.screenshots{width:180px;height:120px;margin:5px 20px 20px 0px;border:3px solid #000}.screenshots :hover{cursor:pointer}.techImg{width:90px;height:90px;margin:5px 15px 20px 0px;background:#000}@media(max-width: 433px){.techImg{width:80px;height:80px}}#modalA:hover{cursor:pointer;color:red}.fade.in.modal{transition:opacity 1s linear}.aboutImg{height:200px;width:200px;margin:100px 50px}.aboutImg2{height:230px;width:100px 50px;margin:100px 50px}.rainContainer{display:flex;flex-direction:column;justify-content:center;height:100vh;align-items:center}.rainContainer h1{text-align:center}@media(min-width: 740px){.rainContainer{margin-top:100px}}#sceneWrapper{position:relative}.frameWrapper{z-index:99;position:relative;width:80vw;max-width:825px}.frame{z-index:99;position:relative;width:80vw;max-width:825px}.frameWrapperChild{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:91%;height:85%;background:#ff0}.rainContainer #defaultCanvas0{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:91% !important;height:85% !important}.cityScape{position:absolute;bottom:17%;left:50%;transform:translateX(-50%);width:94%;height:35%}.rainControls{display:flex;justify-content:space-between;width:80vw;text-align:center}.citySelect,.rainType{flex:1;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}h3{cursor:pointer;display:block;width:fit-content;margin:auto}#golBoard{margin:0 auto;margin-bottom:30px}#golBoard td{border:1px solid gray;width:18px;height:18px}td.alive{background-color:#adff2f}td.dead{background-color:#000}#control_panel{margin:10px auto;text-align:center}#control_panel button{margin:0px 3px}#tableSetup{text-align:center}#tableSetup input{margin:10px 5px}input{color:#000}html{height:100%}#mainView{background-color:#000;position:relative;height:100%}#pageTheme{background-color:#000;color:#fff;font-family:Jura;position:relative;min-height:100%}.example-appear{opacity:.1;background:#000;z-index:99;width:100%;height:100%}.example-appear.example-appear-active{opacity:1;transition:opacity 1s ease-in}#innerRouteMainBody{min-height:100vh;overflow:hidden;display:block;position:relative}", ""]);
+exports.push([module.i, ".navbarColored .abtn:active,.navbarColored .abtn:hover,.navbarColored .abtn:target,.navbarClear .abtn:active,.navbarClear .abtn:hover,.navbarClear .abtn:target{outline:0;color:red;border:2px solid red;cursor:pointer;box-shadow:0 0 5px red;text-decoration:none}.logo{height:80px;width:80px;float:left;margin-right:3px}.navbarClear{color:#000;margin-bottom:0px;border-bottom:none;background:rgba(0,0,0,0);transition:background-color 1s}.navbarClear>.container{margin:0px;width:100%;background-color:rgba(0,0,0,0)}.navbarClear h3{font-size:22px;color:#000}@media(max-width: 375px){.navbarClear h3{display:inline}}.navbarClear>.navContainer{margin:0px;width:100%;background-color:rgba(0,0,0,0);margin-left:-15px}.navbarClear .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#000 !important;border:2px solid #000;background-color:rgba(0,0,0,0)}.navbarClear .abtn:focus{outline:none}.navbarClear a{text-decoration:none;cursor:pointer}.navbarClear a h3:hover{color:red}#navbar .navbar-right{margin:0px;position:relative;top:-5px}@media(max-width: 767px){#navbar .navbar-right{width:100%}.navbarClear h3{width:83%;padding-top:10px}}.navbar-text{position:absolute;top:50px;left:50%;transform:translateX(-50%);text-align:center;background-color:gray;border-radius:10px;padding:20px;color:#fff !important;transition:opacity 3s ease-in-out}.icon-bar{background-color:#000 !important}.navbarColored .icon-bar{background:#fff !important}.navbarClear{color:#000;margin-bottom:0px;border-bottom:none;background:rgba(0,0,0,0);transition:background-color 1s}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form{border:none}.navbarClear>.container{width:100%;background-color:rgba(0,0,0,0)}.navbarClear .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#000 !important;border:2px solid #000;background-color:rgba(0,0,0,0)}.navbarClear h3{font-size:22px;color:#000}.navbarColored{color:#fff;margin-bottom:0px;border-bottom:none;background:#000;transition:background-color 1s}.navbarColored>.container{margin:0px;width:100%;background-color:rgba(0,0,0,0)}.navbarColored h3{font-size:22px;color:#fff}@media(max-width: 375px){.navbarColored h3{display:inline}}.navbarColored>.navContainer{margin:0px;width:100%;background-color:rgba(0,0,0,0);margin-left:-15px}.navbarColored .abtn{width:79px;margin:20px 20px 0px 5px;padding:8px 15px;font-size:12px;float:right;text-align:center;list-style-type:none;color:#fff !important;border:2px solid #fff;background-color:rgba(0,0,0,0)}.navbarColored .abtn:focus{outline:none}.navbarColored a{text-decoration:none;cursor:pointer}.navbarColored a h3:hover{color:red}.nav{margin-bottom:-20px}@media(max-width: 767px){.nav{margin-left:80px}}.nav li{margin:-10px 5px !important}div.navbar-collapse.collapse.in{height:100px;border-top:1px solid #000}.navbar-toggle{float:right;padding:9px 10px;margin-right:15px;margin-bottom:8px;background-color:rgba(0,0,0,0);background-image:none;border:1px solid rgba(0,0,0,0);border-radius:4px;position:absolute;top:10px;right:3px}.navbar-toggle:hover{background-color:rgba(0,0,0,0) !important}.activeNavButton{color:green !important}element.style{margin:0px;width:100%}@media(min-width: 767px){.navbar .container{padding:0px}.navbar h3{padding-top:10px}}.nav{display:inline-block;width:auto}.nav li{width:100px;margin:0px 5px}.descriptors a{text-decoration:none}.descriptors a:hover{text-shadow:0 0 5px red}.jumbotron{height:80vh;background-image:url(/photos/midtown.jpg);background-position:50% 30%;background-size:cover;margin-bottom:0}.border{background-color:#000;height:50px}#bio{text-align:center;min-height:100vh;height:fit-content}#bio #textBox{position:absolute;min-height:100vh;height:fit-content;background:#000}@media(min-width: 375px){#bio #textBox p{font-size:16px;padding:0 15px}}@media(max-width: 412px){#bio #textBox{padding:0 5%}}@media(min-width: 540px){#bio #textBox{margin:0 20%}}@media(min-width: 992px){#bio #textBox{margin:0 25%}#bio #textBox h2{font-size:34px}}@media(min-width: 1600px){#bio #textBox p{font-size:22px}}@media(min-width: 1600px){#bio #textBox p{font-size:22px}}#bio #defaultCanvas0{position:absolute;display:block}#bio #headshot{border-radius:50%;width:35%;height:auto}#parallax{width:100%;background-image:url(\"photos/zenBanner.jpg\");height:475px;background-attachment:fixed;background-position:top;background-size:cover}@media(max-device-width: 1024px)and (min-device-width: 320px)and (-webkit-min-device-pixel-ratio: 1){#parallax{background-attachment:scroll}}.zen{width:100%}.skills{background-color:#000;padding:0 5%;text-align:center}.skills span{font-size:1.05em}.skills .node-color{color:#6cc24a}.skills .react-color{color:#00d8ff}.skills .express-color{color:#9f8cda}.skills .psql-color{color:#316192}.skills .nerd-stack{letter-spacing:.1em}.skills .nerd-stack span{font-size:1.25em}.skills .nerd-stack img{width:80%}@media(max-width: 415px){.skills .nerd-stack img{width:100%;margin:30px auto 30px auto}}.skills .skills{color:red}.skills .skills-intro{padding:1em 0 1em 0}.skills .neonSign{display:inline-block;border:1px solid #1086e8;padding:5px;border-radius:5px;animation:border-flicker 2s linear infinite;color:#ff00e6}.skills .languages-border{position:absolute;left:0;bottom:0;width:20%;border-bottom:1px solid}.skills .languages h2{margin:0 -15px;padding:1em 0;position:relative;text-align:left}.skills .languages img{height:64px;width:63.99px}.skills .frameworks-border{position:absolute;right:0;bottom:0;width:20%;border-bottom:1px solid}.skills .frameworks h2{margin:0 -15px;padding:1em 0;position:relative;text-align:right}.skills .frameworks img{height:64px;width:63.99px}.skills .skill-logo{display:flex;justify-content:center;align-items:center;margin:6px 18px}.skills .skill-logo img{transition:all .3s ease-in-out}.skills .skill-logo img:hover{transform:scale(1.2)}.skills .skill-row{display:flex;align-items:center}.skills .skill-name{padding:0 .3em}.skills .skill-percent-left{position:absolute;left:.3em;color:#000}.skills .skill-percent-right{position:absolute;right:.3em;color:#000}.skills .skill-bar-container{background-color:gray;padding:0}.skills .skill-bar{color:#fff;background-color:#6cc24a}.skills .skill-js,.skills .skill-html,.skills .skill-css,.skills .skill-sql,.skills .skill-rails{text-align:right;float:right}.skills .skill-react,.skills .skill-redux,.skills .skill-express,.skills .skill-sequelize,.skills .skill-jquery{text-align:left;float:left}.skills .skill-js{width:80%}.skills .skill-html{width:90%}.skills .skill-css{width:90%}.skills .skill-sql{width:60%}.skills .skill-rails{width:50%}.skills .skill-react{width:90%}.skills .skill-redux{width:80%}.skills .skill-express{width:70%}.skills .skill-sequelize{width:70%}.skills .skill-jquery{width:60%}.skills .tools div{text-align:left}.skills .tools h3{margin:1em -15px}.skills .tools .tool-row{display:flex;align-items:center}.skills .tools .tool-logo{display:flex;justify-content:flex-start;align-items:center;padding:0}.skills .tools .tool-logo img{height:32px;margin:.5em;transition:all .3s ease-in-out}.skills .tools .tool-logo img:hover{transform:scale(1.3)}.skills .tools .github-color{color:purple}.skills .tools .heroku-color{color:#430098}.skills .tools .chrome-dev-color{color:#3680f7}.skills .tools .react-dev-color{color:#00d8ff}.skills .tools .postman-color{color:#ff931e}.skills .tools .webpack-color{color:#0052cf}.skills .tools .electron-color{color:#0052cf}.skills .tools .socketio-color{color:#fff}.skills .auxiliary div{text-align:left}.skills .auxiliary h3{margin:1em -15px}.skills .auxiliary h4{margin:.5em;padding:0}.skills .auxiliary h1{margin:.5em 0}.skills .auxiliary .auxiliary-row{display:flex;align-items:center}body{background-color:#000}.neon div{text-align:center;position:absolute;border:5px solid #1086e8;width:300px;top:150px;border-radius:20px;left:50%;margin:-50px 0 0 -150px;animation:border-flicker 2s linear infinite}.neon h1,.neon h2,.neon h3{color:#ff00e6;font-family:\"Raleway\",sans-serif;font-size:64px;letter-spacing:10px;animation:text-flicker 3s linear infinite}.neon #offset{animation:letter-flicker 2s linear infinite}@keyframes text-flicker{0%{opacity:.1;text-shadow:0px 0px 29px #f21616}2%{opacity:1;text-shadow:0px 0px 29px #f21616}8%{opacity:.1;text-shadow:0px 0px 29px #f21616}9%{opacity:1;text-shadow:0px 0px 29px #f21616}12%{opacity:.1;text-shadow:0px 0px #f21616}20%{opacity:1;text-shadow:0px 0px 29px #f21616}25%{opacity:.3;text-shadow:0px 0px 29px #f21616}30%{opacity:1;text-shadow:0px 0px 29px #f21616}70%{opacity:.7;text-shadow:0px 0px 29px #f21616}72%{opacity:.2;text-shadow:0px 0px 29px #f21616}77%{opacity:.9;text-shadow:0px 0px 29px #f21616}100%{opacity:.9;text-shadow:0px 0px 29px #f21616}}@keyframes border-flicker{0%{opacity:.1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}2%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}4%{opacity:.1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}8%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}70%{opacity:.7;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}100%{opacity:1;-webkit-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);-moz-box-shadow:0px 0px 78px 4px rgba(16,134,232,.73);box-shadow:0px 0px 78px 4px rgba(16,134,232,.73)}}@keyframes letter-flicker{0%{opacity:.1;text-shadow:0px 0px 29px #f21616}2%{opacity:.1;text-shadow:0px 0px 29px #f21616}4%{opacity:1;text-shadow:0px 0px 29px #f21616}19%{opacity:1;text-shadow:0px 0px 29px #f21616}21%{opacity:.1;text-shadow:0px 0px 29px #f21616}23%{opacity:1;text-shadow:0px 0px 29px #f21616}80%{opacity:1;text-shadow:0px 0px 29px #f21616}83%{opacity:.4;text-shadow:0px 0px 29px #f21616}87%{opacity:1;text-shadow:0px 0px 29px #f21616}}.footer{text-align:center}.footer img{cursor:pointer}.footer-title{text-transform:uppercase;letter-spacing:.25em;font-size:2.5em;margin-top:0;margin-bottom:1rem}.nav-footer{display:block;opacity:1;transition:all .6s ease;width:fit-content;margin:0 auto 0 auto;padding:0 1em}.nav-footer:hover .nav-link-footer{opacity:.5;transform:translateY(6px);transition:.6s}.nav-footer #designedLine{margin-left:1.5em}.nav-footer .nav-link-footer{display:inline-block;position:relative;padding:6px 6px;height:36px;width:36px;margin:0 3px;transition:.6s}.nav-footer .nav-link-github:hover{opacity:1;transform:scale(1.15);background-color:#81047e;border-radius:50%;transition:.6s}.nav-footer .nav-link-github .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-github .hover-link{opacity:1;transition:.6s}.nav-footer .nav-link-linkedin:hover{opacity:1;transform:scale(1.15);background-color:#0079b3;border-radius:50%;transition:.6s}.nav-footer .nav-link-linkedin .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-linkedin .hover-link{opacity:1;transition:.6s}.nav-footer .nav-link-mail:hover{opacity:1;transform:scale(1.15);background-color:maroon;border-radius:50%;transition:.6s}.nav-footer .nav-link-mail .default-link{position:absolute;top:6px;left:6px;opacity:0}.nav-footer .nav-link-mail .hover-link{opacity:1;transition:.6s}.footlogo{height:80px;width:80px;border:1px solid #fff;margin-top:10px}.projectsJumbotron{height:800px;background:-webkit-linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);background:linear-gradient(to right, rgba(7, 0, 0, 0.8), rgba(76, 0, 1, 0.8), rgba(7, 0, 0, 0.8)),url(/photos/midtown.jpg);background-position:50% 47%;background-size:cover;background-attachment:fixed;margin-bottom:0}@media(max-width: 433px){.projectsJumbotron{background-position:30% 47%}}@media(max-device-width: 1024px)and (min-device-width: 320px)and (-webkit-min-device-pixel-ratio: 1){.projectsJumbotron{background-attachment:scroll}}#projectsBody{margin-top:-650px;margin-bottom:500px}@media(max-width: 767px){#projectsBody{margin-top:-750px}}div.panel.panel-default{background:rgba(0,0,0,0) !important}div.panel-heading{color:red !important;background:rgba(0,0,0,0) !important;text-align:center}h4.panel-title{font-size:24px}.panel,.panel-group .panel-heading+.panel-collapse>.panel-body{border:none;border-bottom:1px #fff solid}.panel-title>a:hover{text-decoration:none;cursor:pointer}.col-md-7 .media-body{padding-left:25px}.tileContainer{display:flex;flex-direction:row;flex-wrap:wrap}.appTile{text-align:center;margin:auto;display:flex;flex-direction:column}.appTile:hover{cursor:pointer;color:red}.appThumb{height:200px;width:200px;background-color:#000;border-radius:10px}@media(max-width: 433px){.appThumb{height:150px;width:150px}}#splash{display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:100%}#splash h2{font-size:1.5em}@media(max-width: 600px){#splash h2{font-size:1em}}#splash .loading{width:50%;max-width:200px}.modal-content{background:rgba(51,51,51,.9)}.modal-content span{color:#fff;font-size:30px}@media(max-width: 415px){.modal-content .appThumb{display:none}}.modal-content .screenshots{width:180px;height:120px;margin:5px 20px 20px 0px;border:3px solid #000}@media(max-width: 992px){.modal-content .screenshots{width:42%;height:auto}}.modal-content .media-heading{font-size:36px;text-decoration:underline;margin-bottom:10px}.modal-content .media-body p{font-size:18px}.modal-content h3,h4{text-decoration:underline}.screenshots{width:180px;height:120px;margin:5px 20px 20px 0px;border:3px solid #000}.screenshots :hover{cursor:pointer}.techImg{width:90px;height:90px;margin:5px 15px 20px 0px;background:#000}@media(max-width: 433px){.techImg{width:80px;height:80px}}#modalA:hover{cursor:pointer;color:red}.fade.in.modal{transition:opacity 1s linear}.aboutImg{height:200px;width:200px;margin:100px 50px}.aboutImg2{height:230px;width:100px 50px;margin:100px 50px}.rainContainer{display:flex;flex-direction:column;justify-content:center;height:100vh;align-items:center}.rainContainer h1{text-align:center}@media(min-width: 740px){.rainContainer{margin-top:100px}}#sceneWrapper{position:relative}.frameWrapper{z-index:99;position:relative;width:80vw;max-width:825px}.frame{z-index:99;position:relative;width:80vw;max-width:825px}.frameWrapperChild{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:91%;height:85%;background:#ff0}.rainContainer #defaultCanvas0{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:91% !important;height:85% !important}.cityScape{position:absolute;bottom:17%;left:50%;transform:translateX(-50%);width:94%;height:35%}.rainControls{display:flex;justify-content:space-between;width:80vw;text-align:center}.citySelect,.rainType{flex:1;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}h3{cursor:pointer;display:block;width:fit-content;margin:auto}#golBoard{margin:0 auto;margin-bottom:30px}#golBoard td{border:1px solid gray;width:18px;height:18px}td.alive{background-color:#adff2f}td.dead{background-color:#000}#control_panel{margin:10px auto;text-align:center}#control_panel button{margin:0px 3px}#tableSetup{text-align:center}#tableSetup input{margin:10px 5px}input{color:#000}html{height:100%}#mainView{background-color:#000;position:relative;height:100%}#pageTheme{background-color:#000;color:#fff;font-family:Jura;position:relative;min-height:100%}.example-appear{opacity:.1;background:#000;z-index:99;width:100%;height:100%}.example-appear.example-appear-active{opacity:1;transition:opacity 1s ease-in}#innerRouteMainBody{min-height:100vh;overflow:hidden;display:block;position:relative}", ""]);
 
 // exports
 
@@ -166988,7 +166988,7 @@ var Skills = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'col-xs-10 col-xs-offset-1' },
-                  _react2.default.createElement('img', { src: '/photos/tech/nerd-stack-black.png' })
+                  _react2.default.createElement('img', { src: 'photos/tech/nerd-stack-black.png' })
                 ),
                 mq.matches ? _react2.default.createElement(
                   'div',
@@ -167112,7 +167112,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/javascript.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/javascript.png' })
                       )
                     ),
                     _react2.default.createElement(
@@ -167139,7 +167139,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/html.jpg' })
+                        _react2.default.createElement('img', { src: 'photos/tech/html.jpg' })
                       )
                     ),
                     _react2.default.createElement(
@@ -167166,7 +167166,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/css.jpg' })
+                        _react2.default.createElement('img', { src: 'photos/tech/css.jpg' })
                       )
                     ),
                     _react2.default.createElement(
@@ -167193,7 +167193,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/sql.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/sql.png' })
                       )
                     ),
                     _react2.default.createElement(
@@ -167220,7 +167220,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/Aframe.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/Aframe.png' })
                       )
                     )
                   )
@@ -167247,7 +167247,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/react.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/react.png' })
                       ),
                       _react2.default.createElement(
                         'div',
@@ -167274,7 +167274,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/redux.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/redux.png' })
                       ),
                       _react2.default.createElement(
                         'div',
@@ -167301,7 +167301,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/express.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/express.png' })
                       ),
                       _react2.default.createElement(
                         'div',
@@ -167328,7 +167328,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/sequelize.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/sequelize.png' })
                       ),
                       _react2.default.createElement(
                         'div',
@@ -167355,7 +167355,7 @@ var Skills = function (_Component) {
                       _react2.default.createElement(
                         'div',
                         { className: 'skill-logo col-xs-1' },
-                        _react2.default.createElement('img', { src: '/photos/tech/jquery.png' })
+                        _react2.default.createElement('img', { src: 'photos/tech/jquery.png' })
                       ),
                       _react2.default.createElement(
                         'div',
@@ -167414,13 +167414,13 @@ var Skills = function (_Component) {
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo chrome-dev-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/chrome-devtools.png' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/chrome-devtools.png' }),
                           'Chrome Devtools'
                         ),
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo react-dev-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/react-devtools.svg' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/react-devtools.svg' }),
                           'React Devtools'
                         )
                       ),
@@ -167430,13 +167430,13 @@ var Skills = function (_Component) {
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo postman-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/postman-1.png' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/postman-1.png' }),
                           'Postman'
                         ),
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo webpack-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/webpack.png' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/webpack.png' }),
                           'Webpack & Babel'
                         )
                       ),
@@ -167446,13 +167446,13 @@ var Skills = function (_Component) {
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo electron-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/electron-logo.png' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/electron-logo.png' }),
                           'Electron'
                         ),
                         _react2.default.createElement(
                           'div',
                           { className: 'tool-logo socketio-color col-xs-6 col-xl-12' },
-                          _react2.default.createElement('img', { src: '/photos/tech/socket.png' }),
+                          _react2.default.createElement('img', { src: 'photos/tech/socket.png' }),
                           'Socket.io'
                         )
                       )
@@ -168096,7 +168096,7 @@ var myNavbar = function (_Component) {
                         _react2.default.createElement(
                             'a',
                             { href: '#splash' },
-                            _react2.default.createElement('img', { className: 'logo', src: '/photos/logoBlack.jpg' }),
+                            _react2.default.createElement('img', { className: 'logo', src: 'photos/logoBlack.jpg' }),
                             _react2.default.createElement(
                                 'h3',
                                 null,
@@ -168111,7 +168111,7 @@ var myNavbar = function (_Component) {
                     ) : _react2.default.createElement(
                         'a',
                         { href: '#splash' },
-                        _react2.default.createElement('img', { className: 'logo', src: '/photos/logoBlack.jpg' }),
+                        _react2.default.createElement('img', { className: 'logo', src: 'photos/logoBlack.jpg' }),
                         _react2.default.createElement(
                             'h3',
                             null,
@@ -168350,8 +168350,8 @@ exports.default = function (props) {
           _react2.default.createElement(
             'a',
             { href: 'https://github.com/rossoj85', target: '_blank' },
-            _react2.default.createElement('img', { src: '/logos/github-black.svg', height: '24px', className: 'default-link' }),
-            _react2.default.createElement('img', { src: '/logos/github-white.svg', height: '24px', className: 'hover-link' })
+            _react2.default.createElement('img', { src: 'logos/github-black.svg', height: '24px', className: 'default-link' }),
+            _react2.default.createElement('img', { src: 'logos/github-white.svg', height: '24px', className: 'hover-link' })
           )
         ),
         _react2.default.createElement(
@@ -168360,8 +168360,8 @@ exports.default = function (props) {
           _react2.default.createElement(
             'a',
             { href: 'mailto:jasonrosso@gmail.com', target: '_blank' },
-            _react2.default.createElement('img', { src: '/logos/letter.png', height: '24px', className: 'default-link' }),
-            _react2.default.createElement('img', { src: '/logos/letter.png', height: '24px', className: 'hover-link' })
+            _react2.default.createElement('img', { src: 'logos/letter.png', height: '24px', className: 'default-link' }),
+            _react2.default.createElement('img', { src: 'logos/letter.png', height: '24px', className: 'hover-link' })
           )
         ),
         _react2.default.createElement(
@@ -168370,8 +168370,8 @@ exports.default = function (props) {
           _react2.default.createElement(
             'a',
             { href: 'https://linkedin.com/in/jason-rosso', target: '_blank' },
-            _react2.default.createElement('img', { src: '/logos/linkedin-black.svg', height: '24px', className: 'default-link' }),
-            _react2.default.createElement('img', { src: '/logos/linkedin-white.svg', height: '24px', className: 'hover-link' })
+            _react2.default.createElement('img', { src: 'logos/linkedin-black.svg', height: '24px', className: 'default-link' }),
+            _react2.default.createElement('img', { src: 'logos/linkedin-white.svg', height: '24px', className: 'hover-link' })
           )
         )
       ),
@@ -168425,17 +168425,17 @@ exports.default = function (props) {
             _react2.default.createElement(
                 'a',
                 { href: 'https://github.com/rossoj85' },
-                _react2.default.createElement('img', { className: 'aboutImg', src: '/photos/github-white.png' })
+                _react2.default.createElement('img', { className: 'aboutImg', src: 'photos/github-white.png' })
             ),
             _react2.default.createElement(
                 'a',
                 { href: 'mailto:jasonrosso@gmail.com' },
-                _react2.default.createElement('img', { className: 'aboutImg2', src: '/photos/gmail.png' })
+                _react2.default.createElement('img', { className: 'aboutImg2', src: 'photos/gmail.png' })
             ),
             _react2.default.createElement(
                 'a',
                 { href: 'https://linkedin.com/in/jason-rosso' },
-                _react2.default.createElement('img', { className: 'aboutImg2', src: '/photos/linkedin.png' })
+                _react2.default.createElement('img', { className: 'aboutImg2', src: 'photos/linkedin.png' })
             )
         )
     );
@@ -168511,7 +168511,7 @@ var projectNavbar = function (_Component) {
                         _react2.default.createElement(
                             'a',
                             { href: '#top' },
-                            _react2.default.createElement('img', { className: 'logo', src: '/photos/logoBlack.jpg' }),
+                            _react2.default.createElement('img', { className: 'logo', src: 'photos/logoBlack.jpg' }),
                             _react2.default.createElement(
                                 'h3',
                                 null,
@@ -169040,7 +169040,7 @@ exports.default = function (props) {
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement('embed', { style: { 'height': '100vh' }, src: '/resume7.pdf', width: '100%', height: '100%' })
+    _react2.default.createElement('embed', { style: { 'height': '100vh' }, src: 'resume7.pdf', width: '100%', height: '100%' })
   );
 };
 
@@ -169220,7 +169220,7 @@ var ProjectModal = function (_Component) {
                     null,
                     'View Source Code'
                   ),
-                  _react2.default.createElement('img', { src: '/photos/github-white.png', style: { height: '18px',
+                  _react2.default.createElement('img', { src: 'photos/github-white.png', style: { height: '18px',
                       width: '18px',
                       display: 'inline-block',
                       marginBottom: '3px',
@@ -169474,7 +169474,7 @@ var VRDesert = function (_Component) {
             var paintings = _paintings.arrayOfArt;
             // const desert = 'https://ucarecdn.com/39f58506-1bfa-4464-b66e-c356292be9c8/';
             var groundTexture = 'https://cdn.aframe.io/a-painter/images/floor.jpg';
-            var desert = "/photos/360Desert.jpg";
+            var desert = "photos/360Desert.jpg";
 
             console.log(paintings);
 
@@ -169489,7 +169489,7 @@ var VRDesert = function (_Component) {
                         null,
                         'Loading Scene...'
                     ),
-                    _react2.default.createElement('img', { className: 'loading', src: '/photos/circleRainbowLoad.gif' })
+                    _react2.default.createElement('img', { className: 'loading', src: 'photos/circleRainbowLoad.gif' })
                 ),
                 _react2.default.createElement(
                     _aframeReact.Scene,
@@ -169497,10 +169497,10 @@ var VRDesert = function (_Component) {
                     _react2.default.createElement(
                         'a-assets',
                         null,
-                        _react2.default.createElement('a-asset-item', { id: 'daliClock-obj', src: '/models/daliClock/memory.obj' }),
-                        _react2.default.createElement('a-asset-item', { id: 'daliClock-mtl', src: '/models/daliClock/memory.mtl' }),
-                        _react2.default.createElement('a-asset-item', { id: 'marcus-obj', src: '/models/marcus/MarcusAurelius.obj', material: 'color: grey' }),
-                        _react2.default.createElement('a-asset-item', { id: 'piggy-obj', src: '/models/piggy/piggy.obj' })
+                        _react2.default.createElement('a-asset-item', { id: 'daliClock-obj', src: 'models/daliClock/memory.obj' }),
+                        _react2.default.createElement('a-asset-item', { id: 'daliClock-mtl', src: 'models/daliClock/memory.mtl' }),
+                        _react2.default.createElement('a-asset-item', { id: 'marcus-obj', src: 'models/marcus/MarcusAurelius.obj', material: 'color: grey' }),
+                        _react2.default.createElement('a-asset-item', { id: 'piggy-obj', src: 'models/piggy/piggy.obj' })
                     ),
                     _react2.default.createElement('a-entity', {
                         'obj-model': 'obj:#daliClock-obj;mtl:#daliClock-mtl',
@@ -169526,7 +169526,7 @@ var VRDesert = function (_Component) {
                         null,
                         'NO RENDER BECAUE PAINTINGS NOT BOUND'
                     ),
-                    _react2.default.createElement('a-entity', { 'obj-model': 'obj:#marcus-obj', position: '0 5 -25', scale: '22 22 22', src: '/MarcusAureliusTexture.jpg' }),
+                    _react2.default.createElement('a-entity', { 'obj-model': 'obj:#marcus-obj', position: '0 5 -25', scale: '22 22 22', src: 'MarcusAureliusTexture.jpg' }),
                     _react2.default.createElement('a-sky', { src: desert }),
                     _react2.default.createElement('a-plane', { src: groundTexture, position: '0 -2 -4', rotation: '-90 0 0', width: '90', height: '90', repeat: '10 10' }),
                     _react2.default.createElement('a-entity', { camera: true, position: '0 2 0', 'look-controls': true, 'wasd-controls': true })
@@ -173406,7 +173406,7 @@ var VRNightScene = function (_Component) {
             null,
             'Loading Scene...'
           ),
-          _react2.default.createElement('img', { className: 'loading', src: '/photos/circleRainbowLoad.gif' })
+          _react2.default.createElement('img', { className: 'loading', src: 'photos/circleRainbowLoad.gif' })
         ),
         _react2.default.createElement(
           _aframeReact.Scene,
@@ -173414,12 +173414,12 @@ var VRNightScene = function (_Component) {
           _react2.default.createElement(
             'a-assets',
             null,
-            _react2.default.createElement('a-asset-item', { id: 'ghost-obj', src: '/models/ghost/model.obj' }),
-            _react2.default.createElement('a-asset-item', { id: 'ghost-mtl', src: '/models/ghost/materials.mtl' }),
-            _react2.default.createElement('a-asset-item', { id: 'pumpkin-obj', src: '/models/pumpkin/pumpkin.obj' }),
-            _react2.default.createElement('a-asset-item', { id: 'pumpkin-mtl', src: '/models/pumpkin/pumpkin.mtl' }),
-            _react2.default.createElement('a-asset-item', { id: 'pineTree-obj', src: '/models/pinetree/pineTree.obj' }),
-            _react2.default.createElement('a-asset-item', { id: 'pineTree-mtl', src: '/models/pinetree/pineTree.mtl' })
+            _react2.default.createElement('a-asset-item', { id: 'ghost-obj', src: 'models/ghost/model.obj' }),
+            _react2.default.createElement('a-asset-item', { id: 'ghost-mtl', src: 'models/ghost/materials.mtl' }),
+            _react2.default.createElement('a-asset-item', { id: 'pumpkin-obj', src: 'models/pumpkin/pumpkin.obj' }),
+            _react2.default.createElement('a-asset-item', { id: 'pumpkin-mtl', src: 'models/pumpkin/pumpkin.mtl' }),
+            _react2.default.createElement('a-asset-item', { id: 'pineTree-obj', src: 'models/pinetree/pineTree.obj' }),
+            _react2.default.createElement('a-asset-item', { id: 'pineTree-mtl', src: 'models/pinetree/pineTree.mtl' })
           ),
           _react2.default.createElement('a-sphere', { src: cyberRust, position: '5 12.82 -37.6', radius: '1.25' }),
           _react2.default.createElement('a-dodecahedron', { src: circutBoard, position: '-1 13 -32' }),
@@ -173572,7 +173572,7 @@ var VRVangogh = function (_Component) {
     key: 'render',
     value: function render() {
       var paintings = _paintings.arrayOfArt;
-      var snowyGround = '/photos/snowyground.jpg';
+      var snowyGround = 'photos/snowyground.jpg';
       console.log(paintings);
 
       return (
@@ -173588,7 +173588,7 @@ var VRVangogh = function (_Component) {
               null,
               'Loading Scene...'
             ),
-            _react2.default.createElement('img', { className: 'loading', src: '/photos/circleRainbowLoad.gif' })
+            _react2.default.createElement('img', { className: 'loading', src: 'photos/circleRainbowLoad.gif' })
           ),
           _react2.default.createElement(
             _aframeReact.Scene,
@@ -173596,13 +173596,13 @@ var VRVangogh = function (_Component) {
             _react2.default.createElement(
               'a-assets',
               null,
-              _react2.default.createElement('a-asset-item', { id: 'room', src: '/models/vangogh/room.obj' }),
-              _react2.default.createElement('a-asset-item', { id: 'room-mtl', src: '/models/vangogh/room.mtl' }),
-              _react2.default.createElement('a-asset-item', { id: 'starryNight', src: '/models/vangogh/untitled-scene.obj' }),
-              _react2.default.createElement('a-asset-item', { id: 'starryNight-mtl', src: '/models/vangogh/untitled-scene.mtl' })
+              _react2.default.createElement('a-asset-item', { id: 'room', src: 'models/vangogh/room.obj' }),
+              _react2.default.createElement('a-asset-item', { id: 'room-mtl', src: 'models/vangogh/room.mtl' }),
+              _react2.default.createElement('a-asset-item', { id: 'starryNight', src: 'models/vangogh/untitled-scene.obj' }),
+              _react2.default.createElement('a-asset-item', { id: 'starryNight-mtl', src: 'models/vangogh/untitled-scene.mtl' })
             ),
             _react2.default.createElement('a-entity', {
-              'obj-model': 'obj: url(/models/vangogh/untitled-scene.obj); mtl:url(/models/vangogh/untitled-scene.mtl)',
+              'obj-model': 'obj: url(models/vangogh/untitled-scene.obj); mtl:url(models/vangogh/untitled-scene.mtl)',
               position: '0 -45 -60', scale: '50 50 50',
               rotation: '0 180 0' }),
             _react2.default.createElement('a-entity', {
@@ -173621,7 +173621,7 @@ var VRVangogh = function (_Component) {
             _react2.default.createElement('a-entity', { geometry: 'primitive: sphere; radius: 60',
               material: 'src: /models/jupiter/jupiterTexture.jpg',
               position: '130 20 0' }),
-            _react2.default.createElement('a-sky', { src: '/models/vangogh/sky/milkyWay.png' }),
+            _react2.default.createElement('a-sky', { src: 'models/vangogh/sky/milkyWay.png' }),
             _react2.default.createElement('a-plane', { src: snowyGround, position: '0 -2 -4', rotation: '-90 0 0', width: '90', height: '90', repeat: '10 10' }),
             paintings.length >= 1 && _react2.default.createElement('a-curvedimage', {
               position: '0 3 -23',
@@ -173736,11 +173736,11 @@ var VRVaporwave = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var pinkgrid = "/photos/pinkgrid.svg";
+            var pinkgrid = "photos/pinkgrid.svg";
             var intensePinkGrid = "https://ak5.picdn.net/shutterstock/videos/15813655/thumb/1.jpg–";
-            var pinkSky = "/photos/pinkSky.jpg";
-            var retrowaveTex = '/photos/retrowaveTex.png';
-            var retrowaveSun = '/photos/retrowaveSun.jpg';
+            var pinkSky = "photos/pinkSky.jpg";
+            var retrowaveTex = 'photos/retrowaveTex.png';
+            var retrowaveSun = 'photos/retrowaveSun.jpg';
             var paintings = _paintings.arrayOfArt;
             console.log("PAINTINGS", paintings);
             //positions at first index, rotation at second 
@@ -173787,13 +173787,13 @@ var VRVaporwave = function (_Component) {
                     _react2.default.createElement(
                         'a-assets',
                         null,
-                        _react2.default.createElement('a-asset-item', { id: 'cityscape-obj', src: '/models/cityscape/model.obj' }),
-                        _react2.default.createElement('a-asset-item', { id: 'cityscape-mtl', src: '/models/cityscape/materials.mtl' }),
-                        _react2.default.createElement('a-asset-item', { id: 'palmTree-obj', src: '/models/palmTree/model.obj' }),
-                        _react2.default.createElement('a-asset-item', { id: 'palmTree-mtl', src: '/models/palmTree/materials.mtl' }),
-                        _react2.default.createElement('a-asset-item', { id: 'billboard-obj', src: '/models/billboard/Billboard 1.obj' }),
-                        _react2.default.createElement('a-asset-item', { id: 'hotdog-obj', src: '/models/hotDog/model.obj' }),
-                        _react2.default.createElement('a-asset-item', { id: 'hotdog-mtl', src: '/models/hotDog/materials.mtl' })
+                        _react2.default.createElement('a-asset-item', { id: 'cityscape-obj', src: 'models/cityscape/model.obj' }),
+                        _react2.default.createElement('a-asset-item', { id: 'cityscape-mtl', src: 'models/cityscape/materials.mtl' }),
+                        _react2.default.createElement('a-asset-item', { id: 'palmTree-obj', src: 'models/palmTree/model.obj' }),
+                        _react2.default.createElement('a-asset-item', { id: 'palmTree-mtl', src: 'models/palmTree/materials.mtl' }),
+                        _react2.default.createElement('a-asset-item', { id: 'billboard-obj', src: 'models/billboard/Billboard 1.obj' }),
+                        _react2.default.createElement('a-asset-item', { id: 'hotdog-obj', src: 'models/hotDog/model.obj' }),
+                        _react2.default.createElement('a-asset-item', { id: 'hotdog-mtl', src: 'models/hotDog/materials.mtl' })
                     ),
                     _react2.default.createElement('a-entity', { 'obj-model': 'obj:#hotdog-obj; mtl:#hotdog-mtl', scale: '5 5 5', position: '22.5 1.5 0' }),
                     _react2.default.createElement('a-mountain', { color: 'red', position: '0 0 0', material: 'src: ' + pinkgrid + '; repeat: 10 10' }),
