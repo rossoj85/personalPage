@@ -99,7 +99,7 @@ closeScreenShotModal(){
               project.github?
               <div>
                 <h4>View Source Code</h4>
-                <img src='/photos/github-white.png' style={{height:'18px',
+                <img src='photos/github-white.png' style={{height:'18px',
                 width:'18px',
                 display:'inline-block',
                 marginBottom: '3px',

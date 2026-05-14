@@ -34,7 +34,7 @@ import React, { Component } from 'react';
 export default (props) => {
   return (
     <div>
-    <embed  style={{'height':'100vh'}}src="/resume7.pdf" width="100%" height="100%" />
+    <embed  style={{'height':'100vh'}}src="resume7.pdf" width="100%" height="100%" />
     </div>
   )
 }

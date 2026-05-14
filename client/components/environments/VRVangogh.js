@@ -19,7 +19,7 @@ export default class VRVangogh extends Component{
   }
         render(){
           const paintings=arrayOfArt;
-          var snowyGround= '/photos/snowyground.jpg';
+          var snowyGround= 'photos/snowyground.jpg';
           console.log(paintings)
 
             return(
@@ -27,23 +27,23 @@ export default class VRVangogh extends Component{
               <div>
               <div id='splash'>
               <h2>Loading Scene...</h2>
-              <img className='loading' src={'/photos/circleRainbowLoad.gif'} />
+              <img className='loading' src={'photos/circleRainbowLoad.gif'} />
              </div>
                  
              <Scene>
 
              <a-assets>
              
-             <a-asset-item id="room" src="/models/vangogh/room.obj"></a-asset-item>
-             <a-asset-item id="room-mtl" src="/models/vangogh/room.mtl"></a-asset-item>
-             <a-asset-item id="starryNight" src="/models/vangogh/untitled-scene.obj"></a-asset-item>
-             <a-asset-item id="starryNight-mtl" src="/models/vangogh/untitled-scene.mtl"></a-asset-item>  
+             <a-asset-item id="room" src="models/vangogh/room.obj"></a-asset-item>
+             <a-asset-item id="room-mtl" src="models/vangogh/room.mtl"></a-asset-item>
+             <a-asset-item id="starryNight" src="models/vangogh/untitled-scene.obj"></a-asset-item>
+             <a-asset-item id="starryNight-mtl" src="models/vangogh/untitled-scene.mtl"></a-asset-item>  
             
              </a-assets>
  
           
              <a-entity
-               obj-model="obj: url(/models/vangogh/untitled-scene.obj); mtl:url(/models/vangogh/untitled-scene.mtl)"
+               obj-model="obj: url(models/vangogh/untitled-scene.obj); mtl:url(models/vangogh/untitled-scene.mtl)"
                position="0 -45 -60" scale="50 50 50"
                rotation="0 180 0" />
  
@@ -68,7 +68,7 @@ export default class VRVangogh extends Component{
            position="130 20 0">
           </a-entity>
  
-                 <a-sky src='/models/vangogh/sky/milkyWay.png' />
+                 <a-sky src='models/vangogh/sky/milkyWay.png' />
                  <a-plane src={snowyGround} position="0 -2 -4" rotation="-90 0 0" width="90" height="90" repeat="10 10"  />
                  {/* <Entity particle-system={{preset: 'snow'}} /> */}
                  {

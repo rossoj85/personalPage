@@ -66,7 +66,7 @@ export default class  Skills extends Component{
           }
           
             <div className='col-xs-10 col-xs-offset-1'>
-              <img src='/photos/tech/nerd-stack-black.png'/>
+              <img src='photos/tech/nerd-stack-black.png'/>
             </div>
 
             {mq.matches? 
@@ -116,7 +116,7 @@ export default class  Skills extends Component{
                     </div>
                   </div>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/javascript.png'/>
+                    <img src='photos/tech/javascript.png'/>
                   </div>
                 </div>
                 <div className='row skill-row'>
@@ -131,7 +131,7 @@ export default class  Skills extends Component{
                     </div>
                   </div>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/html.jpg'/>
+                    <img src='photos/tech/html.jpg'/>
                   </div>
                 </div>
                 <div className='row skill-row'>
@@ -146,7 +146,7 @@ export default class  Skills extends Component{
                     </div>
                   </div>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/css.jpg'/>
+                    <img src='photos/tech/css.jpg'/>
                   </div>
                 </div>
                 <div className='row skill-row'>
@@ -161,7 +161,7 @@ export default class  Skills extends Component{
                     </div>
                   </div>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/sql.png'/>
+                    <img src='photos/tech/sql.png'/>
                   </div>
                 </div>
                 <div className='row skill-row'>
@@ -176,7 +176,7 @@ export default class  Skills extends Component{
                     </div>
                   </div>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/Aframe.png'/>
+                    <img src='photos/tech/Aframe.png'/>
                   </div>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default class  Skills extends Component{
                 
                 <div className='row skill-row'>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/react.png'/>
+                    <img src='photos/tech/react.png'/>
                   </div>
                   <div className='col-xs-11 skill-bar-container'>
                     <div className='skill-bar skill-react'>
@@ -204,7 +204,7 @@ export default class  Skills extends Component{
                 </div>
                 <div className='row skill-row'>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/redux.png'/>
+                    <img src='photos/tech/redux.png'/>
                   </div>
                   <div className='col-xs-11 skill-bar-container'>
                     <div className='skill-bar skill-redux'>
@@ -219,7 +219,7 @@ export default class  Skills extends Component{
                 </div>
                 <div className='row skill-row'>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/express.png'/>
+                    <img src='photos/tech/express.png'/>
                   </div>
                   <div className='col-xs-11 skill-bar-container'>
                     <div className='skill-bar skill-express'>
@@ -234,7 +234,7 @@ export default class  Skills extends Component{
                 </div>
                 <div className='row skill-row'>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/sequelize.png'/>
+                    <img src='photos/tech/sequelize.png'/>
                   </div>
                   <div className='col-xs-11 skill-bar-container'>
                     <div className='skill-bar skill-sequelize'>
@@ -249,7 +249,7 @@ export default class  Skills extends Component{
                 </div>
                 <div className='row skill-row'>
                   <div className='skill-logo col-xs-1'>
-                    <img src='/photos/tech/jquery.png'/>
+                    <img src='photos/tech/jquery.png'/>
                   </div>
                   <div className='col-xs-11 skill-bar-container'>
                     <div className='skill-bar skill-jquery'>
@@ -285,31 +285,31 @@ export default class  Skills extends Component{
                   </div>
                   <div className='row tool-row'>
                     <div className='tool-logo chrome-dev-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/chrome-devtools.png'/>
+                      <img src='photos/tech/chrome-devtools.png'/>
                       Chrome Devtools
                     </div>
                     <div className='tool-logo react-dev-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/react-devtools.svg'/>
+                      <img src='photos/tech/react-devtools.svg'/>
                       React Devtools
                     </div>
                   </div>
                   <div className='row tool-row'>
                     <div className='tool-logo postman-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/postman-1.png'/>
+                      <img src='photos/tech/postman-1.png'/>
                       Postman
                     </div>
                     <div className='tool-logo webpack-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/webpack.png'/>
+                      <img src='photos/tech/webpack.png'/>
                       Webpack & Babel
                     </div>
                   </div>
                   <div className='row tool-row'>
                     <div className='tool-logo electron-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/electron-logo.png'/>
+                      <img src='photos/tech/electron-logo.png'/>
                       Electron
                     </div>
                     <div className='tool-logo socketio-color col-xs-6 col-xl-12'>
-                      <img src='/photos/tech/socket.png'/>
+                      <img src='photos/tech/socket.png'/>
                       Socket.io
                     </div>
                   </div>

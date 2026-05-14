@@ -8,11 +8,11 @@ import P5Wrapper from 'react-p5-wrapper';
 //dsfsa
 //scenery
 // const newYork = "https://bagelbrothersofny.com/wp-content/uploads/2016/02/skyline.png"
- const newYork  = "/photos/New-York-Skyline.png"
+ const newYork  = "photos/New-York-Skyline.png"
  const london = "http://i.imgur.com/utq4e4V.png"
 
-const prague = "/photos/prague.jpg"
-const neonMetropolis = "/photos/neonMetropolis.jpg"
+const prague = "photos/prague.jpg"
+const neonMetropolis = "photos/neonMetropolis.jpg"
 
 export default class RainPage extends Component {
     constructor(props){
@@ -36,7 +36,7 @@ export default class RainPage extends Component {
             <h1 >RaiN</h1>
 
             <div className="frameWrapper">
-                <img src='/photos/longArtFrame.png' className="frame" />
+                <img src='photos/longArtFrame.png' className="frame" />
                 {/* <div className="frameWrapperChild"></div> */}
                 <P5Wrapper id="rainWindow" className="frameWrapperChild" sketch={this.state.rainType} />
                 <img src={this.state.city} className="cityScape" />
@@ -74,7 +74,7 @@ export default class RainPage extends Component {
  /*
             <div style={{margin:'auto'}}>
                <h1 >RaiN</h1>
-               <img src='/photos/longArtFrame.png' id="frame"/>
+               <img src='photos/longArtFrame.png' id="frame"/>
             
                <div id="sceneWrapper">
         

@@ -5,10 +5,10 @@
   "main": "index.js",
   "homepage": "https://rossoj85.github.io/personalPage/",
   "scripts": {
+    "build": "webpack",
     "build-client": "webpack",
-    "build-client-watch": "webpack -w",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d public",
     "start-server": "node server",
     "start": "webpack & npm run start-server",
     "start-dev": "webpack -w & nodemon server --ignore /client --ignore /public",

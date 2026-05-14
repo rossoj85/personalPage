@@ -20,7 +20,7 @@ export default class VRDesert extends Component{
         const paintings = arrayOfArt;
         // const desert = 'https://ucarecdn.com/39f58506-1bfa-4464-b66e-c356292be9c8/';
         const groundTexture = 'https://cdn.aframe.io/a-painter/images/floor.jpg';
-        const desert = "/photos/360Desert.jpg"
+        const desert = "photos/360Desert.jpg"
         
         
         console.log(paintings)
@@ -30,17 +30,17 @@ export default class VRDesert extends Component{
 
             <div id='splash'>
                 <h2>Loading Scene...</h2>
-                <img className='loading' src={'/photos/circleRainbowLoad.gif'} />
+                <img className='loading' src={'photos/circleRainbowLoad.gif'} />
             </div>
 
 
                 <Scene>
             
                 <a-assets >
-                    <a-asset-item id="daliClock-obj" src="/models/daliClock/memory.obj" />
-                    <a-asset-item id="daliClock-mtl" src="/models/daliClock/memory.mtl" />
-                    <a-asset-item id="marcus-obj" src="/models/marcus/MarcusAurelius.obj"  material="color: grey"/>
-                    <a-asset-item id="piggy-obj" src="/models/piggy/piggy.obj" />
+                    <a-asset-item id="daliClock-obj" src="models/daliClock/memory.obj" />
+                    <a-asset-item id="daliClock-mtl" src="models/daliClock/memory.mtl" />
+                    <a-asset-item id="marcus-obj" src="models/marcus/MarcusAurelius.obj"  material="color: grey"/>
+                    <a-asset-item id="piggy-obj" src="models/piggy/piggy.obj" />
                 </a-assets>
             
                     {/*DALI TREES*/}
@@ -104,7 +104,7 @@ export default class VRDesert extends Component{
                 }
 
                 
-                    <a-entity obj-model="obj:#marcus-obj" position="0 5 -25" scale="22 22 22" src="/MarcusAureliusTexture.jpg" />
+                    <a-entity obj-model="obj:#marcus-obj" position="0 5 -25" scale="22 22 22" src="MarcusAureliusTexture.jpg" />
                     
                     {/* <a-sky src={`https://www.eso.org/public/archives/images/publicationjpg/par-sunset-pan.jpg`}  /> */}
                     <a-sky src={desert}  />

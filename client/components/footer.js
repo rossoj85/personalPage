@@ -10,20 +10,20 @@ import React from 'react';
         <ul className='nav-footer'>
           <li className='nav-link-footer nav-link-github'>
             <a href='https://github.com/rossoj85' target='_blank'>
-              <img src='/logos/github-black.svg' height='24px' className='default-link'/>
-              <img src='/logos/github-white.svg' height='24px' className='hover-link'/>
+              <img src='logos/github-black.svg' height='24px' className='default-link'/>
+              <img src='logos/github-white.svg' height='24px' className='hover-link'/>
             </a>
           </li>
           <li className='nav-link-footer nav-link-mail'>
           <a href='mailto:jasonrosso@gmail.com' target='_blank'>
-          <img src='/logos/letter.png' height='24px' className='default-link'/>
-          <img src='/logos/letter.png' height='24px' className='hover-link' />
+          <img src='logos/letter.png' height='24px' className='default-link'/>
+          <img src='logos/letter.png' height='24px' className='hover-link' />
         </a>
           </li>
           <li className='nav-link-footer nav-link-linkedin'>
             <a href='https://linkedin.com/in/jason-rosso' target='_blank'>
-              <img src='/logos/linkedin-black.svg' height='24px' className='default-link'/>
-              <img src='/logos/linkedin-white.svg' height='24px' className='hover-link' />
+              <img src='logos/linkedin-black.svg' height='24px' className='default-link'/>
+              <img src='logos/linkedin-white.svg' height='24px' className='hover-link' />
             </a>
           </li>
         </ul>

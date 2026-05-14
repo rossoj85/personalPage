@@ -4,7 +4,7 @@
     /*
             <div style={{margin:'auto'}}>
                <h1 >RaiN</h1>
-               <img src='/photos/longArtFrame.png' id="frame"/>
+               <img src='photos/longArtFrame.png' id="frame"/>
             
                <div id="sceneWrapper">
         

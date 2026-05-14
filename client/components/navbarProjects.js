@@ -24,7 +24,7 @@ export default class projectNavbar extends Component{
                 <Navbar.Header>
                     <LinkContainer to='/'>
                     <a href='#top'>
-                    <img className="logo" src ="/photos/logoBlack.jpg" />
+                    <img className="logo" src ="photos/logoBlack.jpg" />
                     <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
                     </a>
                     </LinkContainer>

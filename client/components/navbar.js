@@ -97,7 +97,7 @@ export default class myNavbar extends Component{
                     {isExternalProject ?
                         <LinkContainer to='/'>
                         <a href='#splash'>
-                        <img className="logo" src ="/photos/logoBlack.jpg" />
+                        <img className="logo" src ="photos/logoBlack.jpg" />
                         <h3>
                             <span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York
                         </h3>
@@ -106,7 +106,7 @@ export default class myNavbar extends Component{
                         </LinkContainer>
                         :
                         <a href='#splash'>
-                        <img className="logo" src ="/photos/logoBlack.jpg" />
+                        <img className="logo" src ="photos/logoBlack.jpg" />
                         <h3><span style = {{color:"red"}} >Jason Rosso</span> Fullstack Developer, New York</h3>
                         {/* <h3>
                                 <span style = {{color:"red"}} >Jason Rosso</span>

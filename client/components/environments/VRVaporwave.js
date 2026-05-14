@@ -21,11 +21,11 @@ export default class VRVaporwave extends Component{
       }
 
     render(){
-        const pinkgrid = "/photos/pinkgrid.svg"
+        const pinkgrid = "photos/pinkgrid.svg"
         const intensePinkGrid ="https://ak5.picdn.net/shutterstock/videos/15813655/thumb/1.jpg–"
-        const pinkSky = "/photos/pinkSky.jpg"
-        const retrowaveTex = '/photos/retrowaveTex.png'
-        const retrowaveSun = '/photos/retrowaveSun.jpg'
+        const pinkSky = "photos/pinkSky.jpg"
+        const retrowaveTex = 'photos/retrowaveTex.png'
+        const retrowaveSun = 'photos/retrowaveSun.jpg'
         const paintings = arrayOfArt;
         console.log("PAINTINGS",paintings)
         //positions at first index, rotation at second 
@@ -81,13 +81,13 @@ export default class VRVaporwave extends Component{
         
                 <Scene>
                     <a-assets>
-                        <a-asset-item id="cityscape-obj" src='/models/cityscape/model.obj' />
-                        <a-asset-item id="cityscape-mtl" src='/models/cityscape/materials.mtl' />
-                        <a-asset-item id="palmTree-obj" src='/models/palmTree/model.obj' />
-                        <a-asset-item id="palmTree-mtl" src='/models/palmTree/materials.mtl' />
-                        <a-asset-item id="billboard-obj" src='/models/billboard/Billboard 1.obj' />
-                        <a-asset-item id="hotdog-obj" src='/models/hotDog/model.obj' />
-                        <a-asset-item id="hotdog-mtl" src='/models/hotDog/materials.mtl' />
+                        <a-asset-item id="cityscape-obj" src='models/cityscape/model.obj' />
+                        <a-asset-item id="cityscape-mtl" src='models/cityscape/materials.mtl' />
+                        <a-asset-item id="palmTree-obj" src='models/palmTree/model.obj' />
+                        <a-asset-item id="palmTree-mtl" src='models/palmTree/materials.mtl' />
+                        <a-asset-item id="billboard-obj" src='models/billboard/Billboard 1.obj' />
+                        <a-asset-item id="hotdog-obj" src='models/hotDog/model.obj' />
+                        <a-asset-item id="hotdog-mtl" src='models/hotDog/materials.mtl' />
                     </a-assets>
                     <a-entity obj-model='obj:#hotdog-obj; mtl:#hotdog-mtl' scale='5 5 5' position='22.5 1.5 0' />
                     <a-mountain color="red" position='0 0 0'  material={`src: ${pinkgrid}; repeat: 10 10`}></a-mountain>

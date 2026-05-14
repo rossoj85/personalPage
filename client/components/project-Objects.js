@@ -43,8 +43,8 @@ github:'https://github.com/Fullstack-Untouchables/u-shop'
 
 export const jsAcademy={name: 'Academy of Javascript',
 description: 'My first major project at bootcamp. Academy of Javascript is a create, read, update and destroy (CRUD) appliction. The app is used to keep track of student and campus information at the fictional "Interplanetary Academy Of Javascript." Data is stored in a PostgresQL data base that users interact with through a React front-end and node/express backend.',
-img: '/photos/planetIcon.png',
-thumbs: ['/photos/jsAcademy1.png','/photos/jsAcademy2.png','/photos/jsAcademy3.png'],
+img: 'photos/planetIcon.png',
+thumbs: ['photos/jsAcademy1.png','photos/jsAcademy2.png','photos/jsAcademy3.png'],
 technologies: [react,nodeEx,postgres],
 github: 'https://github.com/rossoj85/senior-enrichment',
 site: 'https://javascript-academy.herokuapp.com'
@@ -54,21 +54,21 @@ site: 'https://javascript-academy.herokuapp.com'
 //VISUAL ART
 export const vaporWave ={ name: 'Vaporwave',
     description: "A trip back into the 80's...",
-    img: '/photos/vaporwave.png',
+    img: 'photos/vaporwave.png',
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: 'projects/vaporwave'
 }
 export const rain={name: 'RAiN',
     description: "An experimental rain effect produced in P5.js with CSS layering",
-    img: "/photos/rain.jpg",
+    img: "photos/rain.jpg",
     technologies: [p5, css],
     enterBtn: true,
     btnLink: '/projects/rain'
 }
 export const theDesert ={name: "The Desert",
     description: "A Dali-inspired 3D virtual reality scene built for V-aRt",
-    img: "/photos/theDesert.png",
+    img: "photos/theDesert.png",
     technologies: [react, aframe],
     enterBtn: true,
     btnLink: '/projects/theDesert'
