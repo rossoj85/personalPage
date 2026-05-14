@@ -2,6 +2,15 @@
 <html>
   <head>
     <title>Jason Rosso</title>
+    <base id="app-base" href="/" />
+    <script>
+      var base = document.getElementById('app-base');
+      if (window.location.pathname.indexOf('/personalPage') === 0) {
+        base.setAttribute('href', '/personalPage/');
+      } else {
+        base.setAttribute('href', '/');
+      }
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Coda|Electrolize|Exo|Exo+2|Jura|Orbitron|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
