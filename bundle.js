@@ -139367,7 +139367,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import './index.scss'
 _reactDom2.default.render(_react2.default.createElement(
     _reactRouterDom.BrowserRouter,
-    null,
+    { basename: '/personalPage/' },
     _react2.default.createElement(_main2.default, null)
 ), document.getElementById('mainView'));
 // import {HashRouter as Router} from 'react-router-dom';
