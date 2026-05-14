@@ -126169,7 +126169,7 @@ module.exports = JSON.parse('{"name":"aframe","version":"1.5.0","description":"A
 ;
 });
 //# sourceMappingURL=aframe-master.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(556).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(557).setImmediate))
 
 /***/ }),
 /* 98 */
@@ -128867,7 +128867,7 @@ Object.defineProperty(exports, 'Projects', {
   }
 });
 
-var _footer = __webpack_require__(546);
+var _footer = __webpack_require__(547);
 
 Object.defineProperty(exports, 'Footer', {
   enumerable: true,
@@ -128876,7 +128876,7 @@ Object.defineProperty(exports, 'Footer', {
   }
 });
 
-var _contact = __webpack_require__(547);
+var _contact = __webpack_require__(548);
 
 Object.defineProperty(exports, 'Contact', {
   enumerable: true,
@@ -128885,7 +128885,7 @@ Object.defineProperty(exports, 'Contact', {
   }
 });
 
-var _navbarProjects = __webpack_require__(548);
+var _navbarProjects = __webpack_require__(549);
 
 Object.defineProperty(exports, 'ProjectNavbar', {
   enumerable: true,
@@ -128894,7 +128894,7 @@ Object.defineProperty(exports, 'ProjectNavbar', {
   }
 });
 
-var _gol = __webpack_require__(549);
+var _gol = __webpack_require__(550);
 
 Object.defineProperty(exports, 'Gol', {
   enumerable: true,
@@ -128903,7 +128903,7 @@ Object.defineProperty(exports, 'Gol', {
   }
 });
 
-var _resume = __webpack_require__(550);
+var _resume = __webpack_require__(551);
 
 Object.defineProperty(exports, 'Resume', {
   enumerable: true,
@@ -128912,7 +128912,7 @@ Object.defineProperty(exports, 'Resume', {
   }
 });
 
-var _projectModals = __webpack_require__(551);
+var _projectModals = __webpack_require__(552);
 
 Object.defineProperty(exports, 'ProjectModals', {
   enumerable: true,
@@ -128921,7 +128921,7 @@ Object.defineProperty(exports, 'ProjectModals', {
   }
 });
 
-var _screenShotModal = __webpack_require__(552);
+var _screenShotModal = __webpack_require__(553);
 
 Object.defineProperty(exports, 'ScreenShotModal', {
   enumerable: true,
@@ -128993,7 +128993,7 @@ Object.defineProperty(exports, 'gol', {
   }
 });
 
-var _loader = __webpack_require__(553);
+var _loader = __webpack_require__(554);
 
 Object.defineProperty(exports, 'Loader', {
   enumerable: true,
@@ -130259,7 +130259,7 @@ TabContent.childContextTypes = childContextTypes;
  * ShaderParticleEngine by Squarefeet (https://github.com/squarefeet).
  */
 
-var SPE = __webpack_require__(558);
+var SPE = __webpack_require__(559);
 
 if (typeof AFRAME === 'undefined') {
   throw new Error('Component attempted to register before AFRAME was available.');
@@ -154394,7 +154394,7 @@ var _reactRouterDom = __webpack_require__(61);
 
 var _index = __webpack_require__(123);
 
-var _environments = __webpack_require__(554);
+var _environments = __webpack_require__(555);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -167974,7 +167974,7 @@ var _reactRouterBootstrap = __webpack_require__(240);
 
 var _reactScrollableAnchor = __webpack_require__(56);
 
-var _isMobile = __webpack_require__(564);
+var _isMobile = __webpack_require__(546);
 
 var _isMobile2 = _interopRequireDefault(_isMobile);
 
@@ -168273,6 +168273,51 @@ module.exports = exports['default'];
 "use strict";
 
 
+module.exports = isMobile
+module.exports.isMobile = isMobile
+module.exports.default = isMobile
+
+const mobileRE = /(android|bb\d+|meego).+mobile|armv7l|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series[46]0|samsungbrowser.*mobile|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i
+const notMobileRE = /CrOS/
+
+const tabletRE = /android|ipad|playbook|silk/i
+
+function isMobile (opts) {
+  if (!opts) opts = {}
+  let ua = opts.ua
+  if (!ua && typeof navigator !== 'undefined') ua = navigator.userAgent
+  if (ua && ua.headers && typeof ua.headers['user-agent'] === 'string') {
+    ua = ua.headers['user-agent']
+  }
+  if (typeof ua !== 'string') return false
+
+  let result =
+    (mobileRE.test(ua) && !notMobileRE.test(ua)) ||
+    (!!opts.tablet && tabletRE.test(ua))
+
+  if (
+    !result &&
+    opts.tablet &&
+    opts.featureDetect &&
+    navigator &&
+    navigator.maxTouchPoints > 1 &&
+    ua.indexOf('Macintosh') !== -1 &&
+    ua.indexOf('Safari') !== -1
+  ) {
+    result = true
+  }
+
+  return result
+}
+
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -168348,7 +168393,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168397,7 +168442,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 548 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168526,7 +168571,7 @@ var projectNavbar = function (_Component) {
 exports.default = projectNavbar;
 
 /***/ }),
-/* 549 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168944,7 +168989,7 @@ var GOL = function (_Component) {
 exports.default = GOL;
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169000,7 +169045,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169225,7 +169270,7 @@ var ProjectModal = function (_Component) {
 exports.default = ProjectModal;
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169287,7 +169332,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169317,7 +169362,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169327,7 +169372,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _VRDesert = __webpack_require__(555);
+var _VRDesert = __webpack_require__(556);
 
 Object.defineProperty(exports, 'VRDesert', {
   enumerable: true,
@@ -169336,7 +169381,7 @@ Object.defineProperty(exports, 'VRDesert', {
   }
 });
 
-var _VRNightScene = __webpack_require__(559);
+var _VRNightScene = __webpack_require__(560);
 
 Object.defineProperty(exports, 'VRNightScene', {
   enumerable: true,
@@ -169345,7 +169390,7 @@ Object.defineProperty(exports, 'VRNightScene', {
   }
 });
 
-var _VRVangogh = __webpack_require__(560);
+var _VRVangogh = __webpack_require__(561);
 
 Object.defineProperty(exports, 'VRVangogh', {
   enumerable: true,
@@ -169354,7 +169399,7 @@ Object.defineProperty(exports, 'VRVangogh', {
   }
 });
 
-var _VRVaporwave = __webpack_require__(561);
+var _VRVaporwave = __webpack_require__(562);
 
 Object.defineProperty(exports, 'VRVaporwave', {
   enumerable: true,
@@ -169375,7 +169420,7 @@ Object.defineProperty(exports, 'arrayOfArt', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169496,7 +169541,7 @@ var VRDesert = function (_Component) {
 exports.default = VRDesert;
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -169549,13 +169594,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(557);
+__webpack_require__(558);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -169748,7 +169793,7 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(235), __webpack_require__(2)))
 
 /***/ }),
-/* 558 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* shader-particle-engine 1.0.5
@@ -173285,7 +173330,7 @@ SPE.Emitter.prototype.remove = function() {
 
 
 /***/ }),
-/* 559 */
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173468,7 +173513,7 @@ var VRNightScene = function (_Component) {
 exports.default = VRNightScene;
 
 /***/ }),
-/* 560 */
+/* 561 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173633,7 +173678,7 @@ var VRVangogh = function (_Component) {
 exports.default = VRVangogh;
 
 /***/ }),
-/* 561 */
+/* 562 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173647,7 +173692,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 __webpack_require__(97);
 
-__webpack_require__(562);
+__webpack_require__(563);
 
 var _aframeReact = __webpack_require__(98);
 
@@ -173819,10 +173864,10 @@ var VRVaporwave = function (_Component) {
 exports.default = VRVaporwave;
 
 /***/ }),
-/* 562 */
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ImprovedNoise = __webpack_require__(563);
+var ImprovedNoise = __webpack_require__(564);
 
 /**
  * Mountain component.
@@ -173973,7 +174018,7 @@ AFRAME.registerPrimitive('a-mountain', {
 
 
 /***/ }),
-/* 563 */
+/* 564 */
 /***/ (function(module, exports) {
 
 // http://mrl.nyu.edu/~perlin/noise/
@@ -174049,51 +174094,6 @@ var ImprovedNoise = function () {
 };
 
 module.exports = ImprovedNoise;
-
-
-/***/ }),
-/* 564 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = isMobile
-module.exports.isMobile = isMobile
-module.exports.default = isMobile
-
-const mobileRE = /(android|bb\d+|meego).+mobile|armv7l|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series[46]0|samsungbrowser.*mobile|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i
-const notMobileRE = /CrOS/
-
-const tabletRE = /android|ipad|playbook|silk/i
-
-function isMobile (opts) {
-  if (!opts) opts = {}
-  let ua = opts.ua
-  if (!ua && typeof navigator !== 'undefined') ua = navigator.userAgent
-  if (ua && ua.headers && typeof ua.headers['user-agent'] === 'string') {
-    ua = ua.headers['user-agent']
-  }
-  if (typeof ua !== 'string') return false
-
-  let result =
-    (mobileRE.test(ua) && !notMobileRE.test(ua)) ||
-    (!!opts.tablet && tabletRE.test(ua))
-
-  if (
-    !result &&
-    opts.tablet &&
-    opts.featureDetect &&
-    navigator &&
-    navigator.maxTouchPoints > 1 &&
-    ua.indexOf('Macintosh') !== -1 &&
-    ua.indexOf('Safari') !== -1
-  ) {
-    result = true
-  }
-
-  return result
-}
 
 
 /***/ })
