@@ -126169,7 +126169,7 @@ module.exports = JSON.parse('{"name":"aframe","version":"1.5.0","description":"A
 ;
 });
 //# sourceMappingURL=aframe-master.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(557).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(558).setImmediate))
 
 /***/ }),
 /* 98 */
@@ -128912,7 +128912,16 @@ Object.defineProperty(exports, 'Resume', {
   }
 });
 
-var _projectModals = __webpack_require__(552);
+var _services = __webpack_require__(552);
+
+Object.defineProperty(exports, 'Services', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_services).default;
+  }
+});
+
+var _projectModals = __webpack_require__(553);
 
 Object.defineProperty(exports, 'ProjectModals', {
   enumerable: true,
@@ -128921,7 +128930,7 @@ Object.defineProperty(exports, 'ProjectModals', {
   }
 });
 
-var _screenShotModal = __webpack_require__(553);
+var _screenShotModal = __webpack_require__(554);
 
 Object.defineProperty(exports, 'ScreenShotModal', {
   enumerable: true,
@@ -128993,7 +129002,7 @@ Object.defineProperty(exports, 'gol', {
   }
 });
 
-var _loader = __webpack_require__(554);
+var _loader = __webpack_require__(555);
 
 Object.defineProperty(exports, 'Loader', {
   enumerable: true,
@@ -130259,7 +130268,7 @@ TabContent.childContextTypes = childContextTypes;
  * ShaderParticleEngine by Squarefeet (https://github.com/squarefeet).
  */
 
-var SPE = __webpack_require__(559);
+var SPE = __webpack_require__(560);
 
 if (typeof AFRAME === 'undefined') {
   throw new Error('Component attempted to register before AFRAME was available.');
@@ -154394,7 +154403,7 @@ var _reactRouterDom = __webpack_require__(61);
 
 var _index = __webpack_require__(123);
 
-var _environments = __webpack_require__(555);
+var _environments = __webpack_require__(556);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -168136,13 +168145,9 @@ var myNavbar = function (_Component) {
                             'div',
                             null,
                             _react2.default.createElement(
-                                _reactRouterBootstrap.LinkContainer,
-                                { to: '/AIservices' },
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'abtn', onClick: this.collapseNavbar },
-                                    '\uD83E\uDD16 AI Services'
-                                )
+                                'a',
+                                { className: 'abtn', href: '/personalPage/AIservices' },
+                                '\uD83E\uDD16 AI Services'
                             ),
                             _react2.default.createElement(
                                 _reactRouterBootstrap.LinkContainer,
@@ -168175,13 +168180,9 @@ var myNavbar = function (_Component) {
                             'div',
                             { id: 'statefullButtons' },
                             _react2.default.createElement(
-                                _reactRouterBootstrap.LinkContainer,
-                                { to: '/AIservices' },
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'abtn', onClick: this.collapseNavbar },
-                                    '\uD83E\uDD16 AI Services'
-                                )
+                                'a',
+                                { className: 'abtn', href: '/personalPage/AIservices' },
+                                '\uD83E\uDD16 AI Services'
                             ),
                             _react2.default.createElement(
                                 'a',
@@ -169070,6 +169071,31 @@ exports.default = function (props) {
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Services = function Services() {
+    var servicesHTML = '\n    <div id="services-content">\n    <!-- Navigation -->\n    <header>\n        <nav>\n            <div class="logo">\uD83C\uDFA4 VoiceAI Systems</div>\n            <ul class="nav-links">\n                <li><a href="#features">Features</a></li>\n                <li><a href="#pricing">Pricing</a></li>\n                <li><a href="#case-studies">Case Studies</a></li>\n                <li><a href="#contact">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n\n    <!-- Hero Section -->\n    <section class="hero">\n        <div class="hero-content">\n            <h1>AI-Powered Phone Systems That Transform Your Business</h1>\n            <p>Intelligent voice automation that handles calls, screens leads, and manages customer interactions 24/7</p>\n            <div style="margin-bottom: 2rem;">\n                <button class="cta-button" onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Get Started Today</button>\n                <button class="cta-button-secondary" onclick="document.getElementById(\'features\').scrollIntoView({behavior: \'smooth\'})">Learn More</button>\n            </div>\n            <div class="hero-image">\n                <img src="https://via.placeholder.com/800x400/1e40af/ffffff?text=AI+Phone+System+Dashboard" alt="AI Phone System Dashboard">\n            </div>\n        </div>\n    </section>\n\n    <!-- Problem Section -->\n    <section class="section">\n        <h2>The Challenge</h2>\n        <p class="section-subtitle">Your team is drowning in phone calls. Here\'s what we hear every day:</p>\n        <div class="problems-grid">\n            <div class="problem-card">\n                <h3>\uD83D\uDCBC Missed Leads</h3>\n                <p>Potential customers hang up when no one answers. Your competitors pick up the phone.</p>\n            </div>\n            <div class="problem-card">\n                <h3>\u23F0 After-Hours Chaos</h3>\n                <p>Business doesn\'t stop at 5 PM. Your customers call at night, weekends\u2014when you\'re not there.</p>\n            </div>\n            <div class="problem-card">\n                <h3>\uD83D\uDCB8 Rising Labor Costs</h3>\n                <p>Hiring more receptionists? The expenses keep growing while quality inconsistency persists.</p>\n            </div>\n            <div class="problem-card">\n                <h3>\uD83D\uDCDE Repetitive Tasks</h3>\n                <p>Your team spends hours on routine questions instead of closing deals or serving customers.</p>\n            </div>\n        </div>\n    </section>\n\n    <!-- Solution Section -->\n    <section class="section solution-section" id="features">\n        <h2>Our Solution</h2>\n        <p class="section-subtitle">Meet Emily and her intelligent voice system\u2014your 24/7 business development team</p>\n        <div class="solutions-grid">\n            <div class="solution-card">\n                <div class="solution-icon">\uD83E\uDD16</div>\n                <h3>AI-Powered Conversations</h3>\n                <p>Advanced natural language processing understands context and handles complex conversations naturally\u2014not robotic, not scripted.</p>\n            </div>\n            <div class="solution-card">\n                <div class="solution-icon">\uD83D\uDCCA</div>\n                <h3>Intelligent Lead Qualification</h3>\n                <p>Automatically qualify leads, gather information, and transfer qualified prospects to your team with full context.</p>\n            </div>\n            <div class="solution-card">\n                <div class="solution-icon">\uD83C\uDF19</div>\n                <h3>24/7 Availability</h3>\n                <p>Never miss another call. Your AI system works nights, weekends, and holidays\u2014always on, always ready.</p>\n            </div>\n            <div class="solution-card">\n                <div class="solution-icon">\uD83D\uDCC8</div>\n                <h3>Real-Time Analytics</h3>\n                <p>Track every call, understand customer needs, and optimize your sales funnel with detailed insights and reports.</p>\n            </div>\n            <div class="solution-card">\n                <div class="solution-icon">\uD83D\uDD17</div>\n                <h3>Seamless Integration</h3>\n                <p>Connects with your CRM, booking system, or custom tools. Works with your existing workflow, not against it.</p>\n            </div>\n            <div class="solution-card">\n                <div class="solution-icon">\uD83D\uDCAC</div>\n                <h3>Multi-Channel Support</h3>\n                <p>Phone calls, SMS, email\u2014reach customers where they are. Unified conversation history across all channels.</p>\n            </div>\n        </div>\n    </section>\n\n    <!-- Key Features -->\n    <section class="section">\n        <h2>Key Features</h2>\n        <p class="section-subtitle">Everything you need to automate customer interactions</p>\n        <div class="features">\n            <div class="feature">\n                <div class="feature-icon">\u2705</div>\n                <h3>Call Screening</h3>\n                <p>Automatically identify spam and qualify serious inquiries</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">\uD83D\uDCC5</div>\n                <h3>Appointment Booking</h3>\n                <p>Schedule meetings directly\u2014no back and forth needed</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">\uD83D\uDCDD</div>\n                <h3>Message Taking</h3>\n                <p>Capture detailed messages and relay them instantly</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">\uD83D\uDD14</div>\n                <h3>Instant Notifications</h3>\n                <p>Get alerts for important calls in real-time</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">\uD83C\uDFAF</div>\n                <h3>Custom Training</h3>\n                <p>Train Emily for your specific industry and business</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">\uD83D\uDCCA</div>\n                <h3>Performance Metrics</h3>\n                <p>Detailed analytics on call outcomes and customer satisfaction</p>\n            </div>\n        </div>\n    </section>\n\n    <!-- Case Studies -->\n    <section class="section case-studies" id="case-studies">\n        <h2>Real Results From Real Businesses</h2>\n        <p class="section-subtitle">See how our AI phone system transformed customer interactions</p>\n\n        <div class="case-study">\n            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=Medical+Practice" alt="Medical Practice">\n            <div class="case-study-text">\n                <h3>Medical Practice - 40% More Appointments</h3>\n                <p>A busy medical office was losing 30% of incoming calls due to staff unavailability.</p>\n                <div class="metric">+40% Appointment Bookings</div>\n                <div class="metric">-2 hours daily admin time</div>\n                <p style="margin-top: 1rem;">After implementing our AI system, they now capture every call, qualify patients, and book appointments automatically. Staff focuses on care, not phones.</p>\n            </div>\n        </div>\n\n        <div class="case-study">\n            <div class="case-study-text">\n                <h3>Home Services Company - 3x Lead Conversion</h3>\n                <p>A contractor struggled with lead follow-up and inconsistent qualification.</p>\n                <div class="metric">3x Lead Quality</div>\n                <div class="metric">$120k+ Monthly Revenue Impact</div>\n                <p style="margin-top: 1rem;">The AI system now screens, qualifies, and pre-books site visits automatically. Sales team only talks to hot leads. Revenue increased 35% in first 6 months.</p>\n            </div>\n            <img src="https://via.placeholder.com/400x300/1e40af/ffffff?text=Home+Services" alt="Home Services">\n        </div>\n\n        <div class="case-study">\n            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Restaurant+Group" alt="Restaurant Group">\n            <div class="case-study-text">\n                <h3>Restaurant Group - Never Missed Reservation</h3>\n                <p>Multi-location restaurant chain dealing with call volume spikes during peak hours.</p>\n                <div class="metric">100% Call Capture</div>\n                <div class="metric">20% More Reservations</div>\n                <p style="margin-top: 1rem;">Intelligent routing and booking automation now handles 70% of reservation calls without human intervention. Customer satisfaction improved, staff stress reduced.</p>\n            </div>\n        </div>\n    </section>\n\n    <!-- Pricing -->\n    <section class="section pricing-section" id="pricing">\n        <h2>Transparent, Scalable Pricing</h2>\n        <p class="section-subtitle">Choose the plan that fits your business</p>\n        <div class="pricing-grid">\n            <div class="pricing-card">\n                <h3>Starter</h3>\n                <p>Perfect for small businesses</p>\n                <div class="price">$499<span class="price-period">/month</span></div>\n                <ul class="pricing-features">\n                    <li>Up to 500 calls/month</li>\n                    <li>Basic lead qualification</li>\n                    <li>Call transcripts</li>\n                    <li>Basic integrations</li>\n                    <li>Email support</li>\n                </ul>\n                <button class="cta-button" onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Get Started</button>\n            </div>\n\n            <div class="pricing-card featured">\n                <h3>Professional</h3>\n                <p>Most popular choice</p>\n                <div class="price">$999<span class="price-period">/month</span></div>\n                <ul class="pricing-features">\n                    <li>Up to 2,000 calls/month</li>\n                    <li>Advanced qualification</li>\n                    <li>Appointment booking</li>\n                    <li>CRM integration</li>\n                    <li>Custom workflows</li>\n                    <li>Priority phone support</li>\n                    <li>Weekly optimization</li>\n                </ul>\n                <button class="cta-button" onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Get Started</button>\n            </div>\n\n            <div class="pricing-card">\n                <h3>Enterprise</h3>\n                <p>For large operations</p>\n                <div class="price">Custom<span class="price-period">/month</span></div>\n                <ul class="pricing-features">\n                    <li>Unlimited calls</li>\n                    <li>Full customization</li>\n                    <li>Multi-location support</li>\n                    <li>Advanced analytics</li>\n                    <li>Dedicated account manager</li>\n                    <li>24/7 premium support</li>\n                </ul>\n                <button class="cta-button" onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Schedule Demo</button>\n            </div>\n        </div>\n    </section>\n\n    <!-- Testimonials -->\n    <section class="section testimonials-section">\n        <h2>What Our Clients Say</h2>\n        <p class="section-subtitle">Trusted by hundreds of businesses across industries</p>\n        <div class="testimonials-grid">\n            <div class="testimonial">\n                <div class="testimonial-text">"We went from missing calls to capturing every lead. This system paid for itself in the first month."</div>\n                <div class="testimonial-author">Sarah Mitchell</div>\n                <div class="testimonial-title">Owner, Mitchell Dental Group</div>\n            </div>\n            <div class="testimonial">\n                <div class="testimonial-text">"The AI understands our customers naturally. Clients don\'t realize they\'re talking to a system. We\'re impressed."</div>\n                <div class="testimonial-author">James Rodriguez</div>\n                <div class="testimonial-title">CEO, Rodriguez Home Services</div>\n            </div>\n            <div class="testimonial">\n                <div class="testimonial-text">"Our team is finally focused on selling instead of answering routine questions. Game-changer for our productivity."</div>\n                <div class="testimonial-author">Emily Chen</div>\n                <div class="testimonial-title">Director of Sales, Tech Solutions Inc</div>\n            </div>\n        </div>\n    </section>\n\n    <!-- Implementation Process -->\n    <section class="section">\n        <h2>Simple Implementation Process</h2>\n        <p class="section-subtitle">From consultation to live in less than 2 weeks</p>\n        <div class="features">\n            <div class="feature">\n                <div class="feature-icon">1\uFE0F\u20E3</div>\n                <h3>Discovery Call</h3>\n                <p>Understand your business, goals, and call patterns</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">2\uFE0F\u20E3</div>\n                <h3>System Configuration</h3>\n                <p>Customize scripts, workflows, and integrations</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">3\uFE0F\u20E3</div>\n                <h3>Testing & Training</h3>\n                <p>Test scenarios and train your team</p>\n            </div>\n            <div class="feature">\n                <div class="feature-icon">4\uFE0F\u20E3</div>\n                <h3>Launch & Monitor</h3>\n                <p>Go live with ongoing optimization support</p>\n            </div>\n        </div>\n    </section>\n\n    <!-- Contact Section -->\n    <section class="section" id="contact">\n        <h2>Ready to Transform Your Customer Interactions?</h2>\n        <p class="section-subtitle">Get a free consultation and demo tailored to your business</p>\n        \n        <form class="contact-form" onsubmit="handleSubmit(event)">\n            <div class="form-group">\n                <label for="name">Full Name *</label>\n                <input type="text" id="name" name="name" required>\n            </div>\n            <div class="form-group">\n                <label for="company">Company Name *</label>\n                <input type="text" id="company" name="company" required>\n            </div>\n            <div class="form-group">\n                <label for="email">Email Address *</label>\n                <input type="email" id="email" name="email" required>\n            </div>\n            <div class="form-group">\n                <label for="phone">Phone Number *</label>\n                <input type="tel" id="phone" name="phone" required>\n            </div>\n            <div class="form-group">\n                <label for="industry">Industry *</label>\n                <input type="text" id="industry" name="industry" placeholder="e.g., Healthcare, Home Services, Real Estate" required>\n            </div>\n            <div class="form-group">\n                <label for="volume">Average Inbound Calls Per Month *</label>\n                <input type="number" id="volume" name="volume" placeholder="e.g., 500" required>\n            </div>\n            <div class="form-group">\n                <label for="message">Tell us about your main challenge (optional)</label>\n                <textarea id="message" name="message" placeholder="What\'s your biggest pain point with current phone systems?"></textarea>\n            </div>\n            <div class="form-group">\n                <label style="display: flex; align-items: center; font-weight: normal;">\n                    <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">\n                    I agree to the privacy policy and terms of service\n                </label>\n            </div>\n            <button type="submit" class="cta-button" style="width: 100%;">Get Your Free Demo</button>\n            <p class="compliance-note">We respect your privacy. Your information is secure and will never be shared. You\'ll receive a follow-up within 24 hours.</p>\n        </form>\n    </section>\n\n    <!-- CTA Section -->\n    <section class="cta-section">\n        <h2>Don\'t Let Another Call Go Unanswered</h2>\n        <p>Join hundreds of businesses that are capturing leads and improving customer service with intelligent AI phone systems</p>\n        <button class="cta-button" onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Start Your Free Trial</button>\n    </section>\n\n    <!-- Footer -->\n    <footer>\n        <div class="footer-content">\n            <div class="footer-section">\n                <h4>About</h4>\n                <ul>\n                    <li><a href="#about">About Us</a></li>\n                    <li><a href="#blog">Blog</a></li>\n                    <li><a href="#careers">Careers</a></li>\n                </ul>\n            </div>\n            <div class="footer-section">\n                <h4>Product</h4>\n                <ul>\n                    <li><a href="#features">Features</a></li>\n                    <li><a href="#pricing">Pricing</a></li>\n                    <li><a href="#security">Security</a></li>\n                </ul>\n            </div>\n            <div class="footer-section">\n                <h4>Legal</h4>\n                <ul>\n                    <li><a href="#privacy">Privacy Policy</a></li>\n                    <li><a href="#terms">Terms of Service</a></li>\n                    <li><a href="#compliance">Compliance</a></li>\n                </ul>\n            </div>\n            <div class="footer-section">\n                <h4>Support</h4>\n                <ul>\n                    <li><a href="mailto:jasonrosso@gmail.com">Email Support</a></li>\n                    <li><a href="tel:+19143140783">1-914-314-0783</a></li>\n                    <li><a href="#docs">Documentation</a></li>\n                </ul>\n            </div>\n        </div>\n        <div class="footer-bottom">\n            <p>&copy; 2024 VoiceAI Systems. All rights reserved.</p>\n            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Stripe Merchant | PCI Compliant | GDPR Compliant | SOC 2 Certified</p>\n            <p style="margin-top: 0.5rem; font-size: 0.8rem;"><strong>Compliance Notice:</strong> We are fully verified and registered to accept payments through Stripe. All customer data is encrypted and stored securely. We comply with all KYC/AML requirements and industry regulations.</p>\n        </div>\n    </footer>\n\n    <script>\n        function handleSubmit(event) {\n            event.preventDefault();\n            \n            // Collect form data\n            const formData = {\n                name: document.getElementById(\'name\').value,\n                company: document.getElementById(\'company\').value,\n                email: document.getElementById(\'email\').value,\n                phone: document.getElementById(\'phone\').value,\n                industry: document.getElementById(\'industry\').value,\n                volume: document.getElementById(\'volume\').value,\n                message: document.getElementById(\'message\').value,\n                timestamp: new Date().toISOString()\n            };\n\n            // Here you would send to your backend/email service\n            console.log(\'Form submitted:\', formData);\n            \n            // Show success message\n            alert(\'Thank you! We\\\'ll contact you within 24 hours at \' + formData.email);\n            \n            // Reset form\n            event.target.reset();\n        }\n\n        // Smooth scroll for navigation\n        document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {\n            anchor.addEventListener(\'click\', function (e) {\n                e.preventDefault();\n                const target = document.querySelector(this.getAttribute(\'href\'));\n                if (target) {\n                    target.scrollIntoView({\n                        behavior: \'smooth\',\n                        block: \'start\'\n                    });\n                }\n            });\n        });\n    </script>\n    </div>\n  ';
+
+    return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: servicesHTML } });
+};
+
+exports.default = Services;
+
+/***/ }),
+/* 553 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -169288,7 +169314,7 @@ var ProjectModal = function (_Component) {
 exports.default = ProjectModal;
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169350,7 +169376,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169380,7 +169406,7 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169390,7 +169416,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _VRDesert = __webpack_require__(556);
+var _VRDesert = __webpack_require__(557);
 
 Object.defineProperty(exports, 'VRDesert', {
   enumerable: true,
@@ -169399,7 +169425,7 @@ Object.defineProperty(exports, 'VRDesert', {
   }
 });
 
-var _VRNightScene = __webpack_require__(560);
+var _VRNightScene = __webpack_require__(561);
 
 Object.defineProperty(exports, 'VRNightScene', {
   enumerable: true,
@@ -169408,7 +169434,7 @@ Object.defineProperty(exports, 'VRNightScene', {
   }
 });
 
-var _VRVangogh = __webpack_require__(561);
+var _VRVangogh = __webpack_require__(562);
 
 Object.defineProperty(exports, 'VRVangogh', {
   enumerable: true,
@@ -169417,7 +169443,7 @@ Object.defineProperty(exports, 'VRVangogh', {
   }
 });
 
-var _VRVaporwave = __webpack_require__(562);
+var _VRVaporwave = __webpack_require__(563);
 
 Object.defineProperty(exports, 'VRVaporwave', {
   enumerable: true,
@@ -169438,7 +169464,7 @@ Object.defineProperty(exports, 'arrayOfArt', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -169559,7 +169585,7 @@ var VRDesert = function (_Component) {
 exports.default = VRDesert;
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -169612,13 +169638,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(558);
+__webpack_require__(559);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 558 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -169811,7 +169837,7 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(235), __webpack_require__(2)))
 
 /***/ }),
-/* 559 */
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* shader-particle-engine 1.0.5
@@ -173348,7 +173374,7 @@ SPE.Emitter.prototype.remove = function() {
 
 
 /***/ }),
-/* 560 */
+/* 561 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173531,7 +173557,7 @@ var VRNightScene = function (_Component) {
 exports.default = VRNightScene;
 
 /***/ }),
-/* 561 */
+/* 562 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173696,7 +173722,7 @@ var VRVangogh = function (_Component) {
 exports.default = VRVangogh;
 
 /***/ }),
-/* 562 */
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173710,7 +173736,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 __webpack_require__(97);
 
-__webpack_require__(563);
+__webpack_require__(564);
 
 var _aframeReact = __webpack_require__(98);
 
@@ -173882,10 +173908,10 @@ var VRVaporwave = function (_Component) {
 exports.default = VRVaporwave;
 
 /***/ }),
-/* 563 */
+/* 564 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ImprovedNoise = __webpack_require__(564);
+var ImprovedNoise = __webpack_require__(565);
 
 /**
  * Mountain component.
@@ -174036,7 +174062,7 @@ AFRAME.registerPrimitive('a-mountain', {
 
 
 /***/ }),
-/* 564 */
+/* 565 */
 /***/ (function(module, exports) {
 
 // http://mrl.nyu.edu/~perlin/noise/

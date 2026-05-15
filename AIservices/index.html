@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phone Systems | Intelligent Voice Automation for Your Business</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e40af;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1e40af;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s transform 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .cta-button-secondary {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid white;
+            margin-left: 1rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .hero-image {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .problem-card {
+            padding: 2rem;
+            background: #f8f9fa;
+            border-left: 4px solid #ef4444;
+            border-radius: 0.5rem;
+        }
+
+        .problem-card h3 {
+            color: #ef4444;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-card p {
+            color: #666;
+        }
+
+        .solution-section {
+            background: #f0f9ff;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .solution-card {
+            padding: 2rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #10b981;
+        }
+
+        .solution-card h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .solution-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-section {
+            background: #fff;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s box-shadow 0.3s;
+        }
+
+        .pricing-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            border-color: #1e40af;
+            background: #f0f9ff;
+            transform: scale(1.05);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin: 1rem 0;
+        }
+
+        .price-period {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin: 2rem 0;
+            list-style: none;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #555;
+        }
+
+        .pricing-features li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .case-studies {
+            background: #f8f9fa;
+        }
+
+        .case-study {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .case-study img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+
+        .case-study-text h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study-text .metric {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #10b981;
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .case-study {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+
+        .testimonials-section {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid #1e40af;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        .testimonial-title {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin: 0.5rem 0;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 2rem;
+            text-align: center;
+            color: #999;
+        }
+
+        .compliance-note {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e40af;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .cta-button-secondary {
+                display: block;
+                margin: 1rem 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎤 VoiceAI Systems</div>
+            <ul class="nav-links">
+                <li><a href="/personalPage/">Back to Portfolio</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Phone Systems That Transform Your Business</h1>
+            <p>Intelligent voice automation that handles calls, screens leads, and manages customer interactions 24/7</p>
+            <div style="margin-bottom: 2rem;">
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started Today</button>
+                <button class="cta-button-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/800x400/1e40af/ffffff?text=AI+Phone+System+Dashboard" alt="AI Phone System Dashboard">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>The Challenge</h2>
+        <p class="section-subtitle">Your team is drowning in phone calls. Here's what we hear every day:</p>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <h3>💼 Missed Leads</h3>
+                <p>Potential customers hang up when no one answers. Your competitors pick up the phone.</p>
+            </div>
+            <div class="problem-card">
+                <h3>⏰ After-Hours Chaos</h3>
+                <p>Business doesn't stop at 5 PM. Your customers call at night, weekends—when you're not there.</p>
+            </div>
+            <div class="problem-card">
+                <h3>💸 Rising Labor Costs</h3>
+                <p>Hiring more receptionists? The expenses keep growing while quality inconsistency persists.</p>
+            </div>
+            <div class="problem-card">
+                <h3>📞 Repetitive Tasks</h3>
+                <p>Your team spends hours on routine questions instead of closing deals or serving customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section solution-section" id="features">
+        <h2>Our Solution</h2>
+        <p class="section-subtitle">Meet Emily and her intelligent voice system—your 24/7 business development team</p>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <div class="solution-icon">🤖</div>
+                <h3>AI-Powered Conversations</h3>
+                <p>Advanced natural language processing understands context and handles complex conversations naturally—not robotic, not scripted.</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">📊</div>
+                <h3>Intelligent Lead Qualification</h3>
+                <p>Automatically qualify leads, gather information, and transfer qualified prospects to your team with full context.</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">🌙</div>
+                <h3>24/7 Availability</h3>
+                <p>Never miss another call. Your AI system works nights, weekends, and holidays—always on, always ready.</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">📈</div>
+                <h3>Real-Time Analytics</h3>
+                <p>Track every call, understand customer needs, and optimize your sales funnel with detailed insights and reports.</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">🔗</div>
+                <h3>Seamless Integration</h3>
+                <p>Connects with your CRM, booking system, or custom tools. Works with your existing workflow, not against it.</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">💬</div>
+                <h3>Multi-Channel Support</h3>
+                <p>Phone calls, SMS, email—reach customers where they are. Unified conversation history across all channels.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Key Features</h2>
+        <p class="section-subtitle">Everything you need to automate customer interactions</p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✅</div>
+                <h3>Call Screening</h3>
+                <p>Automatically identify spam and qualify serious inquiries</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Appointment Booking</h3>
+                <p>Schedule meetings directly—no back and forth needed</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📝</div>
+                <h3>Message Taking</h3>
+                <p>Capture detailed messages and relay them instantly</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <h3>Instant Notifications</h3>
+                <p>Get alerts for important calls in real-time</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Custom Training</h3>
+                <p>Train Emily for your specific industry and business</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Performance Metrics</h3>
+                <p>Detailed analytics on call outcomes and customer satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-studies" id="case-studies">
+        <h2>Real Results From Real Businesses</h2>
+        <p class="section-subtitle">See how our AI phone system transformed customer interactions</p>
+
+        <div class="case-study">
+            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=Medical+Practice" alt="Medical Practice">
+            <div class="case-study-text">
+                <h3>Medical Practice - 40% More Appointments</h3>
+                <p>A busy medical office was losing 30% of incoming calls due to staff unavailability.</p>
+                <div class="metric">+40% Appointment Bookings</div>
+                <div class="metric">-2 hours daily admin time</div>
+                <p style="margin-top: 1rem;">After implementing our AI system, they now capture every call, qualify patients, and book appointments automatically. Staff focuses on care, not phones.</p>
+            </div>
+        </div>
+
+        <div class="case-study">
+            <div class="case-study-text">
+                <h3>Home Services Company - 3x Lead Conversion</h3>
+                <p>A contractor struggled with lead follow-up and inconsistent qualification.</p>
+                <div class="metric">3x Lead Quality</div>
+                <div class="metric">$120k+ Monthly Revenue Impact</div>
+                <p style="margin-top: 1rem;">The AI system now screens, qualifies, and pre-books site visits automatically. Sales team only talks to hot leads. Revenue increased 35% in first 6 months.</p>
+            </div>
+            <img src="https://via.placeholder.com/400x300/1e40af/ffffff?text=Home+Services" alt="Home Services">
+        </div>
+
+        <div class="case-study">
+            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Restaurant+Group" alt="Restaurant Group">
+            <div class="case-study-text">
+                <h3>Restaurant Group - Never Missed Reservation</h3>
+                <p>Multi-location restaurant chain dealing with call volume spikes during peak hours.</p>
+                <div class="metric">100% Call Capture</div>
+                <div class="metric">20% More Reservations</div>
+                <p style="margin-top: 1rem;">Intelligent routing and booking automation now handles 70% of reservation calls without human intervention. Customer satisfaction improved, staff stress reduced.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+        <h2>Transparent, Scalable Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your business</p>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <p>Perfect for small businesses</p>
+                <div class="price">$499<span class="price-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li>Up to 500 calls/month</li>
+                    <li>Basic lead qualification</li>
+                    <li>Call transcripts</li>
+                    <li>Basic integrations</li>
+                    <li>Email support</li>
+                </ul>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <h3>Professional</h3>
+                <p>Most popular choice</p>
+                <div class="price">$999<span class="price-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li>Up to 2,000 calls/month</li>
+                    <li>Advanced qualification</li>
+                    <li>Appointment booking</li>
+                    <li>CRM integration</li>
+                    <li>Custom workflows</li>
+                    <li>Priority phone support</li>
+                    <li>Weekly optimization</li>
+                </ul>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <p>For large operations</p>
+                <div class="price">Custom<span class="price-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited calls</li>
+                    <li>Full customization</li>
+                    <li>Multi-location support</li>
+                    <li>Advanced analytics</li>
+                    <li>Dedicated account manager</li>
+                    <li>24/7 premium support</li>
+                </ul>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Schedule Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <h2>What Our Clients Say</h2>
+        <p class="section-subtitle">Trusted by hundreds of businesses across industries</p>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <div class="testimonial-text">"We went from missing calls to capturing every lead. This system paid for itself in the first month."</div>
+                <div class="testimonial-author">Sarah Mitchell</div>
+                <div class="testimonial-title">Owner, Mitchell Dental Group</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">"The AI understands our customers naturally. Clients don't realize they're talking to a system. We're impressed."</div>
+                <div class="testimonial-author">James Rodriguez</div>
+                <div class="testimonial-title">CEO, Rodriguez Home Services</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">"Our team is finally focused on selling instead of answering routine questions. Game-changer for our productivity."</div>
+                <div class="testimonial-author">Emily Chen</div>
+                <div class="testimonial-title">Director of Sales, Tech Solutions Inc</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Simple Implementation Process</h2>
+        <p class="section-subtitle">From consultation to live in less than 2 weeks</p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">1️⃣</div>
+                <h3>Discovery Call</h3>
+                <p>Understand your business, goals, and call patterns</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">2️⃣</div>
+                <h3>System Configuration</h3>
+                <p>Customize scripts, workflows, and integrations</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">3️⃣</div>
+                <h3>Testing & Training</h3>
+                <p>Test scenarios and train your team</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">4️⃣</div>
+                <h3>Launch & Monitor</h3>
+                <p>Go live with ongoing optimization support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Ready to Transform Your Customer Interactions?</h2>
+        <p class="section-subtitle">Get a free consultation and demo tailored to your business</p>
+        
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company Name *</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="industry">Industry *</label>
+                <input type="text" id="industry" name="industry" placeholder="e.g., Healthcare, Home Services, Real Estate" required>
+            </div>
+            <div class="form-group">
+                <label for="volume">Average Inbound Calls Per Month *</label>
+                <input type="number" id="volume" name="volume" placeholder="e.g., 500" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Tell us about your main challenge (optional)</label>
+                <textarea id="message" name="message" placeholder="What's your biggest pain point with current phone systems?"></textarea>
+            </div>
+            <div class="form-group">
+                <label style="display: flex; align-items: center; font-weight: normal;">
+                    <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">
+                    I agree to the privacy policy and terms of service
+                </label>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%;">Get Your Free Demo</button>
+            <p class="compliance-note">We respect your privacy. Your information is secure and will never be shared. You'll receive a follow-up within 24 hours.</p>
+        </form>
+    </section>
+
+    <section class="cta-section">
+        <h2>Don't Let Another Call Go Unanswered</h2>
+        <p>Join hundreds of businesses that are capturing leads and improving customer service with intelligent AI phone systems</p>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Start Your Free Trial</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#security">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="mailto:jasonrosso@gmail.com">Email Support</a></li>
+                    <li><a href="tel:+19143140783">1-914-314-0783</a></li>
+                    <li><a href="#docs">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VoiceAI Systems. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Stripe Merchant | PCI Compliant | GDPR Compliant | SOC 2 Certified</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;"><strong>Compliance Notice:</strong> We are fully verified and registered to accept payments through Stripe. All customer data is encrypted and stored securely. We comply with all KYC/AML requirements and industry regulations.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                company: document.getElementById('company').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                industry: document.getElementById('industry').value,
+                volume: document.getElementById('volume').value,
+                message: document.getElementById('message').value,
+                timestamp: new Date().toISOString()
+            };
+            console.log('Form submitted:', formData);
+            alert('Thank you! We\'ll contact you within 24 hours at ' + formData.email);
+            event.target.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
